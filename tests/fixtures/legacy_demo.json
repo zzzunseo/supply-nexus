@@ -1,0 +1,38 @@
+{
+  "notice": "UI 동작 검증용 가상 공급망. 좌표는 도시의 근사 위치이며 실제 기업·거래·점유율·공급 관계를 나타내지 않습니다.",
+  "processes": ["웨이퍼 제조", "산화", "포토", "식각", "증착·이온주입", "금속배선", "EDS", "패키징"],
+  "nodes": [
+    {"id":"seoul","name":"수도권 거점","country":"한국","lat":37.57,"lon":126.98,"role":"공정 거점"},
+    {"id":"tokyo","name":"일본 거점","country":"일본","lat":35.68,"lon":139.69,"role":"소재 거점"},
+    {"id":"taipei","name":"대만 거점","country":"대만","lat":25.03,"lon":121.57,"role":"공정 거점"},
+    {"id":"singapore","name":"싱가포르 거점","country":"싱가포르","lat":1.35,"lon":103.82,"role":"물류 거점"},
+    {"id":"eindhoven","name":"네덜란드 거점","country":"네덜란드","lat":51.44,"lon":5.48,"role":"장비 거점"},
+    {"id":"dresden","name":"독일 거점","country":"독일","lat":51.05,"lon":13.74,"role":"소재 거점"},
+    {"id":"sf","name":"미국 서부 거점","country":"미국","lat":37.77,"lon":-122.42,"role":"장비 거점"},
+    {"id":"austin","name":"미국 중부 거점","country":"미국","lat":30.27,"lon":-97.74,"role":"공정 거점"},
+    {"id":"penang","name":"말레이시아 거점","country":"말레이시아","lat":5.41,"lon":100.34,"role":"패키징 거점"}
+  ],
+  "edges": [
+    {"id":"r01","from":"tokyo","to":"seoul","item":"웨이퍼 소재","processes":["웨이퍼 제조"]},
+    {"id":"r02","from":"dresden","to":"taipei","item":"웨이퍼 소재","processes":["웨이퍼 제조"]},
+    {"id":"r03","from":"singapore","to":"seoul","item":"공정 가스","processes":["산화","증착·이온주입"]},
+    {"id":"r04","from":"tokyo","to":"taipei","item":"공정 가스","processes":["산화","식각"]},
+    {"id":"r05","from":"eindhoven","to":"seoul","item":"노광 장비","processes":["포토"]},
+    {"id":"r06","from":"eindhoven","to":"taipei","item":"노광 장비","processes":["포토"]},
+    {"id":"r07","from":"tokyo","to":"seoul","item":"감광 소재","processes":["포토"]},
+    {"id":"r08","from":"sf","to":"taipei","item":"식각 장비","processes":["식각"]},
+    {"id":"r09","from":"sf","to":"seoul","item":"증착 장비","processes":["증착·이온주입"]},
+    {"id":"r10","from":"tokyo","to":"seoul","item":"배선 소재","processes":["금속배선"]},
+    {"id":"r11","from":"dresden","to":"taipei","item":"배선 소재","processes":["금속배선"]},
+    {"id":"r12","from":"tokyo","to":"seoul","item":"검사 장비","processes":["EDS"]},
+    {"id":"r13","from":"sf","to":"austin","item":"검사 장비","processes":["EDS"]},
+    {"id":"r14","from":"seoul","to":"penang","item":"가공 웨이퍼","processes":["패키징"]},
+    {"id":"r15","from":"taipei","to":"singapore","item":"가공 웨이퍼","processes":["패키징"]}
+  ],
+  "scenarios": [
+    {"name":"정상 상태","affected":[],"description":"모든 예시 거점과 연결을 정상으로 표시합니다."},
+    {"name":"일본 거점 중단 · 예시","affected":["tokyo"],"description":"일본 예시 거점과 직접 연결된 경로를 중단 상태로 표시합니다."},
+    {"name":"대만 거점 중단 · 예시","affected":["taipei"],"description":"대만 예시 거점과 직접 연결된 경로를 중단 상태로 표시합니다."},
+    {"name":"네덜란드 거점 중단 · 예시","affected":["eindhoven"],"description":"네덜란드 예시 거점과 직접 연결된 경로를 중단 상태로 표시합니다."}
+  ]
+}

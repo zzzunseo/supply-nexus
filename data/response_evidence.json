@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-27",
+  "sources": {
+    "sumco_products": {
+      "title": "SUMCO 공식 제품 목록", "url": "https://www.sumcosi.com/english/products/lineup.html",
+      "scope": "PW·EPI·Annealed·SOI 등 제품군 구분", "limit": "고객별 실제 납품 규격과 승인 자료는 아님"
+    },
+    "seh_products": {
+      "title": "Shin-Etsu 공식 웨이퍼 제품", "url": "https://www.shinetsu.co.jp/en/products/semiconductor-silicon-business/silicon-wafers/",
+      "scope": "Polished·Epitaxial·Annealed·SOI 제품군과 반도체 기판 용도", "limit": "특정 고객의 등급·규격 호환과 추가 공급량은 확정하지 않음"
+    },
+    "seh_group": {
+      "title": "Shin-Etsu 그룹 일본 법인 목록", "url": "https://www.shinetsu.co.jp/en/company/network/domestic/",
+      "scope": "Shin-Etsu Handotai의 그룹 소속과 반도체 실리콘 웨이퍼 사업", "limit": "그룹과 개별 법인·공장·계약의 범위는 구분해야 함"
+    },
+    "tsmc_2025": {
+      "title": "TSMC 2025 공식 공급사 수상 자료", "url": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "published_at": "2025-11-26", "scope": "SUMCO·Shin-Etsu Handotai·JSR의 공급사 명단 포함", "limit": "특정 품목·등급·공장 승인 또는 현재 계약 물량의 증거는 아님"
+    },
+    "sumco_customers": {
+      "title": "SUMCO 2025 고객 수상 자료", "url": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "scope": "TSMC 공급 관계 및 삼성 300mm 로직용 실리콘 웨이퍼 공급 언급", "limit": "PW/EPI 고객별 구성과 대체 여력은 공개하지 않음"
+    },
+    "shinetsu_samsung_2023": {
+      "title": "Shin-Etsu의 삼성 공급사 수상 발표", "url": "https://www.shinetsu.co.jp/en/news/news-release/shin-etsu-presented-with-an-excellent-supplier-award-from-samsung-electronics-for-best-in-value/",
+      "published_at": "2023-12-25", "scope": "그룹 모회사 수준의 삼성 반도체 소재 공급 관계", "limit": "현재 PW 납품 계약이나 개별 웨이퍼 등급 승인을 의미하지 않음"
+    },
+    "jsr_products": {
+      "title": "JSR 공식 전자재료 사업 소개", "url": "https://www.jsr.co.jp/jsr_e/products/em/biz/",
+      "scope": "ArF·KrF·i-line·EUV 등 광원별 PR 제품군과 포토 공정 용도", "limit": "고객이 실제 사용하는 등급을 지정하지 않음"
+    },
+    "jsr_arf": {
+      "title": "JSR ArF 공식 카탈로그", "url": "https://www.jsr.co.jp/jsr_e/products/assets/pdf/JSR%20Photoresist%20Materials_ArF_21.pdf",
+      "scope": "ArF 제품 자료 및 Dry 제품 표기", "limit": "표기 제품의 고객별 도입 현황과 대체 호환성은 별도"
+    },
+    "jsr_krf": {
+      "title": "JSR KrF 공식 카탈로그", "url": "https://www.jsr.co.jp/jsr_e/products/assets/pdf/JSR%20Photoresist%20Materials_KrF_21.pdf",
+      "scope": "KrF 제품군·막두께·패턴별 예시", "limit": "대체 후보와 동일 레시피·고객 승인을 의미하지 않음"
+    },
+    "jsr_iline": {
+      "title": "JSR i-line 공식 카탈로그", "url": "https://www.jsr.co.jp/jsr_e/products/assets/pdf/JSR%20Photoresist%20Materials_i-Line_21.pdf",
+      "scope": "i-line의 포지티브·네거티브 제품 구분", "limit": "제품군 이름이 같아도 타입·막두께 조건의 비교가 필요"
+    },
+    "jsr_euv": {
+      "title": "JSR EUV 공식 카탈로그", "url": "https://www.jsr.co.jp/jsr_e/products/assets/pdf/JSR%20Photoresist%20Materials_EUV_21.pdf",
+      "scope": "JSR EUV 제품 자료", "limit": "동진의 EUV 제품이나 양사 간 호환성을 입증하지 않음"
+    },
+    "dongjin_products": {
+      "title": "동진쎄미켐 공식 반도체 소재", "url": "https://www.dongjin.com/en/business/semiconductor.php",
+      "scope": "ArF Immersion·ArF Dry·KrF·i-Line PR 제품군", "limit": "대조한 목록만으로 EUV·TSMC 고객 인증·여유 생산량을 확인할 수 없음"
+    }
+  },
+  "cases": {
+    "wafer": {
+      "candidate_id": "shinetsu", "item_id": "polished-wafer", "display_name": "Shin-Etsu 그룹 · SEH",
+      "source_name": "SUMCO", "source_classes": ["PW", "EPI", "Annealed", "SOI"],
+      "candidate_classes": ["PW", "EPI", "Annealed", "SOI"], "default_class": "PW",
+      "material": "폴리시드 실리콘 웨이퍼(PW)",
+      "source_ids": ["sumco_products", "seh_products", "seh_group", "tsmc_2025", "sumco_customers", "shinetsu_samsung_2023"],
+      "fact": "양사 공식 목록에서 PW를 확인했습니다. TSMC 2025 자료에는 SUMCO와 Shin-Etsu Handotai가 모두 포함됩니다.",
+      "relationship": "TSMC는 2025 공급사 명단 근거. 삼성은 2023 Shin-Etsu 모회사 소재 공급 자료로, 현재 PW 계약과 구분합니다.",
+      "checks": ["직경·저항률·결정 방향·결함 및 금속 오염 기준", "고객별 승인 규격·CoA와 샘플 평가", "추가 물량의 납기 견적·출하 공장·운송 경로"],
+      "legal_scope": "지도 ID shinetsu는 그룹 단위입니다. TSMC 문서의 수상 법인은 Shin-Etsu Handotai이며, 모회사·공장·개별 계약과 구분합니다."
+    },
+    "photoresist": {
+      "candidate_id": "dongjin", "item_id": "photoresist", "display_name": "Dongjin Semichem · 동진쎄미켐",
+      "source_name": "JSR", "source_classes": ["ArF", "KrF", "i-line", "EUV"],
+      "candidate_classes": ["ArF", "KrF", "i-line"], "default_class": "전체 제품군",
+      "material": "포토레지스트", "source_ids": ["jsr_products", "dongjin_products", "tsmc_2025", "jsr_arf", "jsr_krf", "jsr_iline", "jsr_euv"],
+      "fact": "ArF·KrF·i-line은 양사 공식 제품 자료에서 공통으로 확인됩니다. EUV는 대조한 동진 제품 목록만으로 확인되지 않습니다.",
+      "relationship": "JSR → TSMC는 2025 공급사 자료 근거가 있습니다. 동진 → TSMC의 해당 PR 납품·인증 근거는 이번 자료에서 확인하지 못했습니다.",
+      "checks": ["노광 방식·포지/네거 타입·막두께·현상 조건", "금속 오염·결함 기준·고객별 레시피와 품질 승인", "샘플·CoA·납기 견적·출하 및 화학물질 취급 조건"],
+      "legal_scope": "제품군 일치는 고객별 등급 호환성이나 인증 완료를 뜻하지 않습니다. EUV 자료 미확인은 EUV 미생산이라는 판정이 아닙니다."
+    }
+  },
+  "excluded_sources": [{"url":"https://www.sehe.com/products/","reason":"원문 접근 시 suspended page로 연결되어 이번 근거에서 제외"}]
+}

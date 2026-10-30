@@ -1,0 +1,7 @@
+{
+  "name": "supply-globe",
+  "private": true,
+  "scripts": {
+    "test": "npm --prefix legacy/frontend test && node --test tests/globe-click.test.mjs"
+  }
+}

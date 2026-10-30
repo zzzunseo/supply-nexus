@@ -1,0 +1,17 @@
+{
+  "name": "supply-globe-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild index.js --bundle --format=esm --minify --loader:.png=dataurl --outfile=dist/globe-ui.js --legal-comments=eof",
+    "test": "node --test ../../tests/view-model.test.mjs ../../tests/linked-view.test.mjs"
+  },
+  "dependencies": {
+    "globe.gl": "^2.45.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

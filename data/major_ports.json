@@ -1,0 +1,57 @@
+[
+  {
+    "id": "kaohsiung",
+    "name": "가오슝항",
+    "country": "대만",
+    "lat": 22.616944444444446,
+    "lon": 120.25694444444444,
+    "precision": "공식 제1항 입구 좌표",
+    "source": "https://kh.twport.com.tw/en/port/Articles?a=918",
+    "checked_at": "2026-10-28",
+    "routing_status": "기업별 실제 경유 미확인"
+  },
+  {
+    "id": "keelung",
+    "name": "기룽항",
+    "country": "대만",
+    "lat": 25.15736111111111,
+    "lon": 121.73958333333333,
+    "precision": "공식 Port Location 좌표",
+    "source": "https://kl.twport.com.tw/fapi/AttFile?id=5341&l=2&type=AttFile",
+    "checked_at": "2026-10-28",
+    "routing_status": "기업별 실제 경유 미확인"
+  },
+  {
+    "id": "busan",
+    "name": "부산항 · 신항",
+    "country": "한국",
+    "lat": 35.08,
+    "lon": 128.82,
+    "precision": "신항 권역 개략 대표점 · 측량 좌표 아님",
+    "source": "https://busanpa.com/index.bpa?menuCd=DOM_000000103003000000",
+    "checked_at": "2026-10-28",
+    "routing_status": "기업별 실제 경유 미확인"
+  },
+  {
+    "id": "singapore",
+    "name": "싱가포르항 · Tuas",
+    "country": "싱가포르",
+    "lat": 1.27,
+    "lon": 103.61,
+    "precision": "Tuas 터미널 권역 개략 대표점 · 측량 좌표 아님",
+    "source": "https://www.mpa.gov.sg/port-marine-ops/operations/port-infrastructure/terminals",
+    "checked_at": "2026-10-28",
+    "routing_status": "기업별 실제 경유 미확인"
+  },
+  {
+    "id": "rotterdam",
+    "name": "로테르담항 · Maasvlakte",
+    "country": "네덜란드",
+    "lat": 51.96,
+    "lon": 4.03,
+    "precision": "Maasvlakte 권역 개략 대표점 · 측량 좌표 아님",
+    "source": "https://www.portofrotterdam.com/en/building-port/accessible-port/port-signposting",
+    "checked_at": "2026-10-28",
+    "routing_status": "기업별 실제 경유 미확인"
+  }
+]

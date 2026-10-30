@@ -1,0 +1,3451 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29",
+  "sources": {
+    "jsr_business": {
+      "id": "jsr_business",
+      "title": "JSR 전자재료 제품군",
+      "url": "https://www.jsr.co.jp/jsr_e/products/em/biz/",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "광원별 PR 목록 · 개별 제품 규격 아님",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "jsr_arf": {
+      "id": "jsr_arf",
+      "title": "JSR ArF 제품 카탈로그",
+      "url": "https://www.jsr.co.jp/jsr_e/products/assets/pdf/JSR%20Photoresist%20Materials_ArF_21.pdf",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "1쪽 제품명·Dry 표기 · CD 도표는 호환성 수치로 사용하지 않음",
+      "status": "reviewed",
+      "sha256": "77c6733912fcfe9834717d20a8dab2f40f51667e3a649f7d6b25e967fc27cff0"
+    },
+    "dongjin": {
+      "id": "dongjin",
+      "title": "동진쎄미켐 반도체 소재",
+      "url": "https://www.dongjin.com/en/business/semiconductor.php",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "Introduction의 PR 세부 제품군",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "tok_arf": {
+      "id": "tok_arf",
+      "title": "TOK ArF 제품·예시 조건",
+      "url": "https://www.tok-pr.com/en/products/photoresist/arf.html",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "TARF-P6111의 예시 평가 조건 · 허용 공정창 아님",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "tok_krf": {
+      "id": "tok_krf",
+      "title": "TOK KrF 제품·예시 조건",
+      "url": "https://www.tok-pr.com/en/products/photoresist/krf.html",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "TDUR-P3435의 예시 평가 조건 · 보증 성능 아님",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "tok_euv": {
+      "id": "tok_euv",
+      "title": "TOK EUV 제품군",
+      "url": "https://www.tok-pr.com/en/products/photoresist/euv.html",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "EUV 광원 및 사업 소개 · 특정 고객 승인 아님",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "sumco": {
+      "id": "sumco",
+      "title": "SUMCO 웨이퍼 목록",
+      "url": "https://www.sumcosi.com/english/products/lineup.html",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "완성 웨이퍼 종류 · 슬라이싱 약 1mm를 완성품 두께로 사용하지 않음",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "seh": {
+      "id": "seh",
+      "title": "Shin-Etsu 웨이퍼 목록",
+      "url": "https://www.shinetsu.co.jp/en/products/semiconductor-silicon-business/silicon-wafers/",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "Series Name · 원료 순도와 잉곳 치수는 완성 웨이퍼 규격으로 사용하지 않음",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "siltronic_pw": {
+      "id": "siltronic_pw",
+      "title": "Siltronic PW",
+      "url": "https://www.siltronic.com/en/products/polished-wafers.html",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "공개 직경 범위·성장법 · 개별 등급 보증 아님",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "siltronic_epi": {
+      "id": "siltronic_epi",
+      "title": "Siltronic 실리콘 EPI",
+      "url": "https://www.siltronic.com/en/products/epitaxial-wafers.html",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "실리콘 EPI 최대 직경 · GaN 개발 항목과 구분",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "al_nf3": {
+      "id": "al_nf3",
+      "title": "Air Liquide Singapore 전자 가스",
+      "url": "https://sg.airliquide.com/buy-high-purity-electronic-gases-singapore",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "NF3 제품 순도·용기 · 싱가포르 판매 페이지, 제조 공장 자료 아님",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "matheson_nf3": {
+      "id": "matheson_nf3",
+      "title": "MATHESON NF3 등급표",
+      "url": "https://us.nipponsanso.com/pdfs/puregas/nitrogen-trifluoride.pdf",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "1쪽 3개 등급의 순도·불순물 한도 · PDF 열 위치 시각 확인",
+      "status": "reviewed",
+      "sha256": "60319a007a8ac0c6e95fba0f201a5ce694e2d11c31bd835a39a1814cea28de97"
+    },
+    "sk_nf3": {
+      "id": "sk_nf3",
+      "title": "SK specialty 표기 NF3 규격",
+      "url": "https://skspecialty.com/new/eng/html/products/nf3.asp",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품 표의 명시 수치 · 기존 SK materials 그룹 노드와 법인 동일성은 미확정",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "fuji_cmp": {
+      "id": "fuji_cmp",
+      "title": "FUJIFILM CMP 제품군",
+      "url": "https://www.fujifilm.com/us/en/business/semiconductor-materials/cmp",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "구리·배리어·코발트 적용 구분 · 수치 성능 미공개",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "fujimi_topics": {
+      "id": "fujimi_topics",
+      "title": "FUJIMI 금속막 CMP 소개",
+      "url": "https://www.fujimiinc.co.jp/english/service/cmp/topics.html",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "금속막 Cu/W 적용 제품군 · 개별 모델 규격 아님",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "fujimi_old": {
+      "id": "fujimi_old",
+      "title": "FUJIMI PLANERLITE 과거 카탈로그",
+      "url": "https://www.fujimiinc.co.jp/service/catalog/file/planerlite.pdf",
+      "checked_at": "2026-10-29",
+      "edition": "H23.06 ver1.2 (2011-06)",
+      "scope": "1~2쪽 대상 막·연마재 · 현행 공급 여부 미확인",
+      "status": "legacy_reference",
+      "sha256": "33d6131fae0d1d544ed7271020a8c822219419a6897db661881774781026ab4d"
+    },
+    "fuji_arf": {
+      "id": "fuji_arf",
+      "title": "FUJIFILM ArF 193nm · GAR / FAiRS",
+      "url": "https://www.fujifilm.com/in/en/business/semiconductor-materials/photoresists/arf",
+      "edition": null,
+      "scope": "Dry/Immersion 및 PTI/NTI 제품군 구분. 세부 공정 호환 미확인",
+      "checked_at": "2026-10-29",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "waferworks_dsp": {
+      "id": "waferworks_dsp",
+      "title": "Wafer Works 게시 Silicon Works Tech DSP 규격",
+      "url": "https://www.waferworks.com/uploads/dsp_spec_eng.pdf",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "1쪽 직경별 두께·저항률·방향·TTV. 문서 표기 법인과 현재 거래 법인은 별도 확인",
+      "status": "reviewed",
+      "sha256": "b900ce9f990fd1783c9baa9bfc534788d937a4c0e25e73913d53ccca086e0ebe"
+    },
+    "gnc_epi": {
+      "id": "gnc_epi",
+      "title": "GNC Materials EPI 제품 규격",
+      "url": "https://gncmat.com/?page_id=1616",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품 페이지의 실리콘 EPI 공통 규격. 제조 공장·개별 모델·고객 승인 아님",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "matheson_cf4": {
+      "id": "matheson_cf4",
+      "title": "MATHESON CF4 등급표",
+      "url": "https://us.nipponsanso.com/pdfs/puregas/halocarbon-14.pdf",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "1쪽 등급·불순물 열 위치 시각 확인. ULSI CO+CO2 합산과 개별값 구분",
+      "status": "reviewed",
+      "sha256": "6016d7c6b578a9002fbc4f165da92f0fb8e11ac2a7609980b522b332f09de4bb"
+    },
+    "messer_cf4": {
+      "id": "messer_cf4",
+      "title": "Messer CF4 5.0 제품 규격",
+      "url": "https://www.messer.be/web/specialty-gases/tetrafluoromethane",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "Product Specification 원문을 로컬 HTTP로 확인. 표기 %와 ppmv 상한",
+      "status": "reviewed",
+      "sha256": "2cc8ed644554bcf4bcccbea251cf54398329666a56512730279caab838dbb1a5"
+    },
+    "fuji_hybrid": {
+      "id": "fuji_hybrid",
+      "title": "FUJIFILM 첨단 패키징 CMP 출시 발표",
+      "url": "https://www.fujifilm.com/au/en/news/hq/12973",
+      "checked_at": "2026-10-29",
+      "edition": "2025-09-29",
+      "scope": "2025-09-29 출시 발표 / Cu·oxide 공존 hybrid bonding 적용. 고객 실명 미공개",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "linde_nf3_at": {
+      "id": "linde_nf3_at",
+      "title": "Linde Austria NF3 4.5 규격",
+      "url": "https://produkte.linde.at/spezialgase/stickstofftrifluorid_45.html",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "순도 및 기상 vpm 불순물 상한. 원문은 이상 부피비=몰비로 명시",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "efc_nf3": {
+      "id": "efc_nf3",
+      "title": "EFC NF3 등급 규격",
+      "url": "https://www.efcgases.com/product/nitrogen-trifluoride/",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "Grade 4.5 열. 수분 보증은 EFC 용기 준비 조건이며 총 불순물 기준 판매·개별 불순물 변동 유의",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "sumco_usa_line": {
+      "id": "sumco_usa_line",
+      "title": "SUMCO USA 제품 직경",
+      "url": "https://www.sumcousa.com/product-line-2/",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "200mm 및 300mm PW·EPI 제품군. 특정 공장별 제조 제품·고객별 출하 규격을 뜻하지 않음",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "sk_siltron_wafer": {
+      "id": "sk_siltron_wafer",
+      "title": "SK siltron Si Wafer 제품군",
+      "url": "https://www.sksiltron.com/m/en/wafer/wafer.do",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "PW 및 EPI의 200mm·300mm 표기. 개별 두께·저항률·고객 인증 미공개",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "daikin_hf": {
+      "id": "daikin_hf",
+      "title": "DAIKIN HF49%·HF50% 기술자료",
+      "url": "https://www.daikinchemicals.com/library/pb_common/pdf/tds/Semicon_Etching_Agents/tds-hf-4950-E_ver01_Aug_2019.pdf",
+      "edition": "2019-08",
+      "scope": "반도체용 HF 농도 표기. 금속·입자 한도 수치는 미기재. 현행 등급 재확인 필요",
+      "checked_at": "2026-10-29",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "stella_hf": {
+      "id": "stella_hf",
+      "title": "STELLA CHEMIFA 반도체용 약액",
+      "url": "https://www.stella-chemifa.co.jp/english/products/cat1/",
+      "edition": null,
+      "scope": "고순도 HF와 BHF 용도를 구분. 제품별 농도·불순물 보증 수치 미확인",
+      "checked_at": "2026-10-29",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "kanto_hf50": {
+      "id": "kanto_hf50",
+      "title": "KANTO HF50% 전자재료 SDS",
+      "url": "https://www.kanto.co.jp/dcms_media/other/E_GE00172(20240307).pdf",
+      "edition": "2024-03-07",
+      "scope": "전자재료 용도·제품명 근거. SDS는 금속 불순물 보증서가 아님",
+      "checked_at": "2026-10-29",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "solvay_ceria": {
+      "id": "solvay_ceria",
+      "title": "Solvay Zenus 콜로이드 세리아 연마재",
+      "url": "https://www.solvay.com/en/brands/zenus",
+      "edition": null,
+      "scope": "CMP 슬러리 배합용 연마재. 최종 슬러리 호환성·원산지 미확인",
+      "checked_at": "2026-10-29",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "nyacol_ceria": {
+      "id": "nyacol_ceria",
+      "title": "NYACOL CMP 연마재 제품표",
+      "url": "https://www.nyacol.com/application/polishing/",
+      "edition": null,
+      "scope": "Ce120/10의 STI·ILD CMP 용도 및 연마재 공급 범위",
+      "checked_at": "2026-10-29",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "ff_euv": {
+      "id": "ff_euv",
+      "title": "FUJIFILM EUV 공식 제품 소개",
+      "url": "https://www.fujifilm.com/in/en/business/semiconductor-materials/photoresists/euv",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군 보유 근거. 고객 공정 승인·현재 생산 여력·세부 등급 호환은 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "ff_krf": {
+      "id": "ff_krf",
+      "title": "FUJIFILM KrF 공식 제품 소개",
+      "url": "https://www.fujifilm.com/in/en/business/semiconductor-materials/photoresists/krf",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군 보유 근거. 고객 공정 승인·현재 생산 여력·세부 등급 호환은 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "ff_iline": {
+      "id": "ff_iline",
+      "title": "FUJIFILM i-line 공식 제품 소개",
+      "url": "https://www.fujifilm.com/in/en/business/semiconductor-materials/photoresists/iline-gline-broadband",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군 보유 근거. 고객 공정 승인·현재 생산 여력·세부 등급 호환은 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "gw_products": {
+      "id": "gw_products",
+      "title": "GlobalWafers silicon wafer products",
+      "url": "https://www.gw-semi.com/products/",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군·명시된 등급 자료. 공정 호환·고객 승인·생산 여력·납기 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "entegris_cmp_2026": {
+      "id": "entegris_cmp_2026",
+      "title": "Entegris Synergies to Improve CMP Yield",
+      "url": "https://www.entegris.com/en/home/resources/reference-materials/brochures/brochure-synergies-to-improve-cmp-yield-11649.html",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군·명시된 등급 자료. 공정 호환·고객 승인·생산 여력·납기 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "rec_silane": {
+      "id": "rec_silane",
+      "title": "REC Silicon Signature Silane",
+      "url": "https://recsilicon.com/",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군·명시된 등급 자료. 공정 호환·고객 승인·생산 여력·납기 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "al_silane6": {
+      "id": "al_silane6",
+      "title": "Air Liquide Silane 6.0",
+      "url": "https://specialty.airliquide.co.uk/product/silane-6-0-50/?category=pures",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군·명시된 등급 자료. 공정 호환·고객 승인·생산 여력·납기 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "al_sf6": {
+      "id": "al_sf6",
+      "title": "Air Liquide high purity SF6",
+      "url": "https://ph.airliquide.com/sulfur-hexafluoride",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군·명시된 등급 자료. 공정 호환·고객 승인·생산 여력·납기 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "solvay_sf6": {
+      "id": "solvay_sf6",
+      "title": "Solvay electronic grade SF6",
+      "url": "https://www.solvay.com/en/product/sf6-sulfur-hexafluoride-electronic-grade",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군·명시된 등급 자료. 공정 호환·고객 승인·생산 여력·납기 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "al_c4f8": {
+      "id": "al_c4f8",
+      "title": "Air Liquide Singapore electronic gases",
+      "url": "https://sg.airliquide.com/buy-high-purity-electronic-gases-singapore",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군·명시된 등급 자료. 공정 호환·고객 승인·생산 여력·납기 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "efc_c4f8": {
+      "id": "efc_c4f8",
+      "title": "EFC octafluorocyclobutane",
+      "url": "https://www.efcgases.com/product/octafluorocyclobutane/",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "제품군·명시된 등급 자료. 공정 호환·고객 승인·생산 여력·납기 미확인.",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "soulbrain_semiconductor": {
+      "id": "soulbrain_semiconductor",
+      "title": "솔브레인 반도체 재료",
+      "url": "https://www.soulbrain.co.kr/m21.php",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "공식 제품군 확인 · 등급별 호환성·여력 미확인",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "enf_semiconductor": {
+      "id": "enf_semiconductor",
+      "title": "ENF 반도체 프로세스케미컬",
+      "url": "https://www.enftech.com/제품소개/사업분야/",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "공식 제품군 확인 · 등급별 호환성·여력 미확인",
+      "status": "reviewed",
+      "sha256": null
+    },
+    "kc_materials": {
+      "id": "kc_materials",
+      "title": "케이씨텍 CMP 소재",
+      "url": "https://www.kctech.com/page/product3.php",
+      "checked_at": "2026-10-29",
+      "edition": null,
+      "scope": "공식 제품군 확인 · 등급별 호환성·여력 미확인",
+      "status": "reviewed",
+      "sha256": null
+    }
+  },
+  "records": [
+    {
+      "id": "jsr_ar2772",
+      "supplier": "JSR",
+      "name": "AR2772JN",
+      "family": "photoresist",
+      "record_kind": "named_product",
+      "supplier_network_id": "jsr",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "ArF",
+          "source_id": "jsr_arf",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "exposure_mode": {
+          "value": "Dry",
+          "source_id": "jsr_arf",
+          "locator": "Dry / Immersion 표기",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "jsr_krf",
+      "supplier": "JSR",
+      "name": "KrF 제품군",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "jsr",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "KrF",
+          "source_id": "jsr_business",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "jsr_euv",
+      "supplier": "JSR",
+      "name": "EUV 제품군",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "jsr",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "EUV",
+          "source_id": "jsr_business",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "dongjin_arf_dry",
+      "supplier": "Dongjin Semichem",
+      "name": "ArF Dry 제품군",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "dongjin",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "ArF",
+          "source_id": "dongjin",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "exposure_mode": {
+          "value": "Dry",
+          "source_id": "dongjin",
+          "locator": "Dry / Immersion 표기",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "dongjin_arf_immersion",
+      "supplier": "Dongjin Semichem",
+      "name": "ArF Immersion 제품군",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "dongjin",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "ArF",
+          "source_id": "dongjin",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "exposure_mode": {
+          "value": "Immersion",
+          "source_id": "dongjin",
+          "locator": "Dry / Immersion 표기",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "dongjin_krf",
+      "supplier": "Dongjin Semichem",
+      "name": "KrF 제품군",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "dongjin",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "KrF",
+          "source_id": "dongjin",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "dongjin_iline",
+      "supplier": "Dongjin Semichem",
+      "name": "i-Line 제품군",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "dongjin",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "i-line",
+          "source_id": "dongjin",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "tok_tarf_p6111",
+      "supplier": "Tokyo Ohka Kogyo",
+      "name": "TARF-P6111",
+      "family": "photoresist",
+      "record_kind": "named_product",
+      "supplier_network_id": "tok",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "ArF",
+          "source_id": "tok_arf",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "tone": {
+          "value": "positive",
+          "source_id": "tok_arf",
+          "locator": "Positive ArF Resist for Lines",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "pattern": {
+          "value": "line",
+          "source_id": "tok_arf",
+          "locator": "TARF-P6111의 적용 구분",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "example_film_nm": {
+          "value": 250,
+          "source_id": "tok_arf",
+          "locator": "TARF-P6111 / Resist Thickness",
+          "basis": "example_condition",
+          "unit": "nm",
+          "operator": null
+        },
+        "example_pab_c": {
+          "value": 130,
+          "source_id": "tok_arf",
+          "locator": "TARF-P6111 / P.A.B",
+          "basis": "example_condition",
+          "unit": "degC",
+          "operator": null
+        },
+        "example_peb_c": {
+          "value": 130,
+          "source_id": "tok_arf",
+          "locator": "TARF-P6111 / P.E.B",
+          "basis": "example_condition",
+          "unit": "degC",
+          "operator": null
+        },
+        "example_bake_s": {
+          "value": 60,
+          "source_id": "tok_arf",
+          "locator": "TARF-P6111 / P.A.B, P.E.B",
+          "basis": "example_condition",
+          "unit": "s",
+          "operator": null
+        },
+        "example_developer_pct": {
+          "value": 2.38,
+          "source_id": "tok_arf",
+          "locator": "TARF-P6111 / TMAH",
+          "basis": "example_condition",
+          "unit": "%",
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "tok_tdur_p3435",
+      "supplier": "Tokyo Ohka Kogyo",
+      "name": "TDUR-P3435",
+      "family": "photoresist",
+      "record_kind": "named_product",
+      "supplier_network_id": "tok",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "KrF",
+          "source_id": "tok_krf",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "tone": {
+          "value": "positive",
+          "source_id": "tok_krf",
+          "locator": "Positive KrF Resist for Lines",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "pattern": {
+          "value": "line",
+          "source_id": "tok_krf",
+          "locator": "TDUR-P3435의 적용 구분",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "example_film_nm": {
+          "value": [
+            190,
+            250
+          ],
+          "source_id": "tok_krf",
+          "locator": "TDUR-P3435 / Resist Thickness",
+          "basis": "example_condition",
+          "unit": "nm",
+          "operator": null
+        },
+        "example_pab_c": {
+          "value": 100,
+          "source_id": "tok_krf",
+          "locator": "TDUR-P3435 / Pre-bake",
+          "basis": "example_condition",
+          "unit": "degC",
+          "operator": null
+        },
+        "example_peb_c": {
+          "value": 110,
+          "source_id": "tok_krf",
+          "locator": "TDUR-P3435 / P.E.B",
+          "basis": "example_condition",
+          "unit": "degC",
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "tok_euv",
+      "supplier": "Tokyo Ohka Kogyo",
+      "name": "EUV 제품군",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "tok",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "EUV",
+          "source_id": "tok_euv",
+          "locator": "제품군 또는 해당 제품 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "wavelength_nm": {
+          "value": 13.5,
+          "source_id": "tok_euv",
+          "locator": "본문 EUV 파장",
+          "basis": "catalog_family",
+          "unit": "nm",
+          "operator": null
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "sumco_pw",
+      "supplier": "SUMCO",
+      "name": "PW 실리콘 웨이퍼",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "supplier_network_id": "sumco",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "PW",
+          "source_id": "sumco",
+          "locator": "제품 종류",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "diameters_mm": {
+          "value": [
+            200,
+            300
+          ],
+          "source_id": "sumco_usa_line",
+          "locator": "What We Manufacture / 200mm and 300mm Polished and Epitaxial Wafers",
+          "basis": "catalog_family",
+          "unit": "mm",
+          "operator": null
+        }
+      },
+      "notes": "직경·저항률·결정 방향·결함·고객 승인 규격은 제품별 추가 확인. 원료 순도·잉곳 직경을 전용하지 않음. 직경은 SUMCO USA 제품군 공개 자료에서 보강. 특정 공장·고객의 제품 등급이나 출하 가능량은 미확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "sumco_epi",
+      "supplier": "SUMCO",
+      "name": "EPI 실리콘 웨이퍼",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "supplier_network_id": "sumco",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "EPI",
+          "source_id": "sumco",
+          "locator": "제품 종류",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "diameters_mm": {
+          "value": [
+            200,
+            300
+          ],
+          "source_id": "sumco_usa_line",
+          "locator": "What We Manufacture / 200mm and 300mm Polished and Epitaxial Wafers",
+          "basis": "catalog_family",
+          "unit": "mm",
+          "operator": null
+        }
+      },
+      "notes": "직경·저항률·결정 방향·결함·고객 승인 규격은 제품별 추가 확인. 원료 순도·잉곳 직경을 전용하지 않음. 직경은 SUMCO USA 제품군 공개 자료에서 보강. 특정 공장·고객의 제품 등급이나 출하 가능량은 미확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "shinetsu_pw",
+      "supplier": "Shin-Etsu 그룹 · SEH",
+      "name": "PW 실리콘 웨이퍼",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "supplier_network_id": "shinetsu",
+      "network_mapping": "group_reference",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "PW",
+          "source_id": "seh",
+          "locator": "제품 종류",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "직경·저항률·결정 방향·결함·고객 승인 규격은 제품별 추가 확인. 원료 순도·잉곳 직경을 전용하지 않음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "shinetsu_epi",
+      "supplier": "Shin-Etsu 그룹 · SEH",
+      "name": "EPI 실리콘 웨이퍼",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "supplier_network_id": "shinetsu",
+      "network_mapping": "group_reference",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "EPI",
+          "source_id": "seh",
+          "locator": "제품 종류",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "직경·저항률·결정 방향·결함·고객 승인 규격은 제품별 추가 확인. 원료 순도·잉곳 직경을 전용하지 않음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "siltronic_pw",
+      "supplier": "Siltronic",
+      "name": "PW 실리콘 웨이퍼",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "supplier_network_id": "siltronic",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "PW",
+          "source_id": "siltronic_pw",
+          "locator": "제품 종류",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "diameter_min_mm": {
+          "value": 200,
+          "source_id": "siltronic_pw",
+          "locator": "공개 직경 범위",
+          "basis": "catalog_range",
+          "unit": "mm",
+          "operator": null
+        },
+        "diameter_max_mm": {
+          "value": 300,
+          "source_id": "siltronic_pw",
+          "locator": "공개 직경 범위",
+          "basis": "catalog_range",
+          "unit": "mm",
+          "operator": null
+        },
+        "growth_methods": {
+          "value": [
+            "CZ",
+            "FZ"
+          ],
+          "source_id": "siltronic_pw",
+          "locator": "성장법",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "직경·저항률·결정 방향·결함·고객 승인 규격은 제품별 추가 확인. 원료 순도·잉곳 직경을 전용하지 않음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "siltronic_epi",
+      "supplier": "Siltronic",
+      "name": "EPI 실리콘 웨이퍼",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "supplier_network_id": "siltronic",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "EPI",
+          "source_id": "siltronic_epi",
+          "locator": "제품 종류",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "diameter_max_mm": {
+          "value": 300,
+          "source_id": "siltronic_epi",
+          "locator": "실리콘 EPI 최대 직경",
+          "basis": "catalog_range",
+          "unit": "mm",
+          "operator": null
+        }
+      },
+      "notes": "직경·저항률·결정 방향·결함·고객 승인 규격은 제품별 추가 확인. 원료 순도·잉곳 직경을 전용하지 않음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "al_nf3_sg",
+      "supplier": "Air Liquide",
+      "name": "NF3 · Singapore 공개 제품",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": "airliquide",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "NF3",
+          "source_id": "al_nf3",
+          "locator": "공급 옵션 표",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.995,
+          "source_id": "al_nf3",
+          "locator": "NF3 행",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "listed"
+        },
+        "cylinder_l": {
+          "value": 47,
+          "source_id": "al_nf3",
+          "locator": "NF3 행",
+          "basis": "catalog_spec",
+          "unit": "L",
+          "operator": "listed"
+        }
+      },
+      "notes": "",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "matheson_nf3_2n7",
+      "supplier": "MATHESON · Nippon Sanso",
+      "name": "NF3 Semicon 2N7",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": "matheson",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "NF3",
+          "source_id": "matheson_nf3",
+          "locator": "표 제목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.7,
+          "source_id": "matheson_nf3",
+          "locator": "Semicon 2N7 / Purity",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "listed"
+        },
+        "water_ppmv": {
+          "value": 1,
+          "source_id": "matheson_nf3",
+          "locator": "Semicon 2N7 / Water",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "nitrogen_ppmv": {
+          "value": 700,
+          "source_id": "matheson_nf3",
+          "locator": "Semicon 2N7 / Nitrogen",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "cf4_ppmv": {
+          "value": 1500,
+          "source_id": "matheson_nf3",
+          "locator": "Semicon 2N7 / Carbon Tetrafluoride",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "oxygen_argon_ppmv": {
+          "value": 700,
+          "source_id": "matheson_nf3",
+          "locator": "Semicon 2N7 / Oxygen and Argon",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        }
+      },
+      "notes": "등급별 불순물 표의 빈 칸은 0이 아닌 미확인. 현행 판매·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "matheson_nf3_4n",
+      "supplier": "MATHESON · Nippon Sanso",
+      "name": "NF3 ULSI 4N",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": "matheson",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "NF3",
+          "source_id": "matheson_nf3",
+          "locator": "표 제목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.99,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N / Purity",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "listed"
+        },
+        "water_ppmv": {
+          "value": 1,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N / Water",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "nitrogen_ppmv": {
+          "value": 10,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N / Nitrogen",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "cf4_ppmv": {
+          "value": 40,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N / Carbon Tetrafluoride",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "oxygen_ppmv": {
+          "value": 10,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N / Oxygen",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        }
+      },
+      "notes": "등급별 불순물 표의 빈 칸은 0이 아닌 미확인. 현행 판매·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "matheson_nf3_4n5",
+      "supplier": "MATHESON · Nippon Sanso",
+      "name": "NF3 ULSI 4N5",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": "matheson",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "NF3",
+          "source_id": "matheson_nf3",
+          "locator": "표 제목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.995,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N5 / Purity",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "listed"
+        },
+        "water_ppmv": {
+          "value": 1,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N5 / Water",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "nitrogen_ppmv": {
+          "value": 5,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N5 / Nitrogen",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "cf4_ppmv": {
+          "value": 25,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N5 / Carbon Tetrafluoride",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "oxygen_ppmv": {
+          "value": 5,
+          "source_id": "matheson_nf3",
+          "locator": "ULSI 4N5 / Oxygen",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        }
+      },
+      "notes": "등급별 불순물 표의 빈 칸은 0이 아닌 미확인. 현행 판매·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "sk_nf3",
+      "supplier": "SK specialty (자료 표기)",
+      "name": "NF3 99.999% 공개 규격",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": "sk-materials",
+      "network_mapping": "group_reference",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "NF3",
+          "source_id": "sk_nf3",
+          "locator": "SPECIFICATION",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.999,
+          "source_id": "sk_nf3",
+          "locator": "NF3 행",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "listed"
+        },
+        "water_ppmv": {
+          "value": 1,
+          "source_id": "sk_nf3",
+          "locator": "H2O 행",
+          "basis": "listed_value",
+          "unit": "ppmv",
+          "operator": "listed"
+        },
+        "cf4_ppmv": {
+          "value": 10,
+          "source_id": "sk_nf3",
+          "locator": "CF4 행",
+          "basis": "listed_value",
+          "unit": "ppmv",
+          "operator": "listed"
+        }
+      },
+      "notes": "불순물 표의 비교 연산자가 없어 자동 상한 충족 판정은 보류. 기존 그룹 노드와 개별 법인의 동일성·현재 공급은 미확정.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujifilm_cu",
+      "supplier": "FUJIFILM",
+      "name": "Copper CMP 제품군",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "Cu",
+          "source_id": "fuji_cmp",
+          "locator": "Copper 제품 설명",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제거율·선택비·결함·패드·희석 조건의 수치 자료는 추가 확보 필요.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujifilm_barrier",
+      "supplier": "FUJIFILM",
+      "name": "Barrier CMP 제품군",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "barrier",
+          "source_id": "fuji_cmp",
+          "locator": "Barrier 제품 설명",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제거율·선택비·결함·패드·희석 조건의 수치 자료는 추가 확보 필요.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujifilm_co",
+      "supplier": "FUJIFILM",
+      "name": "Cobalt CMP 제품군",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "Co",
+          "source_id": "fuji_cmp",
+          "locator": "Cobalt 제품 설명",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제거율·선택비·결함·패드·희석 조건의 수치 자료는 추가 확보 필요.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujimi_metal",
+      "supplier": "FUJIMI",
+      "name": "Cu/W 금속막 CMP 제품군",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": [
+            "Cu",
+            "W"
+          ],
+          "source_id": "fujimi_topics",
+          "locator": "금속막 연마 항목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "새 벤더 제품 자료만 확보. 기존 고객 계약·지도 연결을 추가하지 않음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujimi_4000",
+      "supplier": "FUJIMI",
+      "name": "PLANERLITE-4000 series",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": true,
+      "fields": {
+        "target_film": {
+          "value": "SiO2",
+          "source_id": "fujimi_old",
+          "locator": "1쪽 / 해당 시리즈",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "abrasive": {
+          "value": "silica",
+          "source_id": "fujimi_old",
+          "locator": "1쪽 / 해당 시리즈",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "2011-06 판 카탈로그. 현행 제품·공급 여부 확인 전 기본 비교에서 제외.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujimi_7000",
+      "supplier": "FUJIMI",
+      "name": "PLANERLITE-7000 series",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": true,
+      "fields": {
+        "target_film": {
+          "value": "Cu",
+          "source_id": "fujimi_old",
+          "locator": "2쪽 / 해당 시리즈",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "abrasive": {
+          "value": "silica",
+          "source_id": "fujimi_old",
+          "locator": "2쪽 / 해당 시리즈",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "2011-06 판 카탈로그. 현행 제품·공급 여부 확인 전 기본 비교에서 제외.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujimi_8000",
+      "supplier": "FUJIMI",
+      "name": "PLANERLITE-8000 series",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": true,
+      "fields": {
+        "target_film": {
+          "value": "barrier",
+          "source_id": "fujimi_old",
+          "locator": "2쪽 / 해당 시리즈",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "abrasive": {
+          "value": "silica",
+          "source_id": "fujimi_old",
+          "locator": "2쪽 / 해당 시리즈",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "2011-06 판 카탈로그. 현행 제품·공급 여부 확인 전 기본 비교에서 제외.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujifilm_gar",
+      "supplier": "FUJIFILM",
+      "name": "GAR Series",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "ArF",
+          "source_id": "fuji_arf",
+          "locator": "GAR Series / exposure",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "exposure_mode": {
+          "value": "Dry",
+          "source_id": "fuji_arf",
+          "locator": "GAR Series / exposure_mode",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "tone": {
+          "value": "positive",
+          "source_id": "fuji_arf",
+          "locator": "GAR Series / tone",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "wavelength_nm": {
+          "value": 193,
+          "source_id": "fuji_arf",
+          "locator": "GAR Series / wavelength_nm",
+          "basis": "catalog_family",
+          "unit": "nm",
+          "operator": null
+        }
+      },
+      "notes": "제품군의 노광 방식·이미징 톤 비교이며 개별 조성·현상액·공정창·고객 인증은 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujifilm_fairs_pti",
+      "supplier": "FUJIFILM",
+      "name": "FAiRS PTI",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "ArF",
+          "source_id": "fuji_arf",
+          "locator": "FAiRS PTI / exposure",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "exposure_mode": {
+          "value": "Immersion",
+          "source_id": "fuji_arf",
+          "locator": "FAiRS PTI / exposure_mode",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "tone": {
+          "value": "positive",
+          "source_id": "fuji_arf",
+          "locator": "FAiRS PTI / tone",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "wavelength_nm": {
+          "value": 193,
+          "source_id": "fuji_arf",
+          "locator": "FAiRS PTI / wavelength_nm",
+          "basis": "catalog_family",
+          "unit": "nm",
+          "operator": null
+        }
+      },
+      "notes": "제품군의 노광 방식·이미징 톤 비교이며 개별 조성·현상액·공정창·고객 인증은 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujifilm_fairs_nti",
+      "supplier": "FUJIFILM",
+      "name": "FAiRS NTI",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "ArF",
+          "source_id": "fuji_arf",
+          "locator": "FAiRS NTI / exposure",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "exposure_mode": {
+          "value": "Immersion",
+          "source_id": "fuji_arf",
+          "locator": "FAiRS NTI / exposure_mode",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "tone": {
+          "value": "negative",
+          "source_id": "fuji_arf",
+          "locator": "FAiRS NTI / tone",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "wavelength_nm": {
+          "value": 193,
+          "source_id": "fuji_arf",
+          "locator": "FAiRS NTI / wavelength_nm",
+          "basis": "catalog_family",
+          "unit": "nm",
+          "operator": null
+        }
+      },
+      "notes": "제품군의 노광 방식·이미징 톤 비교이며 개별 조성·현상액·공정창·고객 인증은 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "swt_dsp_150",
+      "supplier": "Silicon Works Tech (Wafer Works 게시)",
+      "name": "DSP 150 mm",
+      "family": "silicon-wafer",
+      "record_kind": "grade",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "PW",
+          "source_id": "waferworks_dsp",
+          "locator": "DSP 규격 / 양면 연마 웨이퍼",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "diameter_mm": {
+          "value": 150,
+          "source_id": "waferworks_dsp",
+          "locator": "Diameter",
+          "basis": "catalog_spec",
+          "unit": "mm",
+          "operator": "eq"
+        },
+        "thickness_min_um": {
+          "value": 375,
+          "source_id": "waferworks_dsp",
+          "locator": "150 mm / Wafer thickness",
+          "basis": "catalog_range",
+          "unit": "um",
+          "operator": null
+        },
+        "thickness_max_um": {
+          "value": 1000,
+          "source_id": "waferworks_dsp",
+          "locator": "150 mm / Wafer thickness",
+          "basis": "catalog_range",
+          "unit": "um",
+          "operator": null
+        },
+        "resistivity_min_ohm_cm": {
+          "value": 0.0008,
+          "source_id": "waferworks_dsp",
+          "locator": "Resistivity",
+          "basis": "catalog_range",
+          "unit": "ohm-cm",
+          "operator": null
+        },
+        "resistivity_max_ohm_cm": {
+          "value": 100,
+          "source_id": "waferworks_dsp",
+          "locator": "Resistivity",
+          "basis": "catalog_range",
+          "unit": "ohm-cm",
+          "operator": null
+        },
+        "orientation": {
+          "value": [
+            "100",
+            "111"
+          ],
+          "source_id": "waferworks_dsp",
+          "locator": "Crystal orientation",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "ttv_um": {
+          "value": 1,
+          "source_id": "waferworks_dsp",
+          "locator": "TTV",
+          "basis": "catalog_spec",
+          "unit": "um",
+          "operator": "lt"
+        }
+      },
+      "notes": "범위의 조합별 동시 공급 보증 아님. 발행일 미표기·정확한 등급·현행 공급·법인 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "swt_dsp_200",
+      "supplier": "Silicon Works Tech (Wafer Works 게시)",
+      "name": "DSP 200 mm",
+      "family": "silicon-wafer",
+      "record_kind": "grade",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "PW",
+          "source_id": "waferworks_dsp",
+          "locator": "DSP 규격 / 양면 연마 웨이퍼",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "diameter_mm": {
+          "value": 200,
+          "source_id": "waferworks_dsp",
+          "locator": "Diameter",
+          "basis": "catalog_spec",
+          "unit": "mm",
+          "operator": "eq"
+        },
+        "thickness_min_um": {
+          "value": 400,
+          "source_id": "waferworks_dsp",
+          "locator": "200 mm / Wafer thickness",
+          "basis": "catalog_range",
+          "unit": "um",
+          "operator": null
+        },
+        "thickness_max_um": {
+          "value": 1000,
+          "source_id": "waferworks_dsp",
+          "locator": "200 mm / Wafer thickness",
+          "basis": "catalog_range",
+          "unit": "um",
+          "operator": null
+        },
+        "resistivity_min_ohm_cm": {
+          "value": 0.0008,
+          "source_id": "waferworks_dsp",
+          "locator": "Resistivity",
+          "basis": "catalog_range",
+          "unit": "ohm-cm",
+          "operator": null
+        },
+        "resistivity_max_ohm_cm": {
+          "value": 100,
+          "source_id": "waferworks_dsp",
+          "locator": "Resistivity",
+          "basis": "catalog_range",
+          "unit": "ohm-cm",
+          "operator": null
+        },
+        "orientation": {
+          "value": [
+            "100",
+            "111"
+          ],
+          "source_id": "waferworks_dsp",
+          "locator": "Crystal orientation",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "ttv_um": {
+          "value": 1,
+          "source_id": "waferworks_dsp",
+          "locator": "TTV",
+          "basis": "catalog_spec",
+          "unit": "um",
+          "operator": "lt"
+        }
+      },
+      "notes": "범위의 조합별 동시 공급 보증 아님. 발행일 미표기·정확한 등급·현행 공급·법인 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "gnc_epi",
+      "supplier": "GNC Materials",
+      "name": "실리콘 EPI 공개 범위",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "EPI",
+          "source_id": "gnc_epi",
+          "locator": "제품 제목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "diameter_min_mm": {
+          "value": 200,
+          "source_id": "gnc_epi",
+          "locator": "Diameter",
+          "basis": "catalog_range",
+          "unit": "mm",
+          "operator": null
+        },
+        "diameter_max_mm": {
+          "value": 300,
+          "source_id": "gnc_epi",
+          "locator": "Diameter",
+          "basis": "catalog_range",
+          "unit": "mm",
+          "operator": null
+        },
+        "epi_thickness_min_um": {
+          "value": 1,
+          "source_id": "gnc_epi",
+          "locator": "EPI Thickness",
+          "basis": "catalog_range",
+          "unit": "um",
+          "operator": null
+        },
+        "epi_thickness_max_um": {
+          "value": 100,
+          "source_id": "gnc_epi",
+          "locator": "EPI Thickness",
+          "basis": "catalog_range",
+          "unit": "um",
+          "operator": null
+        },
+        "epi_resistivity_min_ohm_cm": {
+          "value": 0.1,
+          "source_id": "gnc_epi",
+          "locator": "Resistivity / EPI",
+          "basis": "catalog_range",
+          "unit": "ohm-cm",
+          "operator": null
+        },
+        "epi_resistivity_max_ohm_cm": {
+          "value": 50,
+          "source_id": "gnc_epi",
+          "locator": "Resistivity / EPI",
+          "basis": "catalog_range",
+          "unit": "ohm-cm",
+          "operator": null
+        }
+      },
+      "notes": "제품 공급 카탈로그이며 제조사·출하공장·고객 계약의 확인 자료가 아님. 원문 페이지에 2021 편집 시각이 있어 현행 규격 재확인 필요.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "matheson_cf4_3n5",
+      "supplier": "MATHESON · Nippon Sanso",
+      "name": "CF4 Semicon 3N5",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": "matheson",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "CF4",
+          "source_id": "matheson_cf4",
+          "locator": "표 제목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.95,
+          "source_id": "matheson_cf4",
+          "locator": "Semicon 3N5 / Purity",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "listed"
+        },
+        "water_ppmv": {
+          "value": 10,
+          "source_id": "matheson_cf4",
+          "locator": "Semicon 3N5 / Water",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        }
+      },
+      "notes": "빈 불순물 칸은 미확인. 다른 화학종 가스의 대체재로 해석하지 않음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "matheson_cf4_5n",
+      "supplier": "MATHESON · Nippon Sanso",
+      "name": "CF4 ULSI 5N",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": "matheson",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "CF4",
+          "source_id": "matheson_cf4",
+          "locator": "표 제목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.999,
+          "source_id": "matheson_cf4",
+          "locator": "ULSI 5N / Purity",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "listed"
+        },
+        "water_ppmv": {
+          "value": 2,
+          "source_id": "matheson_cf4",
+          "locator": "ULSI 5N / Water",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "co_co2_ppmv": {
+          "value": 1,
+          "source_id": "matheson_cf4",
+          "locator": "ULSI 5N / CO2 (+CO)",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        }
+      },
+      "notes": "빈 불순물 칸은 미확인. 다른 화학종 가스의 대체재로 해석하지 않음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "messer_cf4_5n",
+      "supplier": "Messer",
+      "name": "CF4 5.0",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "CF4",
+          "source_id": "messer_cf4",
+          "locator": "표 제목",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.999,
+          "source_id": "messer_cf4",
+          "locator": "Composition",
+          "basis": "catalog_spec",
+          "unit": "%",
+          "operator": "ge"
+        },
+        "water_ppmv": {
+          "value": 1,
+          "source_id": "messer_cf4",
+          "locator": "H2O",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "nitrogen_ppmv": {
+          "value": 5,
+          "source_id": "messer_cf4",
+          "locator": "N2",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "oxygen_ppmv": {
+          "value": 2,
+          "source_id": "messer_cf4",
+          "locator": "O2",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        }
+      },
+      "notes": "벨기에 공식 판매 자료의 규격. 실제 제조 국가·납기·고객 인증은 미확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "fujifilm_hybrid",
+      "supplier": "FUJIFILM",
+      "name": "Hybrid bonding CMP 발표 제품",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": [
+            "Cu",
+            "oxide"
+          ],
+          "source_id": "fuji_hybrid",
+          "locator": "Cu와 oxide 공존 표면 / 발표 설명",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "application": {
+          "value": "hybrid_bonding",
+          "source_id": "fuji_hybrid",
+          "locator": "첨단 패키징 hybrid bonding",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "고객 채택 발표는 있으나 고객 실명·개별 규격·현행 납품은 미확인. 공개 제거율·선택비 수치는 없음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "linde_nf3_4n5",
+      "supplier": "Linde",
+      "name": "NF3 Grade 4.5",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "NF3",
+          "source_id": "linde_nf3_at",
+          "locator": "제품 제목 / Formula",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.995,
+          "source_id": "linde_nf3_at",
+          "locator": "Grade 4.5 / Purity",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "listed"
+        },
+        "water_ppmv": {
+          "value": 5,
+          "source_id": "linde_nf3_at",
+          "locator": "Grade 4.5 / H2O 또는 Water",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        },
+        "cf4_ppmv": {
+          "value": 20,
+          "source_id": "linde_nf3_at",
+          "locator": "Grade 4.5 / CF4 또는 Carbon Tetrafluoride",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "le"
+        }
+      },
+      "notes": "오스트리아 공개 판매 규격. vpm은 원문의 이상 부피비=몰비 설명에 따라 ppmv로 통일. 공급 국가·납기·고객 인증·실제 제조 공장은 미확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "efc_nf3_4n5",
+      "supplier": "EFC Gases & Advanced Materials",
+      "name": "NF3 Grade 4.5",
+      "family": "process-gas",
+      "record_kind": "grade",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "NF3",
+          "source_id": "efc_nf3",
+          "locator": "제품 제목 / Formula",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.995,
+          "source_id": "efc_nf3",
+          "locator": "Grade 4.5 / Purity",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "listed"
+        },
+        "water_ppmv": {
+          "value": 1,
+          "source_id": "efc_nf3",
+          "locator": "Grade 4.5 / H2O 또는 Water",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "lt"
+        },
+        "cf4_ppmv": {
+          "value": 25,
+          "source_id": "efc_nf3",
+          "locator": "Grade 4.5 / CF4 또는 Carbon Tetrafluoride",
+          "basis": "catalog_spec",
+          "unit": "ppmv",
+          "operator": "lt"
+        }
+      },
+      "notes": "수분 보증은 EFC가 용기를 준비한 경우에 한함. 총 불순물 기준 판매이며 개별 불순물은 소폭 변동 가능하므로 CoA 및 구매 규격 확인 필요. 고객 인증·공급 여력·제조 공장 미확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "sk_siltron_pw",
+      "supplier": "SK siltron",
+      "name": "PW 200·300 mm",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "PW",
+          "source_id": "sk_siltron_wafer",
+          "locator": "PW 제품 설명",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "diameters_mm": {
+          "value": [
+            200,
+            300
+          ],
+          "source_id": "sk_siltron_wafer",
+          "locator": "PW / 200mm·300mm 표기",
+          "basis": "catalog_family",
+          "unit": "mm",
+          "operator": null
+        }
+      },
+      "notes": "공개 제품군 기준. 두께·저항률·결함 기준·개별 공정 적합성·고객 인증·추가 공급량·납기는 별도 확인. 제품 자료로 고객 관계를 생성하지 않음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "sk_siltron_epi",
+      "supplier": "SK siltron",
+      "name": "EPI 200·300 mm",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "catalog_only",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "EPI",
+          "source_id": "sk_siltron_wafer",
+          "locator": "EPI 제품 설명",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "diameters_mm": {
+          "value": [
+            200,
+            300
+          ],
+          "source_id": "sk_siltron_wafer",
+          "locator": "EPI / 200mm·300mm 표기",
+          "basis": "catalog_family",
+          "unit": "mm",
+          "operator": null
+        }
+      },
+      "notes": "공개 제품군 기준. 두께·저항률·결함 기준·개별 공정 적합성·고객 인증·추가 공급량·납기는 별도 확인. 제품 자료로 고객 관계를 생성하지 않음.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "daikin_hf49",
+      "supplier": "DAIKIN",
+      "name": "Hydrofluoric Acid HF49%",
+      "family": "wet-chemical",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "unmapped",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "HF",
+          "source_id": "daikin_hf",
+          "locator": "Hydrofluoric Acid",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "product_form": {
+          "value": "aqueous",
+          "source_id": "daikin_hf",
+          "locator": "HF Concentration mass%",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "concentration_pct": {
+          "value": 49,
+          "source_id": "daikin_hf",
+          "locator": "General physical properties / HF Concentration",
+          "unit": "mass%",
+          "operator": "eq",
+          "basis": "nominal_concentration"
+        },
+        "application": {
+          "value": [
+            "wet-etch",
+            "semiconductor"
+          ],
+          "source_id": "daikin_hf",
+          "locator": "wet etching agent / semiconductor manufacturing",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        }
+      },
+      "notes": "농도와 금속 불순물 순도를 구분. 2019년 자료이며 현행 등급·CoA·공급 여부 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "daikin_hf50",
+      "supplier": "DAIKIN",
+      "name": "Hydrofluoric Acid HF50%",
+      "family": "wet-chemical",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "unmapped",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "HF",
+          "source_id": "daikin_hf",
+          "locator": "Hydrofluoric Acid",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "product_form": {
+          "value": "aqueous",
+          "source_id": "daikin_hf",
+          "locator": "HF Concentration mass%",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "concentration_pct": {
+          "value": 50,
+          "source_id": "daikin_hf",
+          "locator": "General physical properties / HF Concentration",
+          "unit": "mass%",
+          "operator": "eq",
+          "basis": "nominal_concentration"
+        },
+        "application": {
+          "value": [
+            "wet-etch",
+            "semiconductor"
+          ],
+          "source_id": "daikin_hf",
+          "locator": "wet etching agent / semiconductor manufacturing",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        }
+      },
+      "notes": "농도와 금속 불순물 순도를 구분. 2019년 자료이며 현행 등급·CoA·공급 여부 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "stella_hf",
+      "supplier": "STELLA CHEMIFA",
+      "name": "Ultra High Purity Hydrofluoric Acid",
+      "family": "wet-chemical",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "unmapped",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "HF",
+          "source_id": "stella_hf",
+          "locator": "Ultra High Purity Hydrofluoric Acid",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "product_form": {
+          "value": "aqueous",
+          "source_id": "stella_hf",
+          "locator": "Hydrofluoric Acid / wet etching and wet cleaning",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "application": {
+          "value": [
+            "wet-etch",
+            "wet-clean",
+            "semiconductor"
+          ],
+          "source_id": "stella_hf",
+          "locator": "Wet etching and wet cleaning of silicon wafers",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "grade_label": {
+          "value": "Ultra High Purity",
+          "source_id": "stella_hf",
+          "locator": "제품명",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        }
+      },
+      "notes": "제품군의 고순도 표기일 뿐 개별 금속 한도·고객 승인 근거가 아닙니다.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "stella_bhf",
+      "supplier": "STELLA CHEMIFA",
+      "name": "Ultra High Purity Buffered Hydrofluoric Acid",
+      "family": "wet-chemical",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "unmapped",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "BHF",
+          "source_id": "stella_hf",
+          "locator": "Buffered Hydrofluoric Acid",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "product_form": {
+          "value": "buffered",
+          "source_id": "stella_hf",
+          "locator": "BHF, LL BHF, LAL BHF",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "application": {
+          "value": [
+            "wet-etch",
+            "wet-clean",
+            "semiconductor"
+          ],
+          "source_id": "stella_hf",
+          "locator": "Wet etching and cleansing",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        }
+      },
+      "notes": "완충 HF 제품군이며 일반 HF와 동일 제품으로 대체하지 않습니다.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "kanto_hf50",
+      "supplier": "KANTO CHEMICAL",
+      "name": "HYDROFLUORIC ACID (50%) · GE00172",
+      "family": "wet-chemical",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "unmapped",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "HF",
+          "source_id": "kanto_hf50",
+          "locator": "SDS section 1 / product name",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "product_form": {
+          "value": "aqueous",
+          "source_id": "kanto_hf50",
+          "locator": "HF50% aqueous product",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "application": {
+          "value": [
+            "electronic-chemicals"
+          ],
+          "source_id": "kanto_hf50",
+          "locator": "Recommended uses: Electronic chemicals",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        }
+      },
+      "notes": "50%는 제품명 표기이며 농도 보증 범위·질량 기준·금속 한도는 별도 규격서로 확인합니다. SDS만으로 고순도 적합 판정하지 않습니다.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "solvay_zenus",
+      "supplier": "Solvay",
+      "name": "Zenus",
+      "family": "cmp-abrasive",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "unmapped",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "CeO2",
+          "source_id": "solvay_ceria",
+          "locator": "Colloidal ceria / cerium oxide",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "product_form": {
+          "value": "abrasive",
+          "source_id": "solvay_ceria",
+          "locator": "Abrasive for formulating slurries",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "application": {
+          "value": [
+            "CMP"
+          ],
+          "source_id": "solvay_ceria",
+          "locator": "CMP applications",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        }
+      },
+      "notes": "산화세륨 연마재 후보입니다. 완성 슬러리 대체 승인·원산지·관세 적용은 확인되지 않았습니다.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "nyacol_ce120",
+      "supplier": "NYACOL",
+      "name": "Ce120/10",
+      "family": "cmp-abrasive",
+      "record_kind": "product_family",
+      "supplier_network_id": null,
+      "network_mapping": "unmapped",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "CeO2",
+          "source_id": "nyacol_ceria",
+          "locator": "Colloidal ceria / cerium oxide",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "product_form": {
+          "value": "abrasive",
+          "source_id": "nyacol_ceria",
+          "locator": "Abrasive for formulating slurries",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        },
+        "application": {
+          "value": [
+            "STI",
+            "ILD",
+            "CMP"
+          ],
+          "source_id": "nyacol_ceria",
+          "locator": "CMP applications",
+          "unit": null,
+          "operator": null,
+          "basis": "catalog_family"
+        }
+      },
+      "notes": "산화세륨 연마재 후보입니다. 완성 슬러리 대체 승인·원산지·관세 적용은 확인되지 않았습니다.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "ff_euv",
+      "supplier": "FUJIFILM",
+      "name": "EUV NTI CAR",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "EUV",
+          "source_id": "ff_euv",
+          "locator": "Product Lineup",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "공식 제품군 자료. 동일 광원만으로 공정 호환성을 확정하지 않음. EUV NTI는 현상 공정 조건을 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "ff_krf",
+      "supplier": "FUJIFILM",
+      "name": "GKR series",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "KrF",
+          "source_id": "ff_krf",
+          "locator": "Product Lineup",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "개별 등급·공정 조건·고객 승인·추가 공급 여력은 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "ff_iline",
+      "supplier": "FUJIFILM",
+      "name": "OiR 620 series",
+      "family": "photoresist",
+      "record_kind": "product_family",
+      "supplier_network_id": "fujifilm",
+      "network_mapping": "exact_company",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "exposure": {
+          "value": "i-line",
+          "source_id": "ff_iline",
+          "locator": "Product Lineup",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "개별 등급·공정 조건·고객 승인·추가 공급 여력은 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "gw_pw",
+      "supplier": "GlobalWafers",
+      "supplier_network_id": "globalwafers",
+      "network_mapping": "group_reference",
+      "name": "PW silicon wafer",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "PW",
+          "source_id": "gw_products",
+          "locator": "Polished / Epitaxial product sections",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "gw_epi",
+      "supplier": "GlobalWafers",
+      "supplier_network_id": "globalwafers",
+      "network_mapping": "group_reference",
+      "name": "EPI silicon wafer",
+      "family": "silicon-wafer",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "wafer_type": {
+          "value": "EPI",
+          "source_id": "gw_products",
+          "locator": "Polished / Epitaxial product sections",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "entegris_cu",
+      "supplier": "Entegris",
+      "supplier_network_id": "entegris",
+      "network_mapping": "exact_company",
+      "name": "EPOCH copper slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "Cu",
+          "source_id": "entegris_cmp_2026",
+          "locator": "PDF 5쪽 Copper CMP",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "entegris_w",
+      "supplier": "Entegris",
+      "supplier_network_id": "entegris",
+      "network_mapping": "exact_company",
+      "name": "WIN tungsten slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "W",
+          "source_id": "entegris_cmp_2026",
+          "locator": "PDF 4쪽 Tungsten CMP",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "entegris_barrier",
+      "supplier": "Entegris",
+      "supplier_network_id": "entegris",
+      "network_mapping": "exact_company",
+      "name": "i-Cue / Sentinel barrier slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "barrier",
+          "source_id": "entegris_cmp_2026",
+          "locator": "PDF 7쪽 Barrier CMP",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "entegris_co",
+      "supplier": "Entegris",
+      "supplier_network_id": "entegris",
+      "network_mapping": "exact_company",
+      "name": "Novus cobalt slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "Co",
+          "source_id": "entegris_cmp_2026",
+          "locator": "PDF 3쪽 Cobalt CMP",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "entegris_mo",
+      "supplier": "Entegris",
+      "supplier_network_id": "entegris",
+      "network_mapping": "exact_company",
+      "name": "Novus molybdenum slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "Mo",
+          "source_id": "entegris_cmp_2026",
+          "locator": "PDF 3쪽 Moly CMP",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "entegris_oxide",
+      "supplier": "Entegris",
+      "supplier_network_id": "entegris",
+      "network_mapping": "exact_company",
+      "name": "iDIEL oxide slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "oxide",
+          "source_id": "entegris_cmp_2026",
+          "locator": "PDF 4쪽 Dielectric CMP",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "rec_sih4",
+      "supplier": "REC Silicon",
+      "supplier_network_id": "rec-silicon",
+      "network_mapping": "group_reference",
+      "name": "Signature Silane",
+      "family": "process-gas",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "SiH4",
+          "source_id": "rec_silane",
+          "locator": "Signature Silane and Specialty Gases",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "al_sih4_6n",
+      "supplier": "Air Liquide",
+      "supplier_network_id": "airliquide",
+      "network_mapping": "exact_company",
+      "name": "Silane 6.0",
+      "family": "process-gas",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "SiH4",
+          "source_id": "al_silane6",
+          "locator": "Main Specifications / Applications",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.9999,
+          "source_id": "al_silane6",
+          "locator": "Main Specifications: Purity >99.9999%",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "gt"
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "al_sf6_family",
+      "supplier": "Air Liquide",
+      "supplier_network_id": "airliquide",
+      "network_mapping": "exact_company",
+      "name": "High-purity SF6",
+      "family": "process-gas",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "SF6",
+          "source_id": "al_sf6",
+          "locator": "High-purity sulfur hexafluoride",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "공식 페이지의 최대 순도 표기는 특정 등급의 최소 보증값으로 사용하지 않음. 등급별 CoA 확인 필요.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "solvay_sf6_5n",
+      "supplier": "Solvay",
+      "supplier_network_id": "solvay",
+      "network_mapping": "group_reference",
+      "name": "SF6 N5.0 electronic grade",
+      "family": "process-gas",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "SF6",
+          "source_id": "solvay_sf6",
+          "locator": "SF6 / N5.0 grade",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.999,
+          "source_id": "solvay_sf6",
+          "locator": "minimum purity 99.999%",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "ge"
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "al_c4f8_family",
+      "supplier": "Air Liquide",
+      "supplier_network_id": "airliquide",
+      "network_mapping": "exact_company",
+      "name": "Electronic C4F8",
+      "family": "process-gas",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "C4F8",
+          "source_id": "al_c4f8",
+          "locator": "NF3, C4F8 and Silane Available",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "제품군 보유 근거이며 등급별 호환·추가 생산 여력·고객 승인·납기는 별도 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "efc_c4f8_5n",
+      "supplier": "EFC Gases & Advanced Materials",
+      "supplier_network_id": "efc",
+      "network_mapping": "group_reference",
+      "name": "C4F8 Grade 5",
+      "family": "process-gas",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "C4F8",
+          "source_id": "efc_c4f8",
+          "locator": "Specifications / Grade 5",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        },
+        "purity_pct": {
+          "value": 99.999,
+          "source_id": "efc_c4f8",
+          "locator": "Grade 5 Purity",
+          "basis": "catalog_grade",
+          "unit": "%",
+          "operator": "eq"
+        }
+      },
+      "notes": "수분 상한은 원문의 ppmw 단위를 ppmv로 바꾸어 비교하지 않음. 용기 준비 조건·총 불순물 기준 확인 필요.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "soulbrain_hf",
+      "supplier": "솔브레인",
+      "supplier_network_id": "soulbrain",
+      "network_mapping": "group_reference",
+      "name": "HF 반도체 약액",
+      "family": "wet-chemical",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "HF",
+          "source_id": "soulbrain_semiconductor",
+          "locator": "반도체 재료 / HF·BOE",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "동일 제품군의 조달 검토 후보. 순도·농도·연마 선택비·입자·고객 승인과 양산 여력은 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "soulbrain_bhf",
+      "supplier": "솔브레인",
+      "supplier_network_id": "soulbrain",
+      "network_mapping": "group_reference",
+      "name": "BOE 반도체 약액",
+      "family": "wet-chemical",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "BHF",
+          "source_id": "soulbrain_semiconductor",
+          "locator": "반도체 재료 / HF·BOE",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "동일 제품군의 조달 검토 후보. 순도·농도·연마 선택비·입자·고객 승인과 양산 여력은 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "enf_hf",
+      "supplier": "ENF테크놀로지",
+      "supplier_network_id": "enf",
+      "network_mapping": "group_reference",
+      "name": "HF 반도체 약액",
+      "family": "wet-chemical",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "HF",
+          "source_id": "enf_semiconductor",
+          "locator": "반도체 재료 / HF·BOE",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "동일 제품군의 조달 검토 후보. 순도·농도·연마 선택비·입자·고객 승인과 양산 여력은 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "enf_bhf",
+      "supplier": "ENF테크놀로지",
+      "supplier_network_id": "enf",
+      "network_mapping": "group_reference",
+      "name": "BOE 반도체 약액",
+      "family": "wet-chemical",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "chemical": {
+          "value": "BHF",
+          "source_id": "enf_semiconductor",
+          "locator": "반도체 재료 / HF·BOE",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "동일 제품군의 조달 검토 후보. 순도·농도·연마 선택비·입자·고객 승인과 양산 여력은 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "soulbrain_cmp_cu",
+      "supplier": "솔브레인",
+      "supplier_network_id": "soulbrain",
+      "network_mapping": "group_reference",
+      "name": "Cu CMP Slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "Cu",
+          "source_id": "soulbrain_semiconductor",
+          "locator": "CMP Slurry / Cu, W, ILD·IMD 및 STI·SOD",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "동일 제품군의 조달 검토 후보. 순도·농도·연마 선택비·입자·고객 승인과 양산 여력은 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "soulbrain_cmp_w",
+      "supplier": "솔브레인",
+      "supplier_network_id": "soulbrain",
+      "network_mapping": "group_reference",
+      "name": "W CMP Slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "W",
+          "source_id": "soulbrain_semiconductor",
+          "locator": "CMP Slurry / Cu, W, ILD·IMD 및 STI·SOD",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "동일 제품군의 조달 검토 후보. 순도·농도·연마 선택비·입자·고객 승인과 양산 여력은 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "soulbrain_cmp_oxide",
+      "supplier": "솔브레인",
+      "supplier_network_id": "soulbrain",
+      "network_mapping": "group_reference",
+      "name": "oxide CMP Slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "oxide",
+          "source_id": "soulbrain_semiconductor",
+          "locator": "CMP Slurry / Cu, W, ILD·IMD 및 STI·SOD",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "동일 제품군의 조달 검토 후보. 순도·농도·연마 선택비·입자·고객 승인과 양산 여력은 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "kc_w_slurry",
+      "supplier": "케이씨텍",
+      "supplier_network_id": "kc-tech",
+      "network_mapping": "group_reference",
+      "name": "W Buff / W Bulk Slurry",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "W",
+          "source_id": "kc_materials",
+          "locator": "Silica Slurry / W Buff, W Bulk",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "동일 제품군의 조달 검토 후보. 순도·농도·연마 선택비·입자·고객 승인과 양산 여력은 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    },
+    {
+      "id": "kc_oxide_slurry",
+      "supplier": "케이씨텍",
+      "supplier_network_id": "kc-tech",
+      "network_mapping": "group_reference",
+      "name": "Ceria Slurry + Silicon Dioxide Self Stop Additive",
+      "family": "cmp-slurry",
+      "record_kind": "product_family",
+      "checked_at": "2026-10-29",
+      "legacy": false,
+      "fields": {
+        "target_film": {
+          "value": "oxide",
+          "source_id": "kc_materials",
+          "locator": "Ceria Slurry용 Additive / Silicon Dioxide Self Stop",
+          "basis": "catalog_family",
+          "unit": null,
+          "operator": null
+        }
+      },
+      "notes": "동일 제품군의 조달 검토 후보. 순도·농도·연마 선택비·입자·고객 승인과 양산 여력은 추가 확인.",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "lead_time_days": null,
+      "manufacturing_site": null,
+      "customer_edges": []
+    }
+  ],
+  "excluded_sources": [
+    {
+      "url": "https://tw.airliquide.com/sites/al_tw/files/2022-06/alfe-0049-cf4-v10-20220221.pdf",
+      "reason": "SDS의 >=99% 성분 표기를 반도체 등급 순도 보증으로 사용할 수 없어 수치 비교에서 제외"
+    },
+    {
+      "url": "https://lifesciences.entegris.com/content/dam/shared-product-assets/holistic-solutions/brochure-synergies-to-improve-cmp-yield-11649.pdf",
+      "reason": "다른 페이지로 리디렉션되어 본문 재확인 실패. 검색 요약만으로 현행 제품 데이터를 추가하지 않음"
+    },
+    {
+      "url": "https://www.fujimi.com/catalog/planerlite-7000/",
+      "reason": "원문 재접속 시간 초과. 별도로 확인한 공식 제품군·과거 카탈로그와 구분"
+    }
+  ],
+  "limits": [
+    "공개 제품 자료의 비교이며 인증·계약·재고·공급 여력·즉시 대체 가능성을 입증하지 않음",
+    "미등록·미기재는 미생산·불가능·수치 0을 의미하지 않음",
+    "예시 평가 조건은 보증 성능·허용 공정창이 아님",
+    "checked_at은 열람일이며 자료 발행일·현재 출하 가능 여부와 다름"
+  ]
+}

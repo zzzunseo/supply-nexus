@@ -1,0 +1,32 @@
+{
+  "reviewed_at": "2026-10-27",
+  "cases": [
+    {
+      "id": "wafer",
+      "name": "웨이퍼 · SUMCO 공급 차질",
+      "item_ids": ["polished-wafer", "epi-wafer"],
+      "target": "supply:sumco:polished-wafer",
+      "process": "웨이퍼 제조",
+      "recipients": ["samsung", "tsmc"],
+      "days": 60,
+      "evidence": "SUMCO의 2025년 고객 수상 자료에서 삼성·TSMC 공급관계를 확인하고, 제품 자료에서 폴리시드·에피택셜 웨이퍼를 확인했습니다.",
+      "limits": "고객별 PW/EW 납품 구성·구매 비중·재고·예약 대체 능력은 미공개 또는 모델 가정입니다.",
+      "relationship_source": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "product_source": "https://www.sumcosi.com/english/products/lineup.html"
+    },
+    {
+      "id": "photoresist",
+      "name": "포토레지스트 · JSR 공급 차질",
+      "item_ids": ["photoresist"],
+      "target": "supply:jsr:photoresist",
+      "process": "포토",
+      "recipients": ["tsmc"],
+      "days": 60,
+      "evidence": "TSMC의 2025년 공식 공급사 자료에서 JSR 관계를 확인하고, JSR 제품 자료에서 포토레지스트와 포토 용도를 확인했습니다.",
+      "limits": "공급사 수상 자료는 고객별 레지스트 등급·현행 계약·구매 비중을 확정하지 않습니다. 재고와 대체 능력은 모델 가정입니다.",
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "product_source": "https://jsr.co.jp/jsr_e/products/em/"
+    }
+  ],
+  "deferred": [{"name":"공정 가스","reason":"기존 공급과 향후 증설·가동 계획, 공급 방식의 구분을 보강한 뒤 핵심 사례 편입 검토"}]
+}

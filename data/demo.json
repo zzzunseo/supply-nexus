@@ -1,0 +1,3073 @@
+{
+  "notice": "공식 자료로 기업·국가와 공급/협력 근거를 확인했습니다. 기업 관계, 세부 품목 근거, 과거·예정 상태를 구분합니다. 경로별 실제 배분율은 미확보이며 계산 배분은 가정입니다.",
+  "processes": [
+    "웨이퍼 제조",
+    "산화",
+    "포토",
+    "식각",
+    "증착·이온주입",
+    "금속배선",
+    "EDS",
+    "패키징"
+  ],
+  "nodes": [
+    {
+      "id": "seoul",
+      "name": "수도권 거점",
+      "country": "한국",
+      "lat": 37.57,
+      "lon": 126.98,
+      "role": "공정 거점",
+      "type": "country_hub",
+      "source": "기존 UI 예시 거점 · 실제 국가 중심/공장 위치 아님",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "tokyo",
+      "name": "일본 거점",
+      "country": "일본",
+      "lat": 35.68,
+      "lon": 139.69,
+      "role": "소재 거점",
+      "type": "country_hub",
+      "source": "기존 UI 예시 거점 · 실제 국가 중심/공장 위치 아님",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "taipei",
+      "name": "대만 거점",
+      "country": "대만",
+      "lat": 25.03,
+      "lon": 121.57,
+      "role": "공정 거점",
+      "type": "country_hub",
+      "source": "기존 UI 예시 거점 · 실제 국가 중심/공장 위치 아님",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "singapore",
+      "name": "싱가포르 거점",
+      "country": "싱가포르",
+      "lat": 1.35,
+      "lon": 103.82,
+      "role": "물류 거점",
+      "type": "country_hub",
+      "source": "기존 UI 예시 거점 · 실제 국가 중심/공장 위치 아님",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "eindhoven",
+      "name": "네덜란드 거점",
+      "country": "네덜란드",
+      "lat": 51.44,
+      "lon": 5.48,
+      "role": "장비 거점",
+      "type": "country_hub",
+      "source": "기존 UI 예시 거점 · 실제 국가 중심/공장 위치 아님",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "dresden",
+      "name": "독일 거점",
+      "country": "독일",
+      "lat": 51.05,
+      "lon": 13.74,
+      "role": "소재 거점",
+      "type": "country_hub",
+      "source": "기존 UI 예시 거점 · 실제 국가 중심/공장 위치 아님",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "sf",
+      "name": "미국 서부 거점",
+      "country": "미국",
+      "lat": 37.77,
+      "lon": -122.42,
+      "role": "장비 거점",
+      "type": "country_hub",
+      "source": "기존 UI 예시 거점 · 실제 국가 중심/공장 위치 아님",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "austin",
+      "name": "미국 중부 거점",
+      "country": "미국",
+      "lat": 30.27,
+      "lon": -97.74,
+      "role": "공정 거점",
+      "type": "country_hub",
+      "source": "기존 UI 예시 거점 · 실제 국가 중심/공장 위치 아님",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "penang",
+      "name": "말레이시아 거점",
+      "country": "말레이시아",
+      "lat": 5.41,
+      "lon": 100.34,
+      "role": "패키징 거점",
+      "type": "country_hub",
+      "source": "기존 UI 예시 거점 · 실제 국가 중심/공장 위치 아님",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "france",
+      "name": "프랑스 표시 거점",
+      "country": "프랑스",
+      "lat": 48.86,
+      "lon": 2.35,
+      "role": "국가 표시 거점",
+      "type": "country_hub",
+      "source": "UI 배치용 파리 근사 좌표",
+      "source_year": null,
+      "status": "가정값"
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung Electronics",
+      "company_name": "Samsung Electronics",
+      "country": "한국",
+      "country_hub_id": "seoul",
+      "type": "company",
+      "role": "반도체 제조",
+      "lat": 37.57,
+      "lon": 126.98,
+      "source": "https://semiconductor.samsung.com/foundry/",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.samsung.com/global/sustainability/contact/privacy/",
+      "country_source_year": null,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-samsung"
+      ]
+    },
+    {
+      "id": "tsmc",
+      "name": "TSMC",
+      "company_name": "TSMC",
+      "country": "대만",
+      "country_hub_id": "taipei",
+      "type": "company",
+      "role": "반도체 제조",
+      "lat": 25.03,
+      "lon": 121.57,
+      "source": "https://www.tsmc.com/english/aboutTSMC",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.tsmc.com/english/aboutTSMC/business_contacts",
+      "country_source_year": null,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-tsmc"
+      ]
+    },
+    {
+      "id": "shinetsu",
+      "name": "Shin-Etsu Chemical",
+      "company_name": "Shin-Etsu Chemical",
+      "country": "일본",
+      "country_hub_id": "tokyo",
+      "type": "material_maker",
+      "role": "실리콘 웨이퍼",
+      "lat": 35.68,
+      "lon": 139.69,
+      "source": "https://www.shinetsu.co.jp/en/products/semiconductor-silicon-business/silicon-wafers/",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.shinetsu.co.jp/en/company/profile/",
+      "country_source_year": 2026,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-shinetsu"
+      ]
+    },
+    {
+      "id": "sumco",
+      "name": "SUMCO",
+      "company_name": "SUMCO",
+      "country": "일본",
+      "country_hub_id": "tokyo",
+      "type": "material_maker",
+      "role": "실리콘 웨이퍼",
+      "lat": 35.68,
+      "lon": 139.69,
+      "source": "https://www.sumcosi.com/english/",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.sumcosi.com/english/corporate/profile.html",
+      "country_source_year": 2025,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-sumco"
+      ]
+    },
+    {
+      "id": "airliquide",
+      "name": "Air Liquide",
+      "company_name": "Air Liquide",
+      "country": "프랑스",
+      "country_hub_id": "france",
+      "type": "material_maker",
+      "role": "반도체 가스·소재",
+      "lat": 48.86,
+      "lon": 2.35,
+      "source": "https://www.airliquide.com/group/activities/electronics",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.airliquide.com/fr/groupe/france",
+      "country_source_year": null,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-airliquide"
+      ]
+    },
+    {
+      "id": "airproducts",
+      "name": "Air Products",
+      "company_name": "Air Products",
+      "country": "미국",
+      "country_hub_id": "sf",
+      "type": "material_maker",
+      "role": "고순도 산업 가스",
+      "lat": 37.77,
+      "lon": -122.42,
+      "source": "https://www.airproducts.com.cn/en/industries/electronics",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.airproducts.com/-/media/files/en/42497_company_history.pdf",
+      "country_source_year": 2023,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-airproducts"
+      ]
+    },
+    {
+      "id": "jsr",
+      "name": "JSR",
+      "company_name": "JSR",
+      "country": "일본",
+      "country_hub_id": "tokyo",
+      "type": "material_maker",
+      "role": "포토레지스트",
+      "lat": 35.68,
+      "lon": 139.69,
+      "source": "https://www.jsr.co.jp/jsr_e/company/assets/pdf/251211_JSR_corporate2025_EN_rev.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.jsr.co.jp/jsr_e/company/profile.html",
+      "country_source_year": 2026,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-jsr"
+      ]
+    },
+    {
+      "id": "tok",
+      "name": "Tokyo Ohka Kogyo",
+      "company_name": "Tokyo Ohka Kogyo",
+      "country": "일본",
+      "country_hub_id": "tokyo",
+      "type": "material_maker",
+      "role": "포토레지스트",
+      "lat": 35.68,
+      "lon": 139.69,
+      "source": "https://www.tok.co.jp/eng/company/overseas",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.tok.co.jp/eng/company/outline",
+      "country_source_year": 2025,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-tok"
+      ]
+    },
+    {
+      "id": "fujifilm",
+      "name": "Fujifilm",
+      "company_name": "Fujifilm",
+      "country": "일본",
+      "country_hub_id": "tokyo",
+      "type": "material_maker",
+      "role": "현상액",
+      "lat": 35.68,
+      "lon": 139.69,
+      "source": "https://www.fujifilm.com/kr/en/business/semiconductor-materials/photoresist-ancillaries/other-developer",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.fujifilm.com/jp/en/about/corporate/overview",
+      "country_source_year": 2026,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-fujifilm"
+      ]
+    },
+    {
+      "id": "asml",
+      "name": "ASML",
+      "company_name": "ASML",
+      "country": "네덜란드",
+      "country_hub_id": "eindhoven",
+      "type": "company",
+      "role": "노광 장비",
+      "lat": 51.44,
+      "lon": 5.48,
+      "source": "https://www.asml.com/en/products",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.asml.com/en/contact-us",
+      "country_source_year": null,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-asml"
+      ]
+    },
+    {
+      "id": "lam",
+      "name": "Lam Research",
+      "company_name": "Lam Research",
+      "country": "미국",
+      "country_hub_id": "sf",
+      "type": "company",
+      "role": "식각 장비",
+      "lat": 37.77,
+      "lon": -122.42,
+      "source": "https://www.lamresearch.com/products/",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.lamresearch.com/company/locations/",
+      "country_source_year": null,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-lam"
+      ]
+    },
+    {
+      "id": "applied",
+      "name": "Applied Materials",
+      "company_name": "Applied Materials",
+      "country": "미국",
+      "country_hub_id": "sf",
+      "type": "company",
+      "role": "증착·금속배선 장비",
+      "lat": 37.77,
+      "lon": -122.42,
+      "source": "https://www.appliedmaterials.com/us/en/semiconductor.html",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.appliedmaterials.com/in/en/frequently-asked-questions.html",
+      "country_source_year": null,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-applied"
+      ]
+    },
+    {
+      "id": "merck",
+      "name": "Merck KGaA",
+      "company_name": "Merck KGaA",
+      "country": "독일",
+      "country_hub_id": "dresden",
+      "type": "material_maker",
+      "role": "박막·금속 전구체",
+      "lat": 51.05,
+      "lon": 13.74,
+      "source": "https://www.reports.emdgroup.com/en/annualreport/2025/management-report/fundamental-information-about-the-group/research-and-development/electronics.html",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://digitalhub.merckgroup.com/legal/imprint",
+      "country_source_year": null,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-merck"
+      ]
+    },
+    {
+      "id": "advantest",
+      "name": "Advantest",
+      "company_name": "Advantest",
+      "country": "일본",
+      "country_hub_id": "tokyo",
+      "type": "company",
+      "role": "반도체 검사 장비",
+      "lat": 35.68,
+      "lon": 139.69,
+      "source": "https://www.advantest.com/en/products/",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.advantest.com/en/about/overview/",
+      "country_source_year": 2026,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-advantest"
+      ]
+    },
+    {
+      "id": "teradyne",
+      "name": "Teradyne",
+      "company_name": "Teradyne",
+      "country": "미국",
+      "country_hub_id": "sf",
+      "type": "company",
+      "role": "반도체 검사 장비",
+      "lat": 37.77,
+      "lon": -122.42,
+      "source": "https://www.teradyne.com/semiconductor-testing/",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.teradyne.com/ja/company/contact-teradyne/",
+      "country_source_year": null,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-teradyne"
+      ]
+    },
+    {
+      "id": "ase",
+      "name": "ASE Technology Holding",
+      "company_name": "ASE Technology Holding",
+      "country": "대만",
+      "country_hub_id": "taipei",
+      "type": "company",
+      "role": "패키징",
+      "lat": 25.03,
+      "lon": 121.57,
+      "source": "https://www.aseglobal.com/about/",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://www.aseglobal.com/en/pdf/aseh-2024-csr-en-final.pdf",
+      "country_source_year": 2024,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-ase"
+      ]
+    },
+    {
+      "id": "amkor",
+      "name": "Amkor Technology",
+      "company_name": "Amkor Technology",
+      "country": "미국",
+      "country_hub_id": "sf",
+      "type": "company",
+      "role": "패키징",
+      "lat": 37.77,
+      "lon": -122.42,
+      "source": "https://amkor.com/packaging/",
+      "source_year": null,
+      "status": "출처 있음",
+      "checked_at": "2026-10-25",
+      "source_scope": "기업·제품군 소개. 본사 국가의 별도 공식 근거도 확인; 고객별 납품·점유율과 구분.",
+      "country_status": "출처 있음",
+      "location_status": "가정값",
+      "location_note": "소속 국가 묶음 표시용 좌표. 본사·공장·광산의 실제 위치 아님.",
+      "country_source": "https://amkor.com/contact-us/",
+      "country_source_year": null,
+      "country_basis": "본사·대표 법인 주소 기준. 실제 생산 시설 소재국과 구분.",
+      "country_evidence_ids": [
+        "hq-amkor"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "polished-wafer:shinetsu>samsung",
+      "from": "shinetsu",
+      "to": "samsung",
+      "item": "폴리시드 실리콘 웨이퍼",
+      "item_id": "polished-wafer",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "share_pct": null,
+      "source": "https://www.shinetsu.co.jp/en/news/news-release/shin-etsu-presented-with-an-excellent-supplier-award-from-samsung-electronics-for-best-in-value/",
+      "source_year": 2023,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "shinetsu-samsung-2023"
+      ],
+      "relationship_source": "https://www.shinetsu.co.jp/en/news/news-release/shin-etsu-presented-with-an-excellent-supplier-award-from-samsung-electronics-for-best-in-value/",
+      "relationship_source_year": 2023,
+      "evidence_note": "반도체 소재의 안정 공급 관계 확인. 특정 웨이퍼 종류로 한정하지 않음.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "shinetsu-samsung-2023"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "polished-wafer:shinetsu>tsmc",
+      "from": "shinetsu",
+      "to": "tsmc",
+      "item": "폴리시드 실리콘 웨이퍼",
+      "item_id": "polished-wafer",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022",
+        "shinetsu-group"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022",
+        "shinetsu-group"
+      ],
+      "legal_entity_scope": "2025 수상 법인은 Shin-Etsu Handotai. 공식 그룹 회사 소개를 근거로 Shin-Etsu 그룹 노드에 연결."
+    },
+    {
+      "id": "polished-wafer:sumco>samsung",
+      "from": "sumco",
+      "to": "samsung",
+      "item": "폴리시드 실리콘 웨이퍼",
+      "item_id": "polished-wafer",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "share_pct": null,
+      "source": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "sumco-awards-2025"
+      ],
+      "relationship_source": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "relationship_source_year": 2025,
+      "evidence_note": "Samsung·TSMC의 웨이퍼 공급사 관계 확인. 폴리시드/에피별 고객 배분 미확인.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "sumco-awards-2025"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "polished-wafer:sumco>tsmc",
+      "from": "sumco",
+      "to": "tsmc",
+      "item": "폴리시드 실리콘 웨이퍼",
+      "item_id": "polished-wafer",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "share_pct": null,
+      "source": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "sumco-awards-2025",
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "relationship_source_year": 2025,
+      "evidence_note": "Samsung·TSMC의 웨이퍼 공급사 관계 확인. 폴리시드/에피별 고객 배분 미확인.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "sumco-awards-2025",
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "epi-wafer:shinetsu>samsung",
+      "from": "shinetsu",
+      "to": "samsung",
+      "item": "에피택셜 실리콘 웨이퍼",
+      "item_id": "epi-wafer",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "share_pct": null,
+      "source": "https://www.shinetsu.co.jp/en/news/news-release/shin-etsu-presented-with-an-excellent-supplier-award-from-samsung-electronics-for-best-in-value/",
+      "source_year": 2023,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "shinetsu-samsung-2023"
+      ],
+      "relationship_source": "https://www.shinetsu.co.jp/en/news/news-release/shin-etsu-presented-with-an-excellent-supplier-award-from-samsung-electronics-for-best-in-value/",
+      "relationship_source_year": 2023,
+      "evidence_note": "반도체 소재의 안정 공급 관계 확인. 특정 웨이퍼 종류로 한정하지 않음.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "shinetsu-samsung-2023"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "epi-wafer:shinetsu>tsmc",
+      "from": "shinetsu",
+      "to": "tsmc",
+      "item": "에피택셜 실리콘 웨이퍼",
+      "item_id": "epi-wafer",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022",
+        "shinetsu-group"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022",
+        "shinetsu-group"
+      ],
+      "legal_entity_scope": "2025 수상 법인은 Shin-Etsu Handotai. 공식 그룹 회사 소개를 근거로 Shin-Etsu 그룹 노드에 연결."
+    },
+    {
+      "id": "epi-wafer:sumco>samsung",
+      "from": "sumco",
+      "to": "samsung",
+      "item": "에피택셜 실리콘 웨이퍼",
+      "item_id": "epi-wafer",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "share_pct": null,
+      "source": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "sumco-awards-2025"
+      ],
+      "relationship_source": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "relationship_source_year": 2025,
+      "evidence_note": "Samsung·TSMC의 웨이퍼 공급사 관계 확인. 폴리시드/에피별 고객 배분 미확인.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "sumco-awards-2025"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "epi-wafer:sumco>tsmc",
+      "from": "sumco",
+      "to": "tsmc",
+      "item": "에피택셜 실리콘 웨이퍼",
+      "item_id": "epi-wafer",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "share_pct": null,
+      "source": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "sumco-awards-2025",
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "relationship_source_year": 2025,
+      "evidence_note": "Samsung·TSMC의 웨이퍼 공급사 관계 확인. 폴리시드/에피별 고객 배분 미확인.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "sumco-awards-2025",
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "oxygen:airliquide>samsung",
+      "from": "airliquide",
+      "to": "samsung",
+      "item": "고순도 산소",
+      "item_id": "oxygen",
+      "processes": [
+        "산화"
+      ],
+      "share_pct": null,
+      "source": "https://www.samsung.com/global/sustainability/policy-file/AYVhOfYaBGoAIx95/2022_Supplier%2BList_220608_F.pdf",
+      "source_year": null,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "samsung-suppliers"
+      ],
+      "relationship_source": "https://www.samsung.com/global/sustainability/policy-file/AYVhOfYaBGoAIx95/2022_Supplier%2BList_220608_F.pdf",
+      "relationship_source_year": null,
+      "evidence_note": "Air Liquide, Air Products, Applied Materials, Advantest 등 공급사 명시. 개별 소재와 비중은 미기재.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "samsung-suppliers"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "oxygen:airliquide>tsmc",
+      "from": "airliquide",
+      "to": "tsmc",
+      "item": "고순도 산소",
+      "item_id": "oxygen",
+      "processes": [
+        "산화"
+      ],
+      "share_pct": null,
+      "source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "source_year": 2022,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "미확인",
+      "item_status": "확인 필요",
+      "relationship_kind": "unconfirmed",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "relationship_source_year": 2022,
+      "evidence_note": "2022 보고서의 세계 주요 소재 공급사 목록은 개별 분자·등급의 TSMC 납품 근거가 아님. 해당 자료만으로 고객 연결을 확정하지 않고 참고 관계로 유지.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "oxygen:airproducts>samsung",
+      "from": "airproducts",
+      "to": "samsung",
+      "item": "고순도 산소",
+      "item_id": "oxygen",
+      "processes": [
+        "산화"
+      ],
+      "share_pct": null,
+      "source": "https://investors.airproducts.com/news-releases/news-release-details/air-products-continues-multi-phase-expansion-support-samsung",
+      "source_year": 2018,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "apd-samsung-2018"
+      ],
+      "relationship_source": "https://investors.airproducts.com/news-releases/news-release-details/air-products-continues-multi-phase-expansion-support-samsung",
+      "relationship_source_year": 2018,
+      "evidence_note": "명시된 두 기업의 가스 공급 프로젝트 관계 확인. 이 페이지 본문은 제목·날짜·원문 링크까지만 확인.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "apd-samsung-2018"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "oxygen:airproducts>tsmc",
+      "from": "airproducts",
+      "to": "tsmc",
+      "item": "고순도 산소",
+      "item_id": "oxygen",
+      "processes": [
+        "산화"
+      ],
+      "share_pct": null,
+      "source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "source_year": 2022,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "미확인",
+      "item_status": "확인 필요",
+      "relationship_kind": "unconfirmed",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "relationship_source_year": 2022,
+      "evidence_note": "2022 보고서의 세계 주요 소재 공급사 목록은 개별 분자·등급의 TSMC 납품 근거가 아님. 해당 자료만으로 고객 연결을 확정하지 않고 참고 관계로 유지.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "hydrogen:airliquide>samsung",
+      "from": "airliquide",
+      "to": "samsung",
+      "item": "고순도 수소",
+      "item_id": "hydrogen",
+      "processes": [
+        "산화"
+      ],
+      "share_pct": null,
+      "source": "https://www.samsung.com/global/sustainability/policy-file/AYVhOfYaBGoAIx95/2022_Supplier%2BList_220608_F.pdf",
+      "source_year": null,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "samsung-suppliers"
+      ],
+      "relationship_source": "https://www.samsung.com/global/sustainability/policy-file/AYVhOfYaBGoAIx95/2022_Supplier%2BList_220608_F.pdf",
+      "relationship_source_year": null,
+      "evidence_note": "Air Liquide, Air Products, Applied Materials, Advantest 등 공급사 명시. 개별 소재와 비중은 미기재.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "samsung-suppliers"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "hydrogen:airliquide>tsmc",
+      "from": "airliquide",
+      "to": "tsmc",
+      "item": "고순도 수소",
+      "item_id": "hydrogen",
+      "processes": [
+        "산화"
+      ],
+      "share_pct": null,
+      "source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "source_year": 2022,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "미확인",
+      "item_status": "확인 필요",
+      "relationship_kind": "unconfirmed",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "relationship_source_year": 2022,
+      "evidence_note": "2022 보고서의 세계 주요 소재 공급사 목록은 개별 분자·등급의 TSMC 납품 근거가 아님. 해당 자료만으로 고객 연결을 확정하지 않고 참고 관계로 유지.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "hydrogen:airproducts>samsung",
+      "from": "airproducts",
+      "to": "samsung",
+      "item": "고순도 수소",
+      "item_id": "hydrogen",
+      "processes": [
+        "산화"
+      ],
+      "share_pct": null,
+      "source": "https://investors.airproducts.com/news-releases/news-release-details/air-products-continues-multi-phase-expansion-support-samsung",
+      "source_year": 2018,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "apd-samsung-2018"
+      ],
+      "relationship_source": "https://investors.airproducts.com/news-releases/news-release-details/air-products-continues-multi-phase-expansion-support-samsung",
+      "relationship_source_year": 2018,
+      "evidence_note": "명시된 두 기업의 가스 공급 프로젝트 관계 확인. 이 페이지 본문은 제목·날짜·원문 링크까지만 확인.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "apd-samsung-2018"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "hydrogen:airproducts>tsmc",
+      "from": "airproducts",
+      "to": "tsmc",
+      "item": "고순도 수소",
+      "item_id": "hydrogen",
+      "processes": [
+        "산화"
+      ],
+      "share_pct": null,
+      "source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "source_year": 2022,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "미확인",
+      "item_status": "확인 필요",
+      "relationship_kind": "unconfirmed",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "relationship_source_year": 2022,
+      "evidence_note": "2022 보고서의 세계 주요 소재 공급사 목록은 개별 분자·등급의 TSMC 납품 근거가 아님. 해당 자료만으로 고객 연결을 확정하지 않고 참고 관계로 유지.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "photoresist:jsr>samsung",
+      "from": "jsr",
+      "to": "samsung",
+      "item": "포토레지스트",
+      "item_id": "photoresist",
+      "processes": [
+        "포토"
+      ],
+      "share_pct": null,
+      "source": "https://jsr.co.jp/jsr_e/tech/report/",
+      "source_year": 2022,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "collaboration",
+      "evidence_scope": "collaboration",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "evidence_note": "Samsung Electronics와 JSR 소속 연구자의 공동 저자 논문. 공급 계약이나 양산 채택의 근거가 아님.",
+      "relationship_source": "https://jsr.co.jp/jsr_e/tech/report/",
+      "relationship_source_year": 2022,
+      "relationship_evidence_ids": [
+        "jsr-samsung-research-2022"
+      ],
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "jsr-samsung-research-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "photoresist:jsr>tsmc",
+      "from": "jsr",
+      "to": "tsmc",
+      "item": "포토레지스트",
+      "item_id": "photoresist",
+      "processes": [
+        "포토"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "photoresist:tok>samsung",
+      "from": "tok",
+      "to": "samsung",
+      "item": "포토레지스트",
+      "item_id": "photoresist",
+      "processes": [
+        "포토"
+      ],
+      "share_pct": null,
+      "source": null,
+      "source_year": null,
+      "status": "확인 필요",
+      "relation_note": "제품군을 바탕으로 추가한 검토 후보. 특정 기업 간 실제 납품은 확인되지 않았습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "확인 필요",
+      "item_status": "확인 필요",
+      "relationship_kind": "unconfirmed",
+      "evidence_scope": "unconfirmed",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "evidence_note": "공식 1차 자료에서 두 기업의 직접 관계를 확인하지 못함.",
+      "relationship_source": null,
+      "relationship_source_year": null,
+      "relationship_evidence_ids": [],
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "photoresist:tok>tsmc",
+      "from": "tok",
+      "to": "tsmc",
+      "item": "포토레지스트",
+      "item_id": "photoresist",
+      "processes": [
+        "포토"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/schinese/news/3192",
+      "source_year": 2024,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-award-2024",
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://pr.tsmc.com/schinese/news/3192",
+      "relationship_source_year": 2024,
+      "evidence_note": "TOK를 포함한 공급사 실명 확인. 제품 등급·공급 비중은 확인하지 못함.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-award-2024",
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "developer:fujifilm>samsung",
+      "from": "fujifilm",
+      "to": "samsung",
+      "item": "현상액(TMAH)",
+      "item_id": "developer",
+      "processes": [
+        "포토"
+      ],
+      "share_pct": null,
+      "source": "https://www.fujifilm.com/sg/en/news/hq/13138",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "fujifilm-samsung-2025"
+      ],
+      "relationship_source": "https://www.fujifilm.com/sg/en/news/hq/13138",
+      "relationship_source_year": 2025,
+      "evidence_note": "다양한 반도체 소재 공급 확인. TMAH 현상액의 개별 고객 납품 여부는 미기재.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "fujifilm-samsung-2025"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "developer:fujifilm>tsmc",
+      "from": "fujifilm",
+      "to": "tsmc",
+      "item": "현상액(TMAH)",
+      "item_id": "developer",
+      "processes": [
+        "포토"
+      ],
+      "share_pct": null,
+      "source": "https://esg.tsmc.com/file/public/2024-TSMC-Responsible-Supply-Chain-Report-e.pdf",
+      "source_year": 2024,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "fujifilm-tsmc-2024",
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://esg.tsmc.com/file/public/2024-TSMC-Responsible-Supply-Chain-Report-e.pdf",
+      "relationship_source_year": 2024,
+      "evidence_note": "FUJIFILM Electronic Materials Taiwan의 공급사 수상 확인. 그룹으로 연결하되 세부 현상액은 미확인.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "fujifilm-tsmc-2024",
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "lithography:asml>samsung",
+      "from": "asml",
+      "to": "samsung",
+      "item": "노광 장비",
+      "item_id": "lithography",
+      "processes": [
+        "포토"
+      ],
+      "share_pct": null,
+      "source": "https://semiconductor.samsung.com/news-events/news/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing/",
+      "source_year": 2026,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "출처 있음",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+      "item_source_year": 2022,
+      "item_evidence_ids": [
+        "asml-euv-customers-2022"
+      ],
+      "relationship_evidence_ids": [
+        "asml-samsung-2026"
+      ],
+      "relationship_source": "https://semiconductor.samsung.com/news-events/news/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing/",
+      "relationship_source_year": 2026,
+      "evidence_note": "EUV 협력의 최근 발표. High-NA의 2028년 양산 도입은 계획이며 현재 양산과 구분.",
+      "item_evidence_note": "노광·EUV 분야 고객 관계 확인; High-NA 미래 양산 계획은 별도.",
+      "temporal_status": "documented",
+      "evidence_ids": [
+        "asml-samsung-2026",
+        "asml-euv-customers-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "lithography:asml>tsmc",
+      "from": "asml",
+      "to": "tsmc",
+      "item": "노광 장비",
+      "item_id": "lithography",
+      "processes": [
+        "포토"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "출처 있음",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": "https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab",
+      "item_source_year": 2022,
+      "item_evidence_ids": [
+        "asml-euv-customers-2022"
+      ],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "ノ광・EUV 분야 고객 관계 확인; 현장·모델·수량은 미공개",
+      "temporal_status": "documented",
+      "evidence_ids": [
+        "tsmc-award-2025",
+        "asml-euv-customers-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "etch-gas:airliquide>samsung",
+      "from": "airliquide",
+      "to": "samsung",
+      "item": "사불화탄소(CF4)",
+      "item_id": "etch-gas",
+      "processes": [
+        "식각"
+      ],
+      "share_pct": null,
+      "source": "https://www.samsung.com/global/sustainability/policy-file/AYVhOfYaBGoAIx95/2022_Supplier%2BList_220608_F.pdf",
+      "source_year": null,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "samsung-suppliers"
+      ],
+      "relationship_source": "https://www.samsung.com/global/sustainability/policy-file/AYVhOfYaBGoAIx95/2022_Supplier%2BList_220608_F.pdf",
+      "relationship_source_year": null,
+      "evidence_note": "Air Liquide, Air Products, Applied Materials, Advantest 등 공급사 명시. 개별 소재와 비중은 미기재.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "samsung-suppliers"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "etch-gas:airliquide>tsmc",
+      "from": "airliquide",
+      "to": "tsmc",
+      "item": "사불화탄소(CF4)",
+      "item_id": "etch-gas",
+      "processes": [
+        "식각"
+      ],
+      "share_pct": null,
+      "source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "source_year": 2022,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "미확인",
+      "item_status": "확인 필요",
+      "relationship_kind": "unconfirmed",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "relationship_source_year": 2022,
+      "evidence_note": "2022 보고서의 세계 주요 소재 공급사 목록은 개별 분자·등급의 TSMC 납품 근거가 아님. 해당 자료만으로 고객 연결을 확정하지 않고 참고 관계로 유지.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "etch-tool:lam>samsung",
+      "from": "lam",
+      "to": "samsung",
+      "item": "플라즈마 식각 장비",
+      "item_id": "etch-tool",
+      "processes": [
+        "식각"
+      ],
+      "share_pct": null,
+      "source": "https://newsroom.lamresearch.com/A-Glance-at-Lams-Triumphs-and-Trophies-of-2023",
+      "source_year": 2023,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "출처 있음",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": "https://newsroom.lamresearch.com/1999-02-24-Lam-Receives-A-Significant-Order-For-Multiple-Systems-From-Samsung",
+      "item_source_year": 1999,
+      "item_evidence_ids": [
+        "lam-samsung-etch-1999"
+      ],
+      "relationship_evidence_ids": [
+        "lam-samsung-2023"
+      ],
+      "relationship_source": "https://newsroom.lamresearch.com/A-Glance-at-Lams-Triumphs-and-Trophies-of-2023",
+      "relationship_source_year": 2023,
+      "evidence_note": "Samsung 연구개발 협력 관계를 확인. 최신 개별 장비 공급 수량은 미확인.",
+      "item_evidence_note": "과거 식각 장비 주문 확인. 현재 양산 재확인 필요.",
+      "temporal_status": "historical",
+      "evidence_ids": [
+        "lam-samsung-2023",
+        "lam-samsung-etch-1999"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "etch-tool:lam>tsmc",
+      "from": "lam",
+      "to": "tsmc",
+      "item": "플라즈마 식각 장비",
+      "item_id": "etch-tool",
+      "processes": [
+        "식각"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "출처 있음",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": "https://pr.tsmc.com/english/news/1946",
+      "item_source_year": 2017,
+      "item_evidence_ids": [
+        "lam-tsmc-etch-2017"
+      ],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "과거 식각 장비 분야 공급사 수상 확인. 현재 제품·현장 확인 필요.",
+      "temporal_status": "historical",
+      "evidence_ids": [
+        "tsmc-award-2025",
+        "lam-tsmc-etch-2017"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "film-precursor:merck>samsung",
+      "from": "merck",
+      "to": "samsung",
+      "item": "박막 전구체",
+      "item_id": "film-precursor",
+      "processes": [
+        "증착·이온주입"
+      ],
+      "share_pct": null,
+      "source": "https://www.merckgroup.com/company/responsibility/us/regulations-and-guidelines/Certificate-ISO-9001-EN.pdf",
+      "source_year": 2024,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "service",
+      "evidence_scope": "service",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "merck-samsung-service-2024"
+      ],
+      "relationship_source": "https://www.merckgroup.com/company/responsibility/us/regulations-and-guidelines/Certificate-ISO-9001-EN.pdf",
+      "relationship_source_year": 2024,
+      "evidence_note": "Versum의 Samsung Austin 현장 화학품 분배 시스템 서비스 범위. 박막/금속 전구체 납품을 입증하지 않음.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "merck-samsung-service-2024"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "film-precursor:merck>tsmc",
+      "from": "merck",
+      "to": "tsmc",
+      "item": "박막 전구체",
+      "item_id": "film-precursor",
+      "processes": [
+        "증착·이온주입"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "deposition-tool:applied>samsung",
+      "from": "applied",
+      "to": "samsung",
+      "item": "박막 증착 장비",
+      "item_id": "deposition-tool",
+      "processes": [
+        "증착·이온주입"
+      ],
+      "share_pct": null,
+      "source": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/021126-applied-materials-announces-samsung-electronics-will-join-new-epic-center.html",
+      "source_year": 2026,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "출처 있음",
+      "relationship_kind": "collaboration",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": "https://ir.appliedmaterials.com/news-releases/news-release-details/samsung-orders-multiple-sacvd-systems-applied-materials-more-500/",
+      "item_source_year": 1999,
+      "item_evidence_ids": [
+        "applied-samsung-cvd-1999"
+      ],
+      "relationship_evidence_ids": [
+        "applied-samsung-2026"
+      ],
+      "relationship_source": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/021126-applied-materials-announces-samsung-electronics-will-join-new-epic-center.html",
+      "relationship_source_year": 2026,
+      "evidence_note": "EPIC 공동 연구개발 참여와 장기 협력 발표. 현재 개별 증착·금속배선 장비의 납품 계약·물량을 입증하지 않으므로 참고 관계로 유지.",
+      "item_evidence_note": "과거 SACVD 증착 장비 주문 확인. 현재 제품·현장 확인 필요.",
+      "temporal_status": "historical",
+      "evidence_ids": [
+        "applied-samsung-2026",
+        "applied-samsung-cvd-1999"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "deposition-tool:applied>tsmc",
+      "from": "applied",
+      "to": "tsmc",
+      "item": "박막 증착 장비",
+      "item_id": "deposition-tool",
+      "processes": [
+        "증착·이온주입"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "출처 있음",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-100th-producer-300mm-cvd-system-shipped-tsmc",
+      "item_source_year": 2003,
+      "item_evidence_ids": [
+        "applied-tsmc-cvd-2003"
+      ],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "과거 CVD 장비 출하 확인. 현재 제품·현장 확인 필요.",
+      "temporal_status": "historical",
+      "evidence_ids": [
+        "tsmc-award-2025",
+        "applied-tsmc-cvd-2003"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "metal-precursor:merck>samsung",
+      "from": "merck",
+      "to": "samsung",
+      "item": "금속 전구체",
+      "item_id": "metal-precursor",
+      "processes": [
+        "금속배선"
+      ],
+      "share_pct": null,
+      "source": "https://www.merckgroup.com/company/responsibility/us/regulations-and-guidelines/Certificate-ISO-9001-EN.pdf",
+      "source_year": 2024,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "service",
+      "evidence_scope": "service",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "merck-samsung-service-2024"
+      ],
+      "relationship_source": "https://www.merckgroup.com/company/responsibility/us/regulations-and-guidelines/Certificate-ISO-9001-EN.pdf",
+      "relationship_source_year": 2024,
+      "evidence_note": "Versum의 Samsung Austin 현장 화학품 분배 시스템 서비스 범위. 박막/금속 전구체 납품을 입증하지 않음.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "merck-samsung-service-2024"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "metal-precursor:merck>tsmc",
+      "from": "merck",
+      "to": "tsmc",
+      "item": "금속 전구체",
+      "item_id": "metal-precursor",
+      "processes": [
+        "금속배선"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-award-2025",
+        "tsmc-materials-2022"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "interconnect-tool:applied>samsung",
+      "from": "applied",
+      "to": "samsung",
+      "item": "금속배선 형성 장비",
+      "item_id": "interconnect-tool",
+      "processes": [
+        "금속배선"
+      ],
+      "share_pct": null,
+      "source": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/021126-applied-materials-announces-samsung-electronics-will-join-new-epic-center.html",
+      "source_year": 2026,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "출처 있음",
+      "relationship_kind": "collaboration",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-chip-wiring-innovations-more-energy",
+      "item_source_year": 2024,
+      "item_evidence_ids": [
+        "applied-wiring-2024"
+      ],
+      "relationship_evidence_ids": [
+        "applied-samsung-2026"
+      ],
+      "relationship_source": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/021126-applied-materials-announces-samsung-electronics-will-join-new-epic-center.html",
+      "relationship_source_year": 2026,
+      "evidence_note": "EPIC 공동 연구개발 참여와 장기 협력 발표. 현재 개별 증착·금속배선 장비의 납품 계약·물량을 입증하지 않으므로 참고 관계로 유지.",
+      "item_evidence_note": "배선 혁신 채택 발언 확인. 개별 장비 모델·물량 미공개.",
+      "temporal_status": "documented",
+      "evidence_ids": [
+        "applied-samsung-2026",
+        "applied-wiring-2024"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "interconnect-tool:applied>tsmc",
+      "from": "applied",
+      "to": "tsmc",
+      "item": "금속배선 형성 장비",
+      "item_id": "interconnect-tool",
+      "processes": [
+        "금속배선"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 50.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "출처 있음",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unique-integrated-linerbarrier-solution-hits",
+      "item_source_year": 1999,
+      "item_evidence_ids": [
+        "applied-tsmc-wiring-1999"
+      ],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "과거 배선용 PVD/CVD 장비 출하 확인. 현재 제품·현장 확인 필요.",
+      "temporal_status": "historical",
+      "evidence_ids": [
+        "tsmc-award-2025",
+        "applied-tsmc-wiring-1999"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "wafer-tester:advantest>samsung",
+      "from": "advantest",
+      "to": "samsung",
+      "item": "웨이퍼 전기 검사 장비",
+      "item_id": "wafer-tester",
+      "processes": [
+        "EDS"
+      ],
+      "share_pct": null,
+      "source": "https://www.advantest.com/document/en/about/sustainability/esg-related-documents/En_SustainabilityReport2025_02.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "advantest-samsung-2024"
+      ],
+      "relationship_source": "https://www.advantest.com/document/en/about/sustainability/esg-related-documents/En_SustainabilityReport2025_02.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "2024 Samsung BEST IN VALUE 수상 확인. 웨이퍼 검사와 최종 검사의 고객별 구분은 미기재.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "advantest-samsung-2024"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "wafer-tester:advantest>tsmc",
+      "from": "advantest",
+      "to": "tsmc",
+      "item": "웨이퍼 전기 검사 장비",
+      "item_id": "wafer-tester",
+      "processes": [
+        "EDS"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "tsmc-award-2025"
+      ],
+      "relationship_source": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "relationship_source_year": 2025,
+      "evidence_note": "기업·그룹 단위 공급사 실명 확인. 세부 품목·비중은 미공개.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "tsmc-award-2025"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "wafer-tester:teradyne>samsung",
+      "from": "teradyne",
+      "to": "samsung",
+      "item": "웨이퍼 전기 검사 장비",
+      "item_id": "wafer-tester",
+      "processes": [
+        "EDS"
+      ],
+      "share_pct": null,
+      "source": "https://investors.teradyne.com/sec-filings/all-sec-filings/content/0000950170-25-023784/ter-20241231.htm",
+      "source_year": 2024,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "supply",
+      "evidence_scope": "company",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "evidence_note": "Samsung을 반도체/무선 검사 부문 고객으로 실명 공시. 고객과 OSAT를 통한 직간접 매출 노출 12.5%; 삼성의 검사 장비 구매 비중은 아님.",
+      "relationship_source": "https://investors.teradyne.com/sec-filings/all-sec-filings/content/0000950170-25-023784/ter-20241231.htm",
+      "relationship_source_year": 2024,
+      "relationship_evidence_ids": [
+        "teradyne-samsung-fy2024"
+      ],
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "teradyne-samsung-fy2024"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "wafer-tester:teradyne>tsmc",
+      "from": "teradyne",
+      "to": "tsmc",
+      "item": "웨이퍼 전기 검사 장비",
+      "item_id": "wafer-tester",
+      "processes": [
+        "EDS"
+      ],
+      "share_pct": null,
+      "source": "https://investors.teradyne.com/news-events/press-releases/detail/422/teradyne-awarded-2025-tsmc-open-innovation-platform-oip-partner-of-the-year-for-tsmc-3dfabric-testing",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "collaboration",
+      "evidence_scope": "collaboration",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "teradyne-tsmc-2025"
+      ],
+      "relationship_source": "https://investors.teradyne.com/news-events/press-releases/detail/422/teradyne-awarded-2025-tsmc-open-innovation-platform-oip-partner-of-the-year-for-tsmc-3dfabric-testing",
+      "relationship_source_year": 2025,
+      "evidence_note": "wafer sort/chip probing을 포함하는 테스트 기술 협력. TSMC의 직접 장비 구매와 구분.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "teradyne-tsmc-2025"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "processed-wafer:samsung>ase",
+      "from": "samsung",
+      "to": "ase",
+      "item": "가공 웨이퍼",
+      "item_id": "processed-wafer",
+      "processes": [
+        "패키징"
+      ],
+      "share_pct": null,
+      "source": "https://asekh.aseglobal.com/Uploads/Pdfs/47c6d9d1-dfb0-4ff9-a66d-4acd5c66b8c0.pdf",
+      "source_year": 2022,
+      "status": "출처 있음",
+      "relation_note": "과거 환경관리 인증만 확인. 현재 유효 인증이나 실제 납품 관계로 단정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "qualification",
+      "evidence_scope": "qualification",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "evidence_note": "삼성이 ASE(Taiwan)을 Eco-Partner Affiliate로 인증. 제품 환경관리 인증이며 납품 계약과 구분.",
+      "relationship_source": "https://asekh.aseglobal.com/Uploads/Pdfs/47c6d9d1-dfb0-4ff9-a66d-4acd5c66b8c0.pdf",
+      "relationship_source_year": 2022,
+      "relationship_evidence_ids": [
+        "ase-samsung-certificate-2022"
+      ],
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "expired_certificate",
+      "evidence_ids": [
+        "ase-samsung-certificate-2022"
+      ],
+      "legal_entity_scope": "자료의 ASE/ASE(Taiwan)를 ASE Technology Holding 그룹 노드로 표시. 지주사 자체의 직접 계약을 뜻하지 않음."
+    },
+    {
+      "id": "processed-wafer:samsung>amkor",
+      "from": "samsung",
+      "to": "amkor",
+      "item": "가공 웨이퍼",
+      "item_id": "processed-wafer",
+      "processes": [
+        "패키징"
+      ],
+      "share_pct": null,
+      "source": "https://amkor.com/blog/samsung-electronics-partners-with-amkor-technology-on-the-development-of-leading-edge-h-cube-solution/",
+      "source_year": 2021,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "collaboration",
+      "evidence_scope": "collaboration",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "amkor-samsung-2021"
+      ],
+      "relationship_source": "https://amkor.com/blog/samsung-electronics-partners-with-amkor-technology-on-the-development-of-leading-edge-h-cube-solution/",
+      "relationship_source_year": 2021,
+      "evidence_note": "2.5D 패키징 공동개발 확인. 특정 가공 웨이퍼의 물류·위탁 물량은 미확인.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "scope_limited",
+      "evidence_ids": [
+        "amkor-samsung-2021"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    },
+    {
+      "id": "processed-wafer:tsmc>ase",
+      "from": "tsmc",
+      "to": "ase",
+      "item": "가공 웨이퍼",
+      "item_id": "processed-wafer",
+      "processes": [
+        "패키징"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/english/news/2968",
+      "source_year": 2022,
+      "status": "출처 있음",
+      "relation_note": "기업 관계/협력에 공식 근거가 있습니다. 이 세부 품목·현장·물량의 납품까지 확정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "출처 있음",
+      "relationship_kind": "collaboration",
+      "evidence_scope": "collaboration",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": "https://pr.tsmc.com/schinese/news/2077",
+      "item_source_year": 1997,
+      "item_evidence_ids": [
+        "ase-tsmc-flow-1997"
+      ],
+      "relationship_evidence_ids": [
+        "ase-tsmc-2022",
+        "ase-tsmc-flow-1997"
+      ],
+      "relationship_source": "https://pr.tsmc.com/english/news/2968",
+      "relationship_source_year": 2022,
+      "evidence_note": "ASE와 Advantest의 패키징·검사 기술 협력 확인. 물량 계약이나 개별 현장 물류와 구분.",
+      "item_evidence_note": "과거 wafer fab→assembly/test 제조 서비스 제휴. 현행 물류는 미확인.",
+      "temporal_status": "historical",
+      "evidence_ids": [
+        "ase-tsmc-2022",
+        "ase-tsmc-flow-1997"
+      ],
+      "legal_entity_scope": "자료의 ASE/ASE(Taiwan)를 ASE Technology Holding 그룹 노드로 표시. 지주사 자체의 직접 계약을 뜻하지 않음."
+    },
+    {
+      "id": "processed-wafer:tsmc>amkor",
+      "from": "tsmc",
+      "to": "amkor",
+      "item": "가공 웨이퍼",
+      "item_id": "processed-wafer",
+      "processes": [
+        "패키징"
+      ],
+      "share_pct": null,
+      "source": "https://pr.tsmc.com/english/news/3174",
+      "source_year": 2024,
+      "status": "출처 있음",
+      "relation_note": "예정 시설의 계약 계획 근거. 현재 가동·납품으로 단정하지 않습니다.",
+      "share_source": null,
+      "share_source_year": null,
+      "share_status": "확인 필요",
+      "model_share_pct": 25.0,
+      "model_source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+      "model_source_year": null,
+      "model_status": "가정값",
+      "checked_at": "2026-10-25",
+      "source_year_basis": "근거 자료의 발표/기준연도",
+      "relationship_status": "출처 있음",
+      "item_status": "확인 필요",
+      "relationship_kind": "planned_contract",
+      "evidence_scope": "planned_contract",
+      "share_disclosure": "공개 경로별 배분 수치 미확보",
+      "item_source": null,
+      "item_source_year": null,
+      "item_evidence_ids": [],
+      "relationship_evidence_ids": [
+        "amkor-tsmc-2024"
+      ],
+      "relationship_source": "https://pr.tsmc.com/english/news/3174",
+      "relationship_source_year": 2024,
+      "evidence_note": "기존 협력과 Arizona 예정 시설의 패키징·검사 계약 계획. 예정 시설을 현재 가동으로 해석하지 않음.",
+      "item_evidence_note": "세부 품목의 고객별 납품·양산 채택 근거는 미확보.",
+      "temporal_status": "planned",
+      "evidence_ids": [
+        "amkor-tsmc-2024"
+      ],
+      "legal_entity_scope": "기업·그룹 단위 연결. 실제 계약 법인·공장별 납품은 별도 확인."
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "정상 상태",
+      "affected": [],
+      "description": "모든 예시 거점과 연결을 정상으로 표시합니다."
+    },
+    {
+      "name": "일본 거점 중단 · 예시",
+      "affected": [
+        "tokyo"
+      ],
+      "description": "선택한 국가 소속으로 묶은 기업들의 공급·수용 능력을 낮추는 예시입니다. 실제 공장 소재국의 가동 중단 예측이 아닙니다."
+    },
+    {
+      "name": "대만 거점 중단 · 예시",
+      "affected": [
+        "taipei"
+      ],
+      "description": "선택한 국가 소속으로 묶은 기업들의 공급·수용 능력을 낮추는 예시입니다. 실제 공장 소재국의 가동 중단 예측이 아닙니다."
+    },
+    {
+      "name": "네덜란드 거점 중단 · 예시",
+      "affected": [
+        "eindhoven"
+      ],
+      "description": "선택한 국가 소속으로 묶은 기업들의 공급·수용 능력을 낮추는 예시입니다. 실제 공장 소재국의 가동 중단 예측이 아닙니다."
+    }
+  ],
+  "schema_version": "linked-demo-1",
+  "ui_limits": {
+    "max_arcs": 15,
+    "labels": {
+      "country": 8,
+      "company": 10,
+      "chain": 12
+    }
+  },
+  "core_companies": {
+    "웨이퍼 제조": [
+      "samsung",
+      "shinetsu",
+      "sumco",
+      "tsmc"
+    ],
+    "산화": [
+      "airliquide",
+      "airproducts",
+      "samsung",
+      "tsmc"
+    ],
+    "포토": [
+      "asml",
+      "fujifilm",
+      "jsr",
+      "samsung",
+      "tok",
+      "tsmc"
+    ],
+    "식각": [
+      "airliquide",
+      "lam",
+      "samsung",
+      "tsmc"
+    ],
+    "증착·이온주입": [
+      "applied",
+      "merck",
+      "samsung",
+      "tsmc"
+    ],
+    "금속배선": [
+      "applied",
+      "merck",
+      "samsung",
+      "tsmc"
+    ],
+    "EDS": [
+      "advantest",
+      "samsung",
+      "teradyne",
+      "tsmc"
+    ],
+    "패키징": [
+      "amkor",
+      "ase",
+      "samsung",
+      "tsmc"
+    ]
+  },
+  "items": [
+    {
+      "id": "polished-wafer",
+      "name": "폴리시드 실리콘 웨이퍼",
+      "category": "material",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "source": "https://www.shinetsu.co.jp/en/products/semiconductor-silicon-business/silicon-wafers/",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "shinetsu",
+          "source": "https://www.shinetsu.co.jp/en/products/semiconductor-silicon-business/silicon-wafers/",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "company_id": "sumco",
+          "source": "https://www.sumcosi.com/english/",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "epi-wafer",
+      "name": "에피택셜 실리콘 웨이퍼",
+      "category": "material",
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "source": "https://www.shinetsu.co.jp/en/products/semiconductor-silicon-business/silicon-wafers/",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "shinetsu",
+          "source": "https://www.shinetsu.co.jp/en/products/semiconductor-silicon-business/silicon-wafers/",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "company_id": "sumco",
+          "source": "https://www.sumcosi.com/english/",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "oxygen",
+      "name": "고순도 산소",
+      "category": "material",
+      "processes": [
+        "산화"
+      ],
+      "source": "https://www.airliquide.com/group/activities/electronics",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "airliquide",
+          "source": "https://www.airliquide.com/group/activities/electronics",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "company_id": "airproducts",
+          "source": "https://www.airproducts.com.cn/en/industries/electronics",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "hydrogen",
+      "name": "고순도 수소",
+      "category": "material",
+      "processes": [
+        "산화"
+      ],
+      "source": "https://www.airliquide.com/group/activities/electronics",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "airliquide",
+          "source": "https://www.airliquide.com/group/activities/electronics",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "company_id": "airproducts",
+          "source": "https://www.airproducts.com.cn/en/industries/electronics",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "photoresist",
+      "name": "포토레지스트",
+      "category": "material",
+      "processes": [
+        "포토"
+      ],
+      "source": "https://www.jsr.co.jp/jsr_e/company/assets/pdf/251211_JSR_corporate2025_EN_rev.pdf",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "jsr",
+          "source": "https://www.jsr.co.jp/jsr_e/company/assets/pdf/251211_JSR_corporate2025_EN_rev.pdf",
+          "source_year": 2025,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "company_id": "tok",
+          "source": "https://www.tok.co.jp/eng/company/overseas",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "developer",
+      "name": "현상액(TMAH)",
+      "category": "material",
+      "processes": [
+        "포토"
+      ],
+      "source": "https://www.fujifilm.com/kr/en/business/semiconductor-materials/photoresist-ancillaries/other-developer",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "fujifilm",
+          "source": "https://www.fujifilm.com/kr/en/business/semiconductor-materials/photoresist-ancillaries/other-developer",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "lithography",
+      "name": "노광 장비",
+      "category": "equipment",
+      "processes": [
+        "포토"
+      ],
+      "source": "https://www.asml.com/en/products",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "asml",
+          "source": "https://www.asml.com/en/products",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "etch-gas",
+      "name": "사불화탄소(CF4)",
+      "category": "material",
+      "processes": [
+        "식각"
+      ],
+      "source": "https://tw.airliquide.com/sites/al_tw/files/2022-06/alfe-0049-cf4-v10-20220221.pdf",
+      "source_year": 2022,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "airliquide",
+          "source": "https://tw.airliquide.com/sites/al_tw/files/2022-06/alfe-0049-cf4-v10-20220221.pdf",
+          "source_year": 2022,
+          "status": "출처 있음",
+          "evidence_ids": [
+            "airliquide-cf4-2022"
+          ],
+          "legal_entity": "Air Liquide Far Eastern",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "chemical_formula": "CF4",
+      "source_scope": "제품·건식 식각 용도만 확인. 반도체 공정 순도/등급·고객은 미확인.",
+      "checked_at": "2026-10-25"
+    },
+    {
+      "id": "etch-tool",
+      "name": "플라즈마 식각 장비",
+      "category": "equipment",
+      "processes": [
+        "식각"
+      ],
+      "source": "https://www.lamresearch.com/products/",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "lam",
+          "source": "https://www.lamresearch.com/products/",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "film-precursor",
+      "name": "박막 전구체",
+      "category": "material",
+      "processes": [
+        "증착·이온주입"
+      ],
+      "source": "https://www.reports.emdgroup.com/en/annualreport/2025/management-report/fundamental-information-about-the-group/research-and-development/electronics.html",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "merck",
+          "source": "https://www.reports.emdgroup.com/en/annualreport/2025/management-report/fundamental-information-about-the-group/research-and-development/electronics.html",
+          "source_year": 2025,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "deposition-tool",
+      "name": "박막 증착 장비",
+      "category": "equipment",
+      "processes": [
+        "증착·이온주입"
+      ],
+      "source": "https://www.appliedmaterials.com/us/en/semiconductor.html",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "applied",
+          "source": "https://www.appliedmaterials.com/us/en/semiconductor.html",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "metal-precursor",
+      "name": "금속 전구체",
+      "category": "material",
+      "processes": [
+        "금속배선"
+      ],
+      "source": "https://www.reports.emdgroup.com/en/annualreport/2025/management-report/fundamental-information-about-the-group/research-and-development/electronics.html",
+      "source_year": 2025,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "merck",
+          "source": "https://www.reports.emdgroup.com/en/annualreport/2025/management-report/fundamental-information-about-the-group/research-and-development/electronics.html",
+          "source_year": 2025,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "interconnect-tool",
+      "name": "금속배선 형성 장비",
+      "category": "equipment",
+      "processes": [
+        "금속배선"
+      ],
+      "source": "https://www.appliedmaterials.com/us/en/semiconductor.html",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "applied",
+          "source": "https://www.appliedmaterials.com/us/en/semiconductor.html",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "wafer-tester",
+      "name": "웨이퍼 전기 검사 장비",
+      "category": "equipment",
+      "processes": [
+        "EDS"
+      ],
+      "source": "https://www.advantest.com/en/products/",
+      "source_year": null,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "advantest",
+          "source": "https://www.advantest.com/en/products/",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "company_id": "teradyne",
+          "source": "https://www.teradyne.com/semiconductor-testing/",
+          "source_year": null,
+          "status": "출처 있음",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "checked_at": "2026-10-25",
+      "source_scope": "소재·제품군 소개의 근거. 고객별 납품과 공정 등급은 별도 확인."
+    },
+    {
+      "id": "processed-wafer",
+      "name": "가공 웨이퍼",
+      "category": "intermediate",
+      "processes": [
+        "패키징"
+      ],
+      "source": "https://pr.tsmc.com/schinese/news/2077",
+      "source_year": 1997,
+      "status": "출처 있음",
+      "product_sources": [
+        {
+          "company_id": "samsung",
+          "source": "https://semiconductor.samsung.com/foundry/",
+          "source_year": null,
+          "status": "출처 있음",
+          "source_scope": "공급 후보의 반도체 제조 역량. 특정 OSAT행 납품과 구분.",
+          "checked_at": "2026-10-25"
+        },
+        {
+          "company_id": "tsmc",
+          "source": "https://www.tsmc.com/english/aboutTSMC",
+          "source_year": null,
+          "status": "출처 있음",
+          "source_scope": "공급 후보의 반도체 제조 역량. 특정 OSAT행 납품과 구분.",
+          "checked_at": "2026-10-25"
+        }
+      ],
+      "source_scope": "웨이퍼 제조→패키징·검사의 일반 제조 흐름 근거. 현재 특정 기업 간 물량과 구분.",
+      "checked_at": "2026-10-25"
+    }
+  ],
+  "core_selection": {
+    "source": "화면 설명을 위해 선정한 대표 후보. 시장 순위·실제 거래 비중을 뜻하지 않음.",
+    "source_year": null,
+    "status": "가정값"
+  },
+  "research_summary": {
+    "checked_at": "2026-10-25",
+    "company_countries_verified": 17,
+    "edges_total": 44,
+    "relationship_evidence_edges": 38,
+    "item_evidence_edges": 9,
+    "historical_item_edges": 6,
+    "actual_shares_verified": 0,
+    "items_with_product_sources": 15,
+    "relationship_kinds": {
+      "supply": 28,
+      "unconfirmed": 6,
+      "collaboration": 6,
+      "service": 2,
+      "qualification": 1,
+      "planned_contract": 1
+    },
+    "note": "기업 관계·협력 근거는 현재 품목별 납품·배분율 확인과 별개. 2026-10-26 업계 공급사 목록 및 공동 연구개발 관계를 보수적으로 재분류.",
+    "reviewed_at": "2026-10-26"
+  },
+  "public_metrics": [
+    {
+      "id": "teradyne-samsung-revenue-2024",
+      "company_id": "teradyne",
+      "counterparty": "samsung",
+      "value": 12.5,
+      "unit": "%",
+      "metric": "고객 유발 연결 매출 비중",
+      "period": 2024,
+      "denominator": "Teradyne 연결 매출",
+      "includes": "Samsung 직접 매출 + 관련 OSAT를 통한 간접 매출",
+      "source": "https://investors.teradyne.com/sec-filings/all-sec-filings/content/0000950170-25-023784/ter-20241231.htm",
+      "source_year": 2024,
+      "publication_date": "2025-02-20",
+      "status": "출처 있음",
+      "evidence_ids": [
+        "teradyne-samsung-fy2024"
+      ],
+      "checked_at": "2026-10-25",
+      "usable_as_edge_share": false,
+      "note": "삼성의 소재·장비 구매 비중이나 특정 공정 배분율로 사용할 수 없음."
+    }
+  ]
+}

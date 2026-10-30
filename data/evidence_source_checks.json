@@ -1,0 +1,386 @@
+{
+  "checked_at": "2026-10-26",
+  "notice": "열람 성공은 개별 주장 검증이 아니며 접근 실패는 제품·관계 부재가 아님.",
+  "checks": [
+    {
+      "url": "https://www.shinetsu.co.jp/en/news/news-release/shin-etsu-presented-with-an-excellent-supplier-award-from-samsung-electronics-for-best-in-value/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://pr.tsmc.com/system/files/newspdf/attachment/083b1ab2191856b8e0f31b46a40dcadafc595e8e/2025%20Supply%20Chain%20Management%20Forum%20Press%20Release%20%28E%29_final_wmn.pdf",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.samsung.com/global/sustainability/policy-file/AYVhOfYaBGoAIx95/2022_Supplier%2BList_220608_F.pdf",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://investor.tsmc.com/static/annualReports/2022/english/ebook/files/basic-html/page106.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://investors.airproducts.com/news-releases/news-release-details/air-products-continues-multi-phase-expansion-support-samsung",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.fujifilm.com/sg/en/news/hq/13138",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://esg.tsmc.com/file/public/2024-TSMC-Responsible-Supply-Chain-Report-e.pdf",
+      "checked_at": "2026-10-26",
+      "status": "unavailable_in_tool"
+    },
+    {
+      "url": "https://semiconductor.samsung.com/news-events/news/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/021126-applied-materials-announces-samsung-electronics-will-join-new-epic-center.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://investors.teradyne.com/sec-filings/all-sec-filings/content/0000950170-25-023784/ter-20241231.htm",
+      "checked_at": "2026-10-26",
+      "status": "unavailable_in_tool"
+    },
+    {
+      "url": "https://pr.tsmc.com/english/news/3174",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://biz.maxell.com/en/sliontec_tapes/list_semiconductor.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://eu.resonac.com/products-top/frontend/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://next.henkel-adhesives.com/uk/en/applications/electronic-component-protection-solutions/underfills.html",
+      "checked_at": "2026-10-26",
+      "status": "unavailable_in_tool"
+    },
+    {
+      "url": "https://www.ccpc.ie/business/wp-content/uploads/sites/3/2023/06/M.23.026-Determination-Public.pdf",
+      "checked_at": "2026-10-26",
+      "status": "unavailable_in_tool"
+    },
+    {
+      "url": "https://www.emdgroup.com/content/dam/web/corporate/non-images/business-specifics/electronics/semiconductors/us/05_media/05b_technical-resources/M4Ward-datasheet-EN-US.pdf",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.entegris.com/shop/en/USD/By-Industry/Microelectronics/Semiconductor/Deposition/Precursors/c/industries-microelectronics-semiconductor-deposition-precursors",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.fujifilm.com/my/en/business/semiconductor-materials/cvd-precursors-chemical-delivery/dielectric-dopant-sources",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.fujifilm.com/us/en/business/semiconductor-materials/polymides-and-pbos",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.kanto.co.jp/english/products/denshi.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.merckgroup.com/content/dam/web/corporate/non-images/business-specifics/electronics/semiconductors/us/05_media/05b_technical-resources/EMD_Global%20Semiconductor%20Solutions%20Insights_Apr%202023.pdf",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.reports.emdgroup.com/en/annualreport/2025/management-report/fundamental-information-about-the-group/research-and-development/electronics.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.ulvac.co.jp/en/products/materials/for_semiconductor/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://my.airliquide.com/gas-application/semiconductor-and-electronics-manufacturing",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://jsr.co.jp/jsr_e/tech/report/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://pr.tsmc.com/schinese/news/3192",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://newsroom.lamresearch.com/A-Glance-at-Lams-Triumphs-and-Trophies-of-2023",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.merckgroup.com/company/responsibility/us/regulations-and-guidelines/Certificate-ISO-9001-EN.pdf",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.advantest.com/document/en/about/sustainability/esg-related-documents/En_SustainabilityReport2025_02.pdf",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://investors.teradyne.com/news-events/press-releases/detail/422/teradyne-awarded-2025-tsmc-open-innovation-platform-oip-partner-of-the-year-for-tsmc-3dfabric-testing",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://asekh.aseglobal.com/Uploads/Pdfs/47c6d9d1-dfb0-4ff9-a66d-4acd5c66b8c0.pdf",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://amkor.com/blog/samsung-electronics-partners-with-amkor-technology-on-the-development-of-leading-edge-h-cube-solution/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://pr.tsmc.com/english/news/2968",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.siltronic.com/en/products/epitaxial-wafers.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://asset.fujifilm.com/master/hq/files/2023-05/03668b3ec4771d2a252242530f04be77/pdf_news_9390_en.pdf",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.sumcosi.com/english/products/lineup.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.airproducts.com.cn/en/industries/electronics",
+      "checked_at": "2026-10-26",
+      "status": "unavailable_in_tool"
+    },
+    {
+      "url": "https://www.tok.co.jp/eng/products/semiconductor-pre",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.teradyne.com/semiconductor-testing/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://electronics.airliquide.com/offer-brands/our-offer/carrier-gases",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.siltronic.com/en/products/polished-wafers.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.henkel-adhesives.com/us/en/industries/electronics/semiconductor-packaging.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.airproducts.com/industries/electronics",
+      "checked_at": "2026-10-26",
+      "status": "unavailable_in_tool"
+    },
+    {
+      "url": "https://www.shinetsu.co.jp/en/products/semiconductor-silicon-business/silicon-wafers/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.asml.com/en/products",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.fujifilm.com/kr/en/business/semiconductor-materials/photoresist-ancillaries/other-developer",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://tw.airliquide.com/sites/al_tw/files/2022-06/alfe-0049-cf4-v10-20220221.pdf",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.lamresearch.com/products/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.appliedmaterials.com/us/en/semiconductor.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.advantest.com/en/products/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.sibelco.com/en/materials/high-purity-quartz",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://reports.wacker.com/2024/annual-report/combined-management-report/segments/wacker-polysilicon.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.hoya.com/en/business/informationtechnology/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.stella-chemifa.co.jp/english/products/cat1/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://eng.sk.com/companies/info/sk-ecoplant-materials",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.5nplus.com/en/news/5n-to-expand-st-george-utah-production-facility-by/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.heraeus-electronics.com/en/products-and-solutions/bonding-wires/fine-bonding-wires/",
+      "checked_at": "2026-10-26",
+      "status": "unavailable_in_tool"
+    },
+    {
+      "url": "https://www.heraeus-electronics.com/en/products-and-solutions/sinter-materials/non-pressure-sinter-materials/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.heraeus-electronics.com/en/products-and-solutions/solder-materials/solder-pastes/advanced-packaging-solder-pastes/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://semiconductor.samsung.com/foundry/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.henkel.com/press-and-media/press-releases-and-kits/2023-04-04-henkel-semiconductor-packaging-innovations-earn-material-supplier-of-the-year-award-1814890",
+      "checked_at": "2026-10-26",
+      "status": "unavailable_in_tool"
+    },
+    {
+      "url": "https://www.henkel.com/press-and-media/press-releases-and-kits/2024-04-05-henkel-semiconductor-capillary-underfill-enables-complex-ai-and-hpc-large-body-advanced-packaging-designs-1943120",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.teradyne.com/artificial-intelligence/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://electronics.airliquide.com/offer-brands/our-offer/electronics-specialty-materials",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://us.nipponsanso.com/industries/electronics/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://eu.resonac.com/products-top/backend/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.fujifilm.com/us/en/business/semiconductor-materials/cmp",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.entegris.com/en/home/resources/industry-insights/chemical-mechanical-planarization.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.nitto.com/us/en/markets/industry/electronic/semicon/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.henkel-adhesives.com/co/en/product/electrically-conductive-adhesives/loctite_ablestikabp8068ta.html",
+      "checked_at": "2026-10-26",
+      "status": "unavailable_in_tool"
+    },
+    {
+      "url": "https://jsr.co.jp/jsr_e/products/em/",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://nmmjx-dc.com/en/products/ng-device/semiconductor.html",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    },
+    {
+      "url": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-08-19-henkel-launches-loctite-ablestik-cdf900-series-conductive-die-attach-film-2223146",
+      "checked_at": "2026-10-26",
+      "status": "text_retrieved"
+    }
+  ]
+}

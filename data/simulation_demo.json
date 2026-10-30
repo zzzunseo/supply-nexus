@@ -1,0 +1,566 @@
+{
+  "notice": "기업 단위 후보 경로에 균등 배분한 가정 계산입니다. share_pct가 null인 미확인 거래를 확정하지 않으며, 실제 점유율·구매 비중·생산량을 뜻하지 않습니다.",
+  "processes": [
+    {
+      "name": "웨이퍼 제조",
+      "order": 1,
+      "required_inputs": [
+        {
+          "item_id": "polished-wafer",
+          "name": "폴리시드 실리콘 웨이퍼",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "polished-wafer:shinetsu>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "polished-wafer:shinetsu>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "polished-wafer:sumco>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "polished-wafer:sumco>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 5,
+          "substitute_fraction": 0.15,
+          "substitute_lead_days": 7,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        },
+        {
+          "item_id": "epi-wafer",
+          "name": "에피택셜 실리콘 웨이퍼",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "epi-wafer:shinetsu>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "epi-wafer:shinetsu>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "epi-wafer:sumco>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "epi-wafer:sumco>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 5,
+          "substitute_fraction": 0.15,
+          "substitute_lead_days": 7,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        }
+      ]
+    },
+    {
+      "name": "산화",
+      "order": 2,
+      "required_inputs": [
+        {
+          "item_id": "oxygen",
+          "name": "고순도 산소",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "oxygen:airliquide>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "oxygen:airliquide>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "oxygen:airproducts>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "oxygen:airproducts>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        },
+        {
+          "item_id": "hydrogen",
+          "name": "고순도 수소",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "hydrogen:airliquide>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "hydrogen:airliquide>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "hydrogen:airproducts>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "hydrogen:airproducts>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        }
+      ]
+    },
+    {
+      "name": "포토",
+      "order": 3,
+      "required_inputs": [
+        {
+          "item_id": "photoresist",
+          "name": "포토레지스트",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "photoresist:jsr>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "photoresist:jsr>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "photoresist:tok>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "photoresist:tok>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        },
+        {
+          "item_id": "developer",
+          "name": "현상액(TMAH)",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "developer:fujifilm>samsung",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "developer:fujifilm>tsmc",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        },
+        {
+          "item_id": "lithography",
+          "name": "노광 장비",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "lithography:asml>samsung",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "lithography:asml>tsmc",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 0,
+          "substitute_fraction": 0,
+          "substitute_lead_days": 0,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        }
+      ]
+    },
+    {
+      "name": "식각",
+      "order": 4,
+      "required_inputs": [
+        {
+          "item_id": "etch-gas",
+          "name": "사불화탄소(CF4)",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "etch-gas:airliquide>samsung",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "etch-gas:airliquide>tsmc",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        },
+        {
+          "item_id": "etch-tool",
+          "name": "플라즈마 식각 장비",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "etch-tool:lam>samsung",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "etch-tool:lam>tsmc",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 0,
+          "substitute_fraction": 0,
+          "substitute_lead_days": 0,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        }
+      ]
+    },
+    {
+      "name": "증착·이온주입",
+      "order": 5,
+      "required_inputs": [
+        {
+          "item_id": "film-precursor",
+          "name": "박막 전구체",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "film-precursor:merck>samsung",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "film-precursor:merck>tsmc",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        },
+        {
+          "item_id": "deposition-tool",
+          "name": "박막 증착 장비",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "deposition-tool:applied>samsung",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "deposition-tool:applied>tsmc",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 0,
+          "substitute_fraction": 0,
+          "substitute_lead_days": 0,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        }
+      ]
+    },
+    {
+      "name": "금속배선",
+      "order": 6,
+      "required_inputs": [
+        {
+          "item_id": "metal-precursor",
+          "name": "금속 전구체",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "metal-precursor:merck>samsung",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "metal-precursor:merck>tsmc",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 4,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        },
+        {
+          "item_id": "interconnect-tool",
+          "name": "금속배선 형성 장비",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "interconnect-tool:applied>samsung",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "interconnect-tool:applied>tsmc",
+              "share_pct": 50.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 0,
+          "substitute_fraction": 0,
+          "substitute_lead_days": 0,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        }
+      ]
+    },
+    {
+      "name": "EDS",
+      "order": 7,
+      "required_inputs": [
+        {
+          "item_id": "wafer-tester",
+          "name": "웨이퍼 전기 검사 장비",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "wafer-tester:advantest>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "wafer-tester:advantest>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "wafer-tester:teradyne>samsung",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "wafer-tester:teradyne>tsmc",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 0,
+          "substitute_fraction": 0,
+          "substitute_lead_days": 0,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        }
+      ]
+    },
+    {
+      "name": "패키징",
+      "order": 8,
+      "required_inputs": [
+        {
+          "item_id": "processed-wafer",
+          "name": "가공 웨이퍼",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "processed-wafer:samsung>ase",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "processed-wafer:samsung>amkor",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "processed-wafer:tsmc>ase",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            },
+            {
+              "edge_id": "processed-wafer:tsmc>amkor",
+              "share_pct": 25.0,
+              "source": "시연용 균등 배분 가정. 시장/구매 점유율 아님.",
+              "source_year": null,
+              "status": "가정값"
+            }
+          ],
+          "buffer_days": 2,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "기존 병목 모델의 시연용 재고·대체 여력 가정. 실제 수치 확인 필요.",
+          "source_year": null,
+          "status": "가정값"
+        }
+      ]
+    }
+  ],
+  "additional_scenarios": [
+    {
+      "name": "일본·대만 동시 중단 · 예시",
+      "affected": [
+        "tokyo",
+        "taipei"
+      ],
+      "description": "일본·대만 소속으로 묶은 모든 기업 후보의 가용률을 동시에 낮추는 가정입니다."
+    }
+  ]
+}

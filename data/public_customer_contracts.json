@@ -1,0 +1,61 @@
+[
+  {
+    "customer": "Micron",
+    "published": "2024-06-05",
+    "site": "미국 Idaho",
+    "materials": [
+      "고순도 질소(N2)"
+    ],
+    "scope": "질소 및 기타 가스 장기 계약 · 신규 설비",
+    "schedule": "2025년 말 가동 예정으로 발표 · 실제 가동 미검증",
+    "lat": 43.6,
+    "lon": -116.2,
+    "source": "https://electronics.airliquide.com/air-liquide-signed-major-contract-support-semiconductor-industry-us-investment-more-250-million",
+    "id": "public-airliquide-0",
+    "supplier": "Air Liquide",
+    "supplier_id": "airliquide",
+    "checked_at": "2026-10-28",
+    "status": "계약 발표 확인 · 공급 가동 미확인",
+    "simulation_eligible": false
+  },
+  {
+    "customer": "VSMC",
+    "published": "2025-06-02",
+    "site": "싱가포르 Tampines",
+    "materials": [
+      "고순도 질소(N2)",
+      "고순도 산소",
+      "고순도 아르곤(Ar)"
+    ],
+    "scope": "질소·산소·아르곤 등 초고순도 가스 장기 계약",
+    "schedule": "2026년 가동 예정으로 발표 · 실제 가동 미검증",
+    "lat": 1.35,
+    "lon": 103.94,
+    "source": "https://www.airliquide.com/group/press-releases-news/2025-06-02/air-liquide-signs-long-term-gas-supply-agreement-vsmc-support-singapores-semiconductor-industry",
+    "id": "public-airliquide-1",
+    "supplier": "Air Liquide",
+    "supplier_id": "airliquide",
+    "checked_at": "2026-10-28",
+    "status": "계약 발표 확인 · 공급 가동 미확인",
+    "simulation_eligible": false
+  },
+  {
+    "customer": "SK hynix",
+    "published": "2026-06-03",
+    "site": "한국 청주 P&T7",
+    "materials": [
+      "고순도 질소(N2)"
+    ],
+    "scope": "질소 생산설비 및 고순도 가스·압축공기 공급 장기 계약 · HBM 패키징",
+    "schedule": "2027년 말 가동 예정 · 미래 공급 계획",
+    "lat": 36.64,
+    "lon": 127.49,
+    "source": "https://www.airliquide.com/group/press-releases-news/2026-06-03/air-liquide-announces-milestone-investment-south-korea-support-sk-hynixs-advanced-ai-memory-chip-0",
+    "id": "public-airliquide-2",
+    "supplier": "Air Liquide",
+    "supplier_id": "airliquide",
+    "checked_at": "2026-10-28",
+    "status": "계약 발표 확인 · 공급 가동 미확인",
+    "simulation_eligible": false
+  }
+]

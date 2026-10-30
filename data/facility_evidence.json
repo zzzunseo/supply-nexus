@@ -1,0 +1,535 @@
+{
+  "version": 1,
+  "checked_at": "2026-10-29",
+  "sources": {
+    "tsmc_2025": {
+      "title": "TSMC 2025 Form 20-F · 생산거점 표",
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm",
+      "as_of": "거점 2026-02-28 / 공정 2025년 말",
+      "locator": "Semiconductor Manufacturing Capacity and Technology, pp.16–17"
+    },
+    "sumco_sites": {
+      "title": "SUMCO Site Data · 사업장별 사업 범위",
+      "url": "https://www.sumcosi.com/english/csr/sitedata.html",
+      "as_of": "웹페이지 확인 2026-10-29",
+      "locator": "각 사업장 Scope of business"
+    },
+    "sumco_address": {
+      "title": "SUMCO Corporate Data · 사업장 주소",
+      "url": "https://www.sumcosi.com/english/corporate/profile.html",
+      "as_of": "웹페이지 확인 2026-10-29",
+      "locator": "Factories and plants"
+    },
+    "hyosung_2016": {
+      "title": "효성 NF3 용연·취저우 생산시설 발표",
+      "url": "https://www.hyosung.com/en/newsroom/view/13108",
+      "as_of": "2016-01-11",
+      "locator": "Yongyeon 3 Plant / Quzhou"
+    },
+    "hyosung_2025": {
+      "title": "효성 특수가스 인수·효성네오켐 출범 발표",
+      "url": "https://blog.hyosung.com/508070",
+      "as_of": "2025-01-23",
+      "locator": "용연·옥산 생산시설 인수 및 취저우 NF3 생산능력"
+    },
+    "hyosung_2026": {
+      "title": "효성 2026년 1분기 공시 · 주요 제품·사업장",
+      "url": "https://kind.krx.co.kr/external/2026/05/14/001452/20260514003158/11013.htm",
+      "as_of": "2026-03-31",
+      "locator": "사업의 내용 / 효성티앤씨 주요 종속회사 생산능력·판매 경로"
+    },
+    "hyosung_network": {
+      "title": "효성화학 사업장 주소 · 사업 양도 전 명칭 주의",
+      "url": "https://www.hyosungchemical.com/en/company/about/global-network",
+      "as_of": "웹페이지 확인 2026-10-29",
+      "locator": "Yongyeon Plant 3 / Oksan Plant"
+    }
+  },
+  "groups": {
+    "tsmc": {
+      "name": "TSMC",
+      "aliases": [
+        "TSMC",
+        "台積電",
+        "대만반도체"
+      ]
+    },
+    "sumco": {
+      "name": "SUMCO",
+      "aliases": [
+        "SUMCO",
+        "섬코",
+        "숨코"
+      ]
+    },
+    "hyosung": {
+      "name": "효성티앤씨 NF3 사업",
+      "aliases": [
+        "효성",
+        "Hyosung",
+        "효성네오켐",
+        "효성화학"
+      ]
+    }
+  },
+  "facilities": [
+    {
+      "id": "facility:tsmc-14",
+      "group": "tsmc",
+      "operator": "TSMC 및 연결 자회사",
+      "name": "TSMC Fab 14",
+      "aliases": [
+        "Fab 14",
+        "Fab14",
+        "14공장"
+      ],
+      "city": "타이난",
+      "lat": 23.0,
+      "lon": 120.2,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "12인치 반도체 위탁생산 · 표의 최첨단 양산 공정 16nm"
+      ],
+      "product_tags": [
+        "foundry",
+        "node:16"
+      ],
+      "source_ids": [
+        "tsmc_2025"
+      ],
+      "note": "표는 최첨단 양산 공정만 기재합니다. 전체 지원 노드·특정 고객 제품·전환 가능성을 뜻하지 않습니다. 다른 수치만으로 공정 불일치를 확정하지 않습니다.",
+      "as_of": "거점 2026-02-28 / 공정 2025년 말",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:tsmc-15",
+      "group": "tsmc",
+      "operator": "TSMC 및 연결 자회사",
+      "name": "TSMC Fab 15",
+      "aliases": [
+        "Fab 15",
+        "Fab15",
+        "15공장"
+      ],
+      "city": "타이중",
+      "lat": 24.1,
+      "lon": 120.7,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "12인치 반도체 위탁생산 · 표의 최첨단 양산 공정 7nm"
+      ],
+      "product_tags": [
+        "foundry",
+        "node:7"
+      ],
+      "source_ids": [
+        "tsmc_2025"
+      ],
+      "note": "표는 최첨단 양산 공정만 기재합니다. 전체 지원 노드·특정 고객 제품·전환 가능성을 뜻하지 않습니다. 다른 수치만으로 공정 불일치를 확정하지 않습니다.",
+      "as_of": "거점 2026-02-28 / 공정 2025년 말",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:tsmc-16",
+      "group": "tsmc",
+      "operator": "TSMC 및 연결 자회사",
+      "name": "TSMC Fab 16",
+      "aliases": [
+        "Fab 16",
+        "Fab16",
+        "난징",
+        "Nanjing"
+      ],
+      "city": "난징",
+      "lat": 32.1,
+      "lon": 118.8,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "12인치 반도체 위탁생산 · 표의 최첨단 양산 공정 16nm"
+      ],
+      "product_tags": [
+        "foundry",
+        "node:16"
+      ],
+      "source_ids": [
+        "tsmc_2025"
+      ],
+      "note": "표는 최첨단 양산 공정만 기재합니다. 전체 지원 노드·특정 고객 제품·전환 가능성을 뜻하지 않습니다. 다른 수치만으로 공정 불일치를 확정하지 않습니다.",
+      "as_of": "거점 2026-02-28 / 공정 2025년 말",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:tsmc-18",
+      "group": "tsmc",
+      "operator": "TSMC 및 연결 자회사",
+      "name": "TSMC Fab 18",
+      "aliases": [
+        "Fab 18",
+        "Fab18",
+        "18공장"
+      ],
+      "city": "타이난",
+      "lat": 23.0,
+      "lon": 120.2,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "12인치 반도체 위탁생산 · 표의 최첨단 양산 공정 3nm"
+      ],
+      "product_tags": [
+        "foundry",
+        "node:3"
+      ],
+      "source_ids": [
+        "tsmc_2025"
+      ],
+      "note": "표는 최첨단 양산 공정만 기재합니다. 전체 지원 노드·특정 고객 제품·전환 가능성을 뜻하지 않습니다. 다른 수치만으로 공정 불일치를 확정하지 않습니다.",
+      "as_of": "거점 2026-02-28 / 공정 2025년 말",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:tsmc-21",
+      "group": "tsmc",
+      "operator": "TSMC 및 연결 자회사",
+      "name": "TSMC Fab 21",
+      "aliases": [
+        "Fab 21",
+        "Fab21",
+        "애리조나",
+        "Arizona"
+      ],
+      "city": "애리조나 피닉스",
+      "lat": 33.4,
+      "lon": -112.1,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "12인치 반도체 위탁생산 · 표의 최첨단 양산 공정 5nm"
+      ],
+      "product_tags": [
+        "foundry",
+        "node:5"
+      ],
+      "source_ids": [
+        "tsmc_2025"
+      ],
+      "note": "표는 최첨단 양산 공정만 기재합니다. 전체 지원 노드·특정 고객 제품·전환 가능성을 뜻하지 않습니다. 다른 수치만으로 공정 불일치를 확정하지 않습니다.",
+      "as_of": "거점 2026-02-28 / 공정 2025년 말",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:tsmc-23",
+      "group": "tsmc",
+      "operator": "TSMC 및 연결 자회사",
+      "name": "TSMC Fab 23",
+      "aliases": [
+        "Fab 23",
+        "Fab23",
+        "구마모토",
+        "Kumamoto",
+        "JASM"
+      ],
+      "city": "구마모토현",
+      "lat": 32.8,
+      "lon": 130.7,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "12인치 반도체 위탁생산 · 표의 최첨단 양산 공정 28nm"
+      ],
+      "product_tags": [
+        "foundry",
+        "node:28"
+      ],
+      "source_ids": [
+        "tsmc_2025"
+      ],
+      "note": "표는 최첨단 양산 공정만 기재합니다. 전체 지원 노드·특정 고객 제품·전환 가능성을 뜻하지 않습니다. 다른 수치만으로 공정 불일치를 확정하지 않습니다.",
+      "as_of": "거점 2026-02-28 / 공정 2025년 말",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:sumco-nagahama",
+      "group": "sumco",
+      "operator": "SUMCO Corporation",
+      "name": "SUMCO 규슈 나가하마",
+      "aliases": [
+        "나가하마",
+        "Nagahama"
+      ],
+      "city": "이마리",
+      "lat": 33.3,
+      "lon": 129.9,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "실리콘 웨이퍼"
+      ],
+      "product_tags": [
+        "silicon-wafer"
+      ],
+      "source_ids": [
+        "sumco_sites",
+        "sumco_address"
+      ],
+      "note": "공장별 PW/EPI·직경·등급·인증은 이번 자료에서 미확인. 잉곳과 완성 웨이퍼를 같은 생산 단계로 취급하지 않습니다.",
+      "as_of": "웹페이지 확인 2026-10-29",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:sumco-kubara",
+      "group": "sumco",
+      "operator": "SUMCO Corporation",
+      "name": "SUMCO 규슈 구바라",
+      "aliases": [
+        "구바라",
+        "쿠바라",
+        "Kubara"
+      ],
+      "city": "이마리",
+      "lat": 33.3,
+      "lon": 129.9,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "단결정 실리콘 잉곳",
+        "실리콘 웨이퍼"
+      ],
+      "product_tags": [
+        "silicon-ingot",
+        "silicon-wafer"
+      ],
+      "source_ids": [
+        "sumco_sites",
+        "sumco_address"
+      ],
+      "note": "공장별 PW/EPI·직경·등급·인증은 이번 자료에서 미확인. 잉곳과 완성 웨이퍼를 같은 생산 단계로 취급하지 않습니다.",
+      "as_of": "웹페이지 확인 2026-10-29",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:sumco-saga",
+      "group": "sumco",
+      "operator": "SUMCO Corporation",
+      "name": "SUMCO 규슈 사가",
+      "aliases": [
+        "사가",
+        "Saga",
+        "Kohoku"
+      ],
+      "city": "사가현 고호쿠",
+      "lat": 33.2,
+      "lon": 130.2,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "단결정 실리콘 잉곳",
+        "실리콘 웨이퍼"
+      ],
+      "product_tags": [
+        "silicon-ingot",
+        "silicon-wafer"
+      ],
+      "source_ids": [
+        "sumco_sites",
+        "sumco_address"
+      ],
+      "note": "공장별 PW/EPI·직경·등급·인증은 이번 자료에서 미확인. 잉곳과 완성 웨이퍼를 같은 생산 단계로 취급하지 않습니다.",
+      "as_of": "웹페이지 확인 2026-10-29",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:sumco-yonezawa",
+      "group": "sumco",
+      "operator": "SUMCO Corporation",
+      "name": "SUMCO 요네자와",
+      "aliases": [
+        "요네자와",
+        "Yonezawa"
+      ],
+      "city": "요네자와",
+      "lat": 37.9,
+      "lon": 140.1,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "단결정 실리콘 잉곳"
+      ],
+      "product_tags": [
+        "silicon-ingot"
+      ],
+      "source_ids": [
+        "sumco_sites",
+        "sumco_address"
+      ],
+      "note": "공장별 PW/EPI·직경·등급·인증은 이번 자료에서 미확인. 잉곳과 완성 웨이퍼를 같은 생산 단계로 취급하지 않습니다.",
+      "as_of": "웹페이지 확인 2026-10-29",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:sumco-chitose",
+      "group": "sumco",
+      "operator": "SUMCO Corporation",
+      "name": "SUMCO 치토세",
+      "aliases": [
+        "치토세",
+        "Chitose"
+      ],
+      "city": "치토세",
+      "lat": 42.8,
+      "lon": 141.7,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "실리콘 웨이퍼"
+      ],
+      "product_tags": [
+        "silicon-wafer"
+      ],
+      "source_ids": [
+        "sumco_sites",
+        "sumco_address"
+      ],
+      "note": "공장별 PW/EPI·직경·등급·인증은 이번 자료에서 미확인. 잉곳과 완성 웨이퍼를 같은 생산 단계로 취급하지 않습니다.",
+      "as_of": "웹페이지 확인 2026-10-29",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:hyosung-yongyeon",
+      "group": "hyosung",
+      "operator": "효성네오켐 · 효성티앤씨 그룹",
+      "name": "효성 용연 NF3 거점",
+      "aliases": [
+        "용연",
+        "Yongyeon",
+        "울산"
+      ],
+      "city": "울산",
+      "lat": 35.5,
+      "lon": 129.3,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "NF3 · 과거 시설 발표와 사업 인수 자료 연결"
+      ],
+      "product_tags": [
+        "NF3"
+      ],
+      "source_ids": [
+        "hyosung_2016",
+        "hyosung_2025",
+        "hyosung_2026",
+        "hyosung_network"
+      ],
+      "note": "과거 용연3공장 발표와 현재 사업 소속을 구분. 라인별 현행 등급·가동 상태는 추가 확인.",
+      "as_of": "시설 근거 2016 / 사업 소속 자료 2025–2026",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:hyosung-quzhou",
+      "group": "hyosung",
+      "operator": "Hyosung New Material & High Technology (Quzhou) · 효성티앤씨 그룹",
+      "name": "효성 취저우 NF3 거점",
+      "aliases": [
+        "취저우",
+        "취조우",
+        "Quzhou"
+      ],
+      "city": "취저우",
+      "lat": 28.9,
+      "lon": 118.9,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "NF3"
+      ],
+      "product_tags": [
+        "NF3"
+      ],
+      "source_ids": [
+        "hyosung_2025",
+        "hyosung_2026"
+      ],
+      "note": "동일 그룹 내 별도 법인입니다. 국경 간 공급·인증·용기·운송 조건을 확인해야 합니다.",
+      "as_of": "2025 발표 / 2026-03-31 공시",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    },
+    {
+      "id": "facility:hyosung-oksan",
+      "group": "hyosung",
+      "operator": "효성네오켐 · 효성티앤씨 그룹",
+      "name": "효성 옥산 특수가스 거점",
+      "aliases": [
+        "옥산",
+        "Oksan"
+      ],
+      "city": "청주 옥산",
+      "lat": 36.7,
+      "lon": 127.4,
+      "coordinate_precision": "도시·지역 개략 대표점 · 실제 공장 좌표 아님",
+      "coordinate_method": "공식 자료의 소재 지역을 지도상 개략 표시",
+      "products": [
+        "특수가스 생산시설 · NF3의 공장별 배정은 미확인"
+      ],
+      "product_tags": [],
+      "source_ids": [
+        "hyosung_2025",
+        "hyosung_2026",
+        "hyosung_network"
+      ],
+      "note": "사업부 통합 표의 NF3를 모든 공장에 배정하지 않습니다. NF3 내부 대안으로 확정하지 않습니다.",
+      "as_of": "2025 발표 / 2026-03-31 공시",
+      "capacity_available": null,
+      "qualification": null,
+      "transfer_days": null,
+      "disruption_confirmed": false
+    }
+  ],
+  "limits": [
+    "기업별 전체 공장 목록이 아닌 공개자료로 확인한 일부 거점입니다.",
+    "사건 확인 자료가 아닙니다. 질문·선택만으로 피해를 확정하지 않습니다.",
+    "동일 기업·그룹의 제품군 중복은 실제 전환 승인이나 여유 생산능력 근거가 아닙니다."
+  ]
+}

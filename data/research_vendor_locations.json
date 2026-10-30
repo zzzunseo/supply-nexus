@@ -1,0 +1,748 @@
+{
+  "checked_at": "2026-10-29",
+  "locations": [
+    {
+      "id": "research:sk-siltron",
+      "name": "SK siltron",
+      "aliases": [
+        "SK실트론",
+        "SK 실트론"
+      ],
+      "site": "SK siltron 구미 3공장·본사",
+      "kind": "웨이퍼 생산거점",
+      "lat": 36.0943391,
+      "lon": 128.4124407,
+      "address": "132-11, 3gongdan 3-ro, Gumi City, Korea",
+      "source": "https://www.sksiltron.com/m/en/company/office01.do",
+      "coordinate_source": "https://www.google.co.kr/maps/place/%EA%B2%BD%EC%83%81%EB%B6%81%EB%8F%84+%EA%B5%AC%EB%AF%B8%EC%8B%9C+%EC%8B%9C%EB%AF%B8%EB%8F%99+3%EA%B3%B5%EB%8B%A83%EB%A1%9C+132-11/@36.0943434,128.410252,17z/data=!3m1!4b1!4m5!3m4!1s0x3565c3f0b441005f:0x2d606e2c6cfd6962!8m2!3d36.0943391!4d128.4124407",
+      "precision": "공식 페이지 연결 지도 POI",
+      "scope": "공식 소개: 300mm Growing/Wafering, 200·300mm EPI. 고객별 납품·공급 여력 미확인."
+    },
+    {
+      "id": "research:efc",
+      "name": "EFC Gases & Advanced Materials",
+      "aliases": [
+        "EFC",
+        "EFC Gases"
+      ],
+      "site": "EFC Hopkinton 본사",
+      "kind": "본사",
+      "address": "239 South Street, Hopkinton, MA 01748",
+      "source": "https://www.efcgases.com/",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=239+South+Street%2C+Hopkinton%2C+MA+01748&benchmark=Public_AR_Current&format=json",
+      "lat": 42.190282622596,
+      "lon": -71.539349387196,
+      "precision": "미 Census 공식 주소 지오코딩 · 도로 구간 보간 좌표, 건물 확정 아님",
+      "scope": "NF3 제품 자료와 본사 위치를 연결. NF3 생산공장 위치를 뜻하지 않음.",
+      "matched_address": "239 SOUTH ST, HOPKINTON, MA, 01748"
+    },
+    {
+      "id": "research:matheson",
+      "name": "MATHESON · Nippon Sanso",
+      "aliases": [
+        "MATHESON",
+        "Nippon Sanso Matheson"
+      ],
+      "site": "MATHESON Montgomeryville 기술센터",
+      "kind": "장비 기술센터",
+      "address": "166 Keystone Drive, Montgomeryville, PA 18936",
+      "source": "https://store.mathesongas.com/contact-us/",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=166+Keystone+Drive%2C+Montgomeryville%2C+PA+18936&benchmark=Public_AR_Current&format=json",
+      "lat": 40.217175507164,
+      "lon": -75.234324829812,
+      "precision": "미 Census 공식 주소 지오코딩 · 도로 구간 보간 좌표, 건물 확정 아님",
+      "scope": "공식 연락처의 Equipment Technology Center. NF3 생산공장 위치를 뜻하지 않음.",
+      "matched_address": "166 KEYSTONE DR, MONTGOMERYVILLE, PA, 18936"
+    },
+    {
+      "id": "research:globalwafers",
+      "name": "GlobalWafers",
+      "aliases": [
+        "GlobalWafers MEMC"
+      ],
+      "site": "GlobalWafers MEMC St. Peters 등록 사업장",
+      "kind": "등록 사업장",
+      "lat": 38.818701614251,
+      "lon": -90.659042772421,
+      "address": "501 Pearl Drive, St. Peters, MO 63376",
+      "source": "https://www.gw-semi.com/overview-locations/",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=501+Pearl+Drive%2C+St+Peters%2C+MO+63376&benchmark=Public_AR_Current&format=json",
+      "precision": "미국 Census 도로 주소 보간 좌표 · 건물·공장 경계 좌표 아님",
+      "scope": "기업 위치 참고. 선택 제품의 출하 공장·고객 납품·공급 여력 미확인."
+    },
+    {
+      "id": "research:entegris",
+      "name": "Entegris",
+      "aliases": [
+        "ENTEGRIS"
+      ],
+      "site": "Entegris Billerica 본사",
+      "kind": "본사",
+      "lat": 42.5481958,
+      "lon": -71.2846076,
+      "address": "129 Concord Road, Billerica, MA 01821 USA",
+      "source": "https://www.entegris.com/en/home/about-us/locations.html",
+      "coordinate_source": "https://goo.gl/maps/VG3EbiMMVhS8amo86",
+      "precision": "공식 위치 페이지에 연결된 지도 POI 좌표",
+      "scope": "기업 위치 참고. 선택 제품의 실제 출하 공장·고객 납품·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:rec-silicon",
+      "name": "REC Silicon",
+      "aliases": [
+        "REC Advanced Silicon Materials"
+      ],
+      "site": "REC Silicon Silver Bow 등록 생산거점",
+      "kind": "등록 생산거점",
+      "lat": 45.97322110916,
+      "lon": -112.68689529665,
+      "address": "119140 Rick Jones Way, Silver Bow, Montana 59750 USA",
+      "source": "https://recsilicon.com/contact/",
+      "coordinate_source": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=119140+Rick+Jones+Way+Silver+Bow+MT+59750&benchmark=Public_AR_Current&format=json",
+      "precision": "미국 Census 도로 주소 보간 좌표 · 건물·공장 경계 좌표 아님",
+      "scope": "기업 위치 참고. 선택 제품의 실제 출하 공장·고객 납품·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:solvay",
+      "name": "Solvay",
+      "aliases": [
+        "SOLVAY"
+      ],
+      "site": "Solvay Brussels 본사",
+      "kind": "본사",
+      "lat": 50.9011235,
+      "lon": 4.4003779,
+      "address": "Rue de Ransbeek 310, 1120 Brussels, Belgium",
+      "source": "https://www.solvay.com/en/solvay-around-the-world/belgium",
+      "coordinate_source": "https://www.google.com/maps/place/Solvay/@50.9011235,4.3981892,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3c2c4590b2509:0x6a89626c82500764!8m2!3d50.9011235!4d4.4003779",
+      "precision": "공식 위치 페이지에 연결된 지도 POI 좌표",
+      "scope": "기업 위치 참고. 선택 제품의 실제 출하 공장·고객 납품·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:siltronic",
+      "name": "Siltronic",
+      "aliases": [
+        "실트로닉"
+      ],
+      "site": "Siltronic · Munich 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "Einsteinstraße 172, 81677 München, Germany",
+      "source": "https://www.siltronic.com/en/our-company/sites.html",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Munich&count=100&language=en&format=json",
+      "lat": 48.13743,
+      "lon": 11.57549,
+      "country_code": "DE",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:tel",
+      "name": "Tokyo Electron",
+      "aliases": [
+        "TEL",
+        "도쿄일렉트론"
+      ],
+      "site": "Tokyo Electron · Tokyo 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "Akasaka Biz Tower, 5-3-1 Akasaka, Minato-ku, Tokyo",
+      "source": "https://www.tel.com/about/summary/",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Tokyo&count=100&language=en&format=json",
+      "lat": 35.6895,
+      "lon": 139.69171,
+      "country_code": "JP",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:wonik-ips",
+      "name": "원익IPS",
+      "aliases": [
+        "WONIK IPS"
+      ],
+      "site": "원익IPS · Pyeongtaek-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 평택시 진위면 진위산단로 75",
+      "source": "https://expo.semi.org/europa2025/public/eBooth.aspx?BoothID=656491",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Pyeongtaek&count=100&language=en&format=json",
+      "lat": 36.99472,
+      "lon": 127.08889,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:psk",
+      "name": "PSK",
+      "aliases": [
+        "피에스케이"
+      ],
+      "site": "PSK · Seongnam-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 성남시 수정구 금토로 75",
+      "source": "https://pskinc.com/index.php",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Seongnam&count=100&language=en&format=json",
+      "lat": 37.43861,
+      "lon": 127.13778,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:ap-systems",
+      "name": "AP시스템",
+      "aliases": [
+        "AP Systems"
+      ],
+      "site": "AP시스템 · Hwaseong-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 화성시 동탄산단8길 15-5",
+      "source": "https://www.apsystems.co.kr/",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Hwaseong&count=100&language=en&format=json",
+      "lat": 37.20682,
+      "lon": 126.8169,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:yest",
+      "name": "예스티",
+      "aliases": [
+        "YEST"
+      ],
+      "site": "예스티 · Pyeongtaek-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 평택시 진위면 마산12로 27",
+      "source": "https://yest.co.kr/ko/establishment-information.asp",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Pyeongtaek&count=100&language=en&format=json",
+      "lat": 36.99472,
+      "lon": 127.08889,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:sns-tech",
+      "name": "에스앤에스텍",
+      "aliases": [
+        "S&S Tech",
+        "에스엔에스텍"
+      ],
+      "site": "에스앤에스텍 · Daegu 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "대구광역시 달서구 호산동로 42",
+      "source": "https://www.snstech.co.kr/renew/html/sub01_04.asp",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Daegu&count=100&language=en&format=json",
+      "lat": 35.87028,
+      "lon": 128.59111,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:fst",
+      "name": "에프에스티",
+      "aliases": [
+        "FST",
+        "Fine Semitech"
+      ],
+      "site": "에프에스티 · Hwaseong-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 화성시 동탄산단6길 15-23",
+      "source": "https://www.fstc.co.kr/en/index.php",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Hwaseong&count=100&language=en&format=json",
+      "lat": 37.20682,
+      "lon": 126.8169,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:vm",
+      "name": "브이엠",
+      "aliases": [
+        "VM",
+        "APTC",
+        "에이피티씨"
+      ],
+      "site": "브이엠 · Icheon-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 이천시 마장면 서이천로 58-47",
+      "source": "https://www.vmsemi.com/kor/ContactUs",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Icheon&count=100&language=en&format=json",
+      "lat": 37.27917,
+      "lon": 127.4425,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:soulbrain",
+      "name": "솔브레인",
+      "aliases": [
+        "Soulbrain"
+      ],
+      "site": "솔브레인 · Seongnam-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 성남시 수정구 금토로 52",
+      "source": "https://www.soulbrain.co.kr/",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Seongnam&count=100&language=en&format=json",
+      "lat": 37.43861,
+      "lon": 127.13778,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:enf",
+      "name": "ENF테크놀로지",
+      "aliases": [
+        "ENF Technology",
+        "이엔에프테크놀로지"
+      ],
+      "site": "ENF테크놀로지 · Yongin-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 용인시 기흥구 탑실로35번길 14",
+      "source": "https://www.enftech.com/",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Yongin&count=100&language=en&format=json",
+      "lat": 37.29686,
+      "lon": 127.08042,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:asm",
+      "name": "ASM",
+      "aliases": [
+        "ASM International"
+      ],
+      "site": "ASM · Almere Stad 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "Versterkerstraat 8, 1322 AP Almere, Netherlands",
+      "source": "https://www.asm.com/contact-us",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Almere&count=100&language=en&format=json",
+      "lat": 52.37025,
+      "lon": 5.21413,
+      "country_code": "NL",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:jusung",
+      "name": "주성엔지니어링",
+      "aliases": [
+        "Jusung Engineering"
+      ],
+      "site": "주성엔지니어링 · Gwangju 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 광주시 오포로 240",
+      "source": "https://jusung.com/document/display",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Gwangju&count=100&language=en&format=json",
+      "lat": 37.41,
+      "lon": 127.25722,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:eugene-tech",
+      "name": "유진테크",
+      "aliases": [
+        "Eugene Technology"
+      ],
+      "site": "유진테크 · Yongin-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 용인시 처인구 양지면 추계로 42",
+      "source": "https://kind.krx.co.kr/external/2026/01/21/000530/20260121001445/11333.htm",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Yongin&count=100&language=en&format=json",
+      "lat": 37.29686,
+      "lon": 127.08042,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:tes",
+      "name": "테스",
+      "aliases": [
+        "TES"
+      ],
+      "site": "테스 · Yongin-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 용인시 처인구 양지읍 중부대로 2374-36",
+      "source": "https://hites.co.kr/bbs/board.php?bo_table=a1",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Yongin&count=100&language=en&format=json",
+      "lat": 37.29686,
+      "lon": 127.08042,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:kc-tech",
+      "name": "케이씨텍",
+      "aliases": [
+        "KC Tech",
+        "KCTech"
+      ],
+      "site": "케이씨텍 · Anseong 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 안성시 미양면 제2공단3길 12",
+      "source": "https://kctech.com/",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Anseong&count=100&language=en&format=json",
+      "lat": 37.01083,
+      "lon": 127.27028,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:tesna",
+      "name": "두산테스나",
+      "aliases": [
+        "Doosan Tesna"
+      ],
+      "site": "두산테스나 · Pyeongtaek-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 평택시 산단로16번길 72",
+      "source": "https://www.doosan.com/en/network",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Pyeongtaek&count=100&language=en&format=json",
+      "lat": 36.99472,
+      "lon": 127.08889,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:leeno",
+      "name": "리노공업",
+      "aliases": [
+        "LEENO",
+        "Leeno Industrial"
+      ],
+      "site": "리노공업 · Busan 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "부산광역시 강서구 미음산단로105번길 10",
+      "source": "https://kind.krx.co.kr/external/2026/03/18/000195/20260318000896/11011.htm",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Busan&count=100&language=en&format=json",
+      "lat": 35.10168,
+      "lon": 129.03004,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:yc",
+      "name": "와이씨",
+      "aliases": [
+        "YC",
+        "YIK"
+      ],
+      "site": "와이씨 · Seongnam-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 성남시 분당구 판교로255번길 28",
+      "source": "https://www.yccorp.com/kr/index.php",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Seongnam&count=100&language=en&format=json",
+      "lat": 37.43861,
+      "lon": 127.13778,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:di",
+      "name": "디아이",
+      "aliases": [
+        "DI Corporation"
+      ],
+      "site": "디아이 · Seoul 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "서울특별시 강남구 논현로 703",
+      "source": "https://kind.krx.co.kr/corpdetail/totalinfo.do?isurCd=00316&kisComCd=360392&method=searchTotalInfo&repIsuCd=KR7003160009",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Seoul&count=100&language=en&format=json",
+      "lat": 37.566,
+      "lon": 126.9784,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:hanmi",
+      "name": "한미반도체",
+      "aliases": [
+        "Hanmi Semiconductor"
+      ],
+      "site": "한미반도체 · Incheon 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "인천광역시 가좌로30번길 14",
+      "source": "https://www.hanmisemi.com/",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Incheon&count=100&language=en&format=json",
+      "lat": 37.45646,
+      "lon": 126.70515,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:hana-micron",
+      "name": "하나마이크론",
+      "aliases": [
+        "Hana Micron"
+      ],
+      "site": "하나마이크론 · Asan 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "충남 아산시 음봉면 연암율금로 77",
+      "source": "https://hanamicron.com/",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Asan&count=100&language=en&format=json",
+      "lat": 36.78361,
+      "lon": 127.00417,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:nepes",
+      "name": "네패스",
+      "aliases": [
+        "Nepes"
+      ],
+      "site": "네패스 · Cheongju-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "충북 청주시 청원구 오창읍 과학산업2로 587-32",
+      "source": "https://www.nepes.co.kr/kr/business/semiconductor/overview.php",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Cheongju&count=100&language=en&format=json",
+      "lat": 36.63722,
+      "lon": 127.48972,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:sfa-semicon",
+      "name": "SFA반도체",
+      "aliases": [
+        "SFA Semicon"
+      ],
+      "site": "SFA반도체 · Cheonan 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "충남 천안시 서북구 백석공단7로 16",
+      "source": "https://kind.krx.co.kr/external/2026/05/15/002777/20260515006322/11013.htm",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Cheonan&count=100&language=en&format=json",
+      "lat": 36.8065,
+      "lon": 127.1522,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:eo-technics",
+      "name": "이오테크닉스",
+      "aliases": [
+        "EO Technics"
+      ],
+      "site": "이오테크닉스 · Anyang-si 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경기도 안양시 동안구 동편로 91",
+      "source": "https://www.eotechnics.com/page/main/main.php",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Anyang&count=100&language=en&format=json",
+      "lat": 37.3925,
+      "lon": 126.92694,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:sk-specialty",
+      "name": "SK specialty (자료 표기)",
+      "aliases": [
+        "SK specialty",
+        "SK스페셜티"
+      ],
+      "site": "SK specialty (자료 표기) · Yeongju 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "경북 영주시 가흥공단로 59-33",
+      "source": "https://www.skspecialty.com/new/eng/html/main/",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Yeongju&count=100&language=en&format=json",
+      "lat": 36.82167,
+      "lon": 128.63083,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:fujimi",
+      "name": "FUJIMI",
+      "aliases": [
+        "후지미"
+      ],
+      "site": "FUJIMI · Kiyosu 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "1-1 Chiryo-2, Nishibiwajima-cho, Kiyosu, Aichi, Japan",
+      "source": "https://www.fujimiinc.co.jp/english/company/overview.html",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Kiyosu&count=100&language=en&format=json",
+      "lat": 35.21667,
+      "lon": 136.83333,
+      "country_code": "JP",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:gnc",
+      "name": "GNC Materials",
+      "aliases": [
+        "GNC MATERIALS INC."
+      ],
+      "site": "GNC Materials · Seoul 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "서울 영등포구 국제금융로 70 미원빌딩 609호",
+      "source": "https://gncmat.com/?page_id=1616",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Seoul&count=100&language=en&format=json",
+      "lat": 37.566,
+      "lon": 126.9784,
+      "country_code": "KR",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:messer",
+      "name": "Messer",
+      "aliases": [
+        "메싸"
+      ],
+      "site": "Messer · Bad Soden am Taunus 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "Messer-Platz 1, 65812 Bad Soden am Taunus, Germany",
+      "source": "https://www.messergroup.com/en/web/gaseanwendungen/imprint",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Bad+Soden+am+Taunus&count=100&language=en&format=json",
+      "lat": 50.1408,
+      "lon": 8.50449,
+      "country_code": "DE",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:linde",
+      "name": "Linde",
+      "aliases": [
+        "Linde Electronics",
+        "린데"
+      ],
+      "site": "Linde · Pullach im Isartal 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "Dr.-Carl-von-Linde-Strasse 6-14, 82049 Pullach, Germany",
+      "source": "https://www.linde-gas.com/privacy-notice",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Pullach&count=100&language=en&format=json",
+      "lat": 48.06122,
+      "lon": 11.52148,
+      "country_code": "DE",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:daikin",
+      "name": "DAIKIN",
+      "aliases": [
+        "다이킨"
+      ],
+      "site": "DAIKIN · Osaka 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "1-13-1 Umeda, Kita-ku, Osaka 530-0001, Japan",
+      "source": "https://www.daikinchemicals.com/term-use.html",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Osaka&count=100&language=en&format=json",
+      "lat": 34.69379,
+      "lon": 135.50107,
+      "country_code": "JP",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:stella",
+      "name": "STELLA CHEMIFA",
+      "aliases": [
+        "스텔라케미파"
+      ],
+      "site": "STELLA CHEMIFA · Osaka 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "4-1-1 Fushimi-machi, Chuo-ku, Osaka, Japan",
+      "source": "https://www.stella-chemifa.co.jp/english/company/network.html",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Osaka&count=100&language=en&format=json",
+      "lat": 34.69379,
+      "lon": 135.50107,
+      "country_code": "JP",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:kanto",
+      "name": "KANTO CHEMICAL",
+      "aliases": [
+        "간토화학"
+      ],
+      "site": "KANTO CHEMICAL · Tokyo 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "2-1 Nihonbashi Muromachi 2-chome, Chuo-ku, Tokyo, Japan",
+      "source": "https://www.kanto.co.jp/english/corp/outline.html",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Tokyo&count=100&language=en&format=json",
+      "lat": 35.6895,
+      "lon": 139.69171,
+      "country_code": "JP",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "research:nyacol",
+      "name": "NYACOL",
+      "aliases": [
+        "Nyacol Nano Technologies"
+      ],
+      "site": "NYACOL · Ashland 소재지(도시 기준)",
+      "kind": "공식 주소 소재 도시",
+      "address": "211 Megunko Road, Ashland, MA 01721, USA",
+      "source": "https://www.nyacol.com/contact-us/",
+      "coordinate_source": "https://geocoding-api.open-meteo.com/v1/search?name=Ashland&count=100&language=en&format=json",
+      "lat": 42.26121,
+      "lon": -71.4634,
+      "country_code": "US",
+      "precision": "Open-Meteo / GeoNames 도시 대표 좌표 · 건물·공장 좌표 아님",
+      "scope": "공식 주소의 소재 도시를 표시. 실제 출하 공장·현재 고객 계약·대체 승인·공급 여력은 미확인.",
+      "checked_at": "2026-10-29"
+    }
+  ]
+}

@@ -1,0 +1,2035 @@
+{
+  "version": 1,
+  "checked_at": "2026-10-26",
+  "notice": "제품 존재/용도와 실제 계약을 구분. 기업 소속국은 생산국이 아니며 전체 공급 경로·재고·우회량·인증일은 시나리오 가정.",
+  "vendors": [
+    {
+      "id": "linde",
+      "name": "Linde Electronics",
+      "country": "다국적",
+      "aliases": [
+        "린데",
+        "linde"
+      ],
+      "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics"
+    },
+    {
+      "id": "matheson",
+      "name": "Nippon Sanso Matheson",
+      "country": "미국",
+      "aliases": [
+        "매티슨",
+        "메티슨",
+        "matheson",
+        "니폰산소"
+      ],
+      "source": "https://us.nipponsanso.com/industries/electronics/"
+    },
+    {
+      "id": "kanto",
+      "name": "Kanto Chemical",
+      "country": "일본",
+      "aliases": [
+        "간토화학",
+        "칸토",
+        "kanto"
+      ],
+      "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html"
+    },
+    {
+      "id": "entegris",
+      "name": "Entegris",
+      "country": "미국",
+      "aliases": [
+        "인테그리스",
+        "엔테그리스",
+        "entegris"
+      ],
+      "source": "https://www.entegris.com/en/home/resources/industry-insights/chemical-mechanical-planarization.html"
+    },
+    {
+      "id": "resonac",
+      "name": "Resonac",
+      "country": "일본",
+      "aliases": [
+        "레조낙",
+        "레조나크",
+        "resonac"
+      ],
+      "source": "https://eu.resonac.com/products-top/backend/"
+    },
+    {
+      "id": "henkel",
+      "name": "Henkel",
+      "country": "독일",
+      "aliases": [
+        "헨켈",
+        "henkel"
+      ],
+      "source": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-08-19-henkel-launches-loctite-ablestik-cdf900-series-conductive-die-attach-film-2223146"
+    },
+    {
+      "id": "nitto",
+      "name": "Nitto Denko",
+      "country": "일본",
+      "aliases": [
+        "닛토",
+        "니토",
+        "nitto"
+      ],
+      "source": "https://www.nitto.com/us/en/markets/industry/electronic/semicon/"
+    },
+    {
+      "id": "maxell",
+      "name": "Maxell",
+      "country": "일본",
+      "aliases": [
+        "맥셀",
+        "maxell"
+      ],
+      "source": "https://biz.maxell.com/en/sliontec_tapes/list_semiconductor.html"
+    },
+    {
+      "id": "siltronic",
+      "name": "Siltronic",
+      "country": "독일",
+      "aliases": [
+        "실트로닉",
+        "siltronic"
+      ],
+      "source": "https://www.siltronic.com/en/products/epitaxial-wafers.html"
+    },
+    {
+      "id": "ulvac",
+      "name": "ULVAC Materials",
+      "country": "일본",
+      "aliases": [
+        "알박",
+        "울박",
+        "ulvac"
+      ],
+      "source": "https://www.ulvac.co.jp/en/products/materials/for_semiconductor/"
+    }
+  ],
+  "materials": [
+    {
+      "id": "nitrogen",
+      "name": "고순도 질소(N2)",
+      "group": "특수가스",
+      "aliases": [
+        "질소",
+        "N2"
+      ],
+      "processes": [
+        "산화",
+        "증착·이온주입",
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/carrier-gases",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "argon",
+      "name": "고순도 아르곤(Ar)",
+      "group": "특수가스",
+      "aliases": [
+        "아르곤",
+        "argon"
+      ],
+      "processes": [
+        "증착·이온주입",
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/carrier-gases",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "helium",
+      "name": "고순도 헬륨(He)",
+      "group": "특수가스",
+      "aliases": [
+        "헬륨",
+        "helium"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "silane",
+      "name": "모노실란(SiH4)",
+      "group": "특수가스",
+      "aliases": [
+        "모노실란",
+        "실란",
+        "SiH4"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/electronics-specialty-materials",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": "poly",
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "disilane",
+      "name": "디실란(Si2H6)",
+      "group": "특수가스",
+      "aliases": [
+        "디실란",
+        "Si2H6"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": "poly",
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "dcs",
+      "name": "디클로로실란(DCS)",
+      "group": "특수가스",
+      "aliases": [
+        "디클로로실란",
+        "DCS",
+        "SiH2Cl2"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/electronics-specialty-materials",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": "poly",
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "ammonia",
+      "name": "고순도 암모니아(NH3)",
+      "group": "특수가스",
+      "aliases": [
+        "암모니아",
+        "NH3"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/electronics-specialty-materials",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "nitrous-oxide",
+      "name": "아산화질소(N2O)",
+      "group": "특수가스",
+      "aliases": [
+        "아산화질소",
+        "N2O"
+      ],
+      "processes": [
+        "산화",
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/electronics-specialty-materials",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "phosphine",
+      "name": "포스핀(PH3)",
+      "group": "특수가스",
+      "aliases": [
+        "포스핀",
+        "PH3"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/electronics-specialty-materials",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "arsine",
+      "name": "아르신(AsH3)",
+      "group": "특수가스",
+      "aliases": [
+        "아르신",
+        "AsH3"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/electronics-specialty-materials",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "diborane",
+      "name": "디보란(B2H6)",
+      "group": "특수가스",
+      "aliases": [
+        "디보란",
+        "B2H6"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/electronics-specialty-materials",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "bf3",
+      "name": "삼불화붕소(BF3)",
+      "group": "특수가스",
+      "aliases": [
+        "삼불화붕소",
+        "BF3"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "airliquide",
+          "source": "https://electronics.airliquide.com/offer-brands/our-offer/electronics-specialty-materials",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": "fluorspar",
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "bcl3",
+      "name": "삼염화붕소(BCl3)",
+      "group": "특수가스",
+      "aliases": [
+        "삼염화붕소",
+        "BCl3"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "hbr",
+      "name": "브롬화수소(HBr)",
+      "group": "특수가스",
+      "aliases": [
+        "브롬화수소",
+        "HBr"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "matheson",
+          "source": "https://us.nipponsanso.com/industries/electronics/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "chlorine",
+      "name": "고순도 염소(Cl2)",
+      "group": "특수가스",
+      "aliases": [
+        "염소",
+        "Cl2"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "nf3",
+      "name": "삼불화질소(NF3)",
+      "group": "특수가스",
+      "aliases": [
+        "삼불화질소",
+        "NF3"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "merck",
+          "source": "https://www.merckgroup.com/content/dam/web/corporate/non-images/business-specifics/electronics/semiconductors/us/05_media/05b_technical-resources/EMD_Global%20Semiconductor%20Solutions%20Insights_Apr%202023.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": "fluorspar",
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "c2f6",
+      "name": "육불화에탄(C2F6)",
+      "group": "특수가스",
+      "aliases": [
+        "육불화에탄",
+        "C2F6"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "merck",
+          "source": "https://www.merckgroup.com/content/dam/web/corporate/non-images/business-specifics/electronics/semiconductors/us/05_media/05b_technical-resources/EMD_Global%20Semiconductor%20Solutions%20Insights_Apr%202023.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": "fluorspar",
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "sf6",
+      "name": "육불화황(SF6)",
+      "group": "특수가스",
+      "aliases": [
+        "육불화황",
+        "SF6"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "merck",
+          "source": "https://www.merckgroup.com/content/dam/web/corporate/non-images/business-specifics/electronics/semiconductors/us/05_media/05b_technical-resources/EMD_Global%20Semiconductor%20Solutions%20Insights_Apr%202023.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        },
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0.4,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": "fluorspar",
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "c4f8",
+      "name": "옥타플루오로사이클로부탄(C4F8)",
+      "group": "특수가스",
+      "aliases": [
+        "C4F8",
+        "옥타플루오로사이클로부탄"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": "fluorspar",
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "chf3",
+      "name": "트리플루오로메탄(CHF3)",
+      "group": "특수가스",
+      "aliases": [
+        "CHF3",
+        "트리플루오로메탄"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": "fluorspar",
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "germane",
+      "name": "게르만(GeH4)",
+      "group": "특수가스",
+      "aliases": [
+        "게르만",
+        "GeH4"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 7,
+      "alt_capacity": 0,
+      "qualification_days": 7,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "sulfuric",
+      "name": "고순도 황산(H2SO4)",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "황산",
+        "H2SO4"
+      ],
+      "processes": [
+        "산화",
+        "포토"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://asset.fujifilm.com/master/hq/files/2023-05/03668b3ec4771d2a252242530f04be77/pdf_news_9390_en.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 14,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "peroxide",
+      "name": "과산화수소(H2O2)",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "과산화수소",
+        "H2O2"
+      ],
+      "processes": [
+        "산화",
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://asset.fujifilm.com/master/hq/files/2023-05/03668b3ec4771d2a252242530f04be77/pdf_news_9390_en.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 14,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "hcl-wet",
+      "name": "세정용 염산(HCl)",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "염산",
+        "HCl"
+      ],
+      "processes": [
+        "산화"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://asset.fujifilm.com/master/hq/files/2023-05/03668b3ec4771d2a252242530f04be77/pdf_news_9390_en.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 14,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "nitric",
+      "name": "고순도 질산(HNO3)",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "질산",
+        "HNO3"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://asset.fujifilm.com/master/hq/files/2023-05/03668b3ec4771d2a252242530f04be77/pdf_news_9390_en.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 14,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "ammonium",
+      "name": "암모니아수(NH4OH)",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "암모니아수",
+        "NH4OH"
+      ],
+      "processes": [
+        "산화"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://asset.fujifilm.com/master/hq/files/2023-05/03668b3ec4771d2a252242530f04be77/pdf_news_9390_en.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 14,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "phosphoric",
+      "name": "고순도 인산(H3PO4)",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "인산",
+        "H3PO4"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://asset.fujifilm.com/master/hq/files/2023-05/03668b3ec4771d2a252242530f04be77/pdf_news_9390_en.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 14,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "ipa",
+      "name": "고순도 IPA",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "IPA",
+        "이소프로필알코올",
+        "이소프로판올"
+      ],
+      "processes": [
+        "포토",
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://asset.fujifilm.com/master/hq/files/2023-05/03668b3ec4771d2a252242530f04be77/pdf_news_9390_en.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 14,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "pgmea",
+      "name": "포토용 PGMEA 용제",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "PGMEA",
+        "프로필렌글리콜메틸에테르아세테이트"
+      ],
+      "processes": [
+        "포토"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://www.ccpc.ie/business/wp-content/uploads/sites/3/2023/06/M.23.026-Determination-Public.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 14,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "stripper",
+      "name": "포토레지스트 박리액",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "박리액",
+        "스트리퍼",
+        "resist stripper"
+      ],
+      "processes": [
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi.html",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://asset.fujifilm.com/master/hq/files/2023-05/03668b3ec4771d2a252242530f04be77/pdf_news_9390_en.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 14,
+      "ramp_days": 7,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "cmp-copper",
+      "name": "구리 CMP 슬러리",
+      "group": "CMP 소모재",
+      "aliases": [
+        "구리 CMP",
+        "구리 슬러리"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "fujifilm",
+          "source": "https://www.fujifilm.com/us/en/business/semiconductor-materials/cmp",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "entegris",
+          "source": "https://www.entegris.com/en/home/resources/industry-insights/chemical-mechanical-planarization.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "resonac",
+          "source": "https://eu.resonac.com/products-top/backend/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 21,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "cmp-tungsten",
+      "name": "텅스텐 CMP 슬러리",
+      "group": "CMP 소모재",
+      "aliases": [
+        "텅스텐 CMP",
+        "텅스텐 슬러리"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "entegris",
+          "source": "https://www.entegris.com/en/home/resources/industry-insights/chemical-mechanical-planarization.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://www.fujifilm.com/us/en/business/semiconductor-materials/cmp",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 21,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "cmp-dielectric",
+      "name": "절연막 CMP 슬러리",
+      "group": "CMP 소모재",
+      "aliases": [
+        "절연막 CMP",
+        "실리카 슬러리"
+      ],
+      "processes": [
+        "산화"
+      ],
+      "suppliers": [
+        {
+          "company": "entegris",
+          "source": "https://www.entegris.com/en/home/resources/industry-insights/chemical-mechanical-planarization.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://www.fujifilm.com/us/en/business/semiconductor-materials/cmp",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 21,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "cmp-pad",
+      "name": "CMP 연마 패드",
+      "group": "CMP 소모재",
+      "aliases": [
+        "CMP 패드",
+        "연마 패드"
+      ],
+      "processes": [
+        "산화",
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "entegris",
+          "source": "https://www.entegris.com/en/home/resources/industry-insights/chemical-mechanical-planarization.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 21,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "cmp-brush",
+      "name": "PVA CMP 세정 브러시",
+      "group": "CMP 소모재",
+      "aliases": [
+        "PVA 브러시",
+        "CMP 브러시"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "entegris",
+          "source": "https://www.entegris.com/en/home/resources/industry-insights/chemical-mechanical-planarization.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 21,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "post-cmp",
+      "name": "Post-CMP 세정액",
+      "group": "CMP 소모재",
+      "aliases": [
+        "Post-CMP",
+        "포스트 CMP",
+        "CMP 세정액"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "entegris",
+          "source": "https://www.entegris.com/en/home/resources/industry-insights/chemical-mechanical-planarization.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://www.fujifilm.com/us/en/business/semiconductor-materials/cmp",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 21,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 레시피의 필수 투입재로 설정한 가정. 실제 고객·등급별 납품/배분은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "emc",
+      "name": "에폭시 몰딩 컴파운드(EMC)",
+      "group": "패키징 소재",
+      "aliases": [
+        "EMC",
+        "몰딩 컴파운드"
+      ],
+      "processes": [
+        "패키징"
+      ],
+      "suppliers": [
+        {
+          "company": "resonac",
+          "source": "https://eu.resonac.com/products-top/backend/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 패키지 레시피 전용. 몰딩·플립칩·적층 등 서로 다른 패키지를 전체 반도체 공통 필수재로 일반화하지 않음.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "die-paste",
+      "name": "다이 접착 페이스트",
+      "group": "패키징 소재",
+      "aliases": [
+        "다이 접착 페이스트",
+        "die attach paste"
+      ],
+      "processes": [
+        "패키징"
+      ],
+      "suppliers": [
+        {
+          "company": "resonac",
+          "source": "https://eu.resonac.com/products-top/backend/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "henkel",
+          "source": "https://next.henkel-adhesives.com/uk/en/applications/electronic-component-protection-solutions/underfills.html",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 패키지 레시피 전용. 몰딩·플립칩·적층 등 서로 다른 패키지를 전체 반도체 공통 필수재로 일반화하지 않음.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "die-film",
+      "name": "다이 접착 필름(DAF)",
+      "group": "패키징 소재",
+      "aliases": [
+        "DAF",
+        "다이 접착 필름"
+      ],
+      "processes": [
+        "패키징"
+      ],
+      "suppliers": [
+        {
+          "company": "resonac",
+          "source": "https://eu.resonac.com/products-top/backend/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "henkel",
+          "source": "https://www.henkel.com/press-and-media/press-releases-and-kits/2026-08-19-henkel-launches-loctite-ablestik-cdf900-series-conductive-die-attach-film-2223146",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 패키지 레시피 전용. 몰딩·플립칩·적층 등 서로 다른 패키지를 전체 반도체 공통 필수재로 일반화하지 않음.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "dicing-tape",
+      "name": "다이싱 테이프",
+      "group": "패키징 소재",
+      "aliases": [
+        "다이싱 테이프",
+        "dicing tape"
+      ],
+      "processes": [
+        "패키징"
+      ],
+      "suppliers": [
+        {
+          "company": "nitto",
+          "source": "https://www.nitto.com/us/en/markets/industry/electronic/semicon/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "maxell",
+          "source": "https://biz.maxell.com/en/sliontec_tapes/list_semiconductor.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 패키지 레시피 전용. 몰딩·플립칩·적층 등 서로 다른 패키지를 전체 반도체 공통 필수재로 일반화하지 않음.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "polyimide",
+      "name": "패키징 폴리이미드(PI)",
+      "group": "패키징 소재",
+      "aliases": [
+        "폴리이미드",
+        "polyimide"
+      ],
+      "processes": [
+        "패키징"
+      ],
+      "suppliers": [
+        {
+          "company": "fujifilm",
+          "source": "https://www.fujifilm.com/us/en/business/semiconductor-materials/polymides-and-pbos",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 패키지 레시피 전용. 몰딩·플립칩·적층 등 서로 다른 패키지를 전체 반도체 공통 필수재로 일반화하지 않음.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "underfill",
+      "name": "플립칩 언더필",
+      "group": "패키징 소재",
+      "aliases": [
+        "언더필",
+        "underfill"
+      ],
+      "processes": [
+        "패키징"
+      ],
+      "suppliers": [
+        {
+          "company": "resonac",
+          "source": "https://eu.resonac.com/products-top/backend/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "henkel",
+          "source": "https://www.henkel.com/press-and-media/press-releases-and-kits/2024-04-05-henkel-semiconductor-capillary-underfill-enables-complex-ai-and-hpc-large-body-advanced-packaging-designs-1943120",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 패키지 레시피 전용. 몰딩·플립칩·적층 등 서로 다른 패키지를 전체 반도체 공통 필수재로 일반화하지 않음.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "wafer-polished-extra",
+      "name": "실리콘 폴리시드 웨이퍼 추가 후보",
+      "group": "웨이퍼 대체 후보",
+      "aliases": [
+        "실리콘 웨이퍼"
+      ],
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "suppliers": [
+        {
+          "company": "siltronic",
+          "source": "https://www.siltronic.com/en/products/polished-wafers.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 30,
+      "upstream": "poly",
+      "recipe_note": "Siltronic 공급 후보 확장. 기존 Shin-Etsu/SUMCO 물량을 임의로 재분배하지 않는 별도 선택 경로.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "wafer-epi-extra",
+      "name": "실리콘 에피 웨이퍼 추가 후보",
+      "group": "웨이퍼 대체 후보",
+      "aliases": [
+        "에피택셜 웨이퍼"
+      ],
+      "processes": [
+        "웨이퍼 제조"
+      ],
+      "suppliers": [
+        {
+          "company": "siltronic",
+          "source": "https://www.siltronic.com/en/products/epitaxial-wafers.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 30,
+      "upstream": "poly",
+      "recipe_note": "Siltronic 공급 후보 확장. 기존 Shin-Etsu/SUMCO 물량을 임의로 재분배하지 않는 별도 선택 경로.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "target-ta",
+      "name": "탄탈럼 스퍼터링 타깃",
+      "group": "금속 타깃",
+      "aliases": [
+        "탄탈럼 타깃",
+        "탄탈럼",
+        "Ta 타깃"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "jx",
+          "source": "https://nmmjx-dc.com/en/products/ng-device/semiconductor.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "target-ti",
+      "name": "티타늄 스퍼터링 타깃",
+      "group": "금속 타깃",
+      "aliases": [
+        "티타늄 타깃",
+        "티타늄",
+        "Ti 타깃"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "jx",
+          "source": "https://nmmjx-dc.com/en/products/ng-device/semiconductor.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "target-w",
+      "name": "텅스텐 스퍼터링 타깃",
+      "group": "금속 타깃",
+      "aliases": [
+        "텅스텐 타깃",
+        "W 타깃"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "jx",
+          "source": "https://nmmjx-dc.com/en/products/ng-device/semiconductor.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "ulvac",
+          "source": "https://www.ulvac.co.jp/en/products/materials/for_semiconductor/",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "target-co",
+      "name": "코발트 스퍼터링 타깃",
+      "group": "금속 타깃",
+      "aliases": [
+        "코발트 타깃",
+        "Co 타깃"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "jx",
+          "source": "https://nmmjx-dc.com/en/products/ng-device/semiconductor.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "target-wti",
+      "name": "텅스텐·티타늄 합금 타깃(WTi)",
+      "group": "금속 타깃",
+      "aliases": [
+        "WTi",
+        "텅스텐 티타늄 합금 타깃"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "jx",
+          "source": "https://nmmjx-dc.com/en/products/ng-device/semiconductor.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "target-nipt",
+      "name": "니켈·백금 합금 타깃(NiPt)",
+      "group": "금속 타깃",
+      "aliases": [
+        "NiPt",
+        "니켈 백금 타깃"
+      ],
+      "processes": [
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "jx",
+          "source": "https://nmmjx-dc.com/en/products/ng-device/semiconductor.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "precursor-co",
+      "name": "코발트 증착 전구체",
+      "group": "증착 전구체",
+      "aliases": [
+        "코발트 전구체"
+      ],
+      "processes": [
+        "증착·이온주입",
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "merck",
+          "source": "https://www.emdgroup.com/content/dam/web/corporate/non-images/business-specifics/electronics/semiconductors/us/05_media/05b_technical-resources/M4Ward-datasheet-EN-US.pdf",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "차세대 선택 금속화 제품군. 공식 개발·솔루션 자료이며 고객 양산 채택·제품 등급은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "precursor-ru",
+      "name": "루테늄 증착 전구체",
+      "group": "증착 전구체",
+      "aliases": [
+        "루테늄",
+        "루테늄 전구체",
+        "Ru 전구체"
+      ],
+      "processes": [
+        "증착·이온주입",
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "merck",
+          "source": "https://www.reports.emdgroup.com/en/annualreport/2025/management-report/fundamental-information-about-the-group/research-and-development/electronics.html",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "차세대 선택 금속화 제품군. 공식 개발·솔루션 자료이며 고객 양산 채택·제품 등급은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "precursor-mo",
+      "name": "몰리브덴 증착 전구체",
+      "group": "증착 전구체",
+      "aliases": [
+        "몰리브덴",
+        "몰리브덴 전구체",
+        "Mo 전구체"
+      ],
+      "processes": [
+        "증착·이온주입",
+        "금속배선"
+      ],
+      "suppliers": [
+        {
+          "company": "merck",
+          "source": "https://www.reports.emdgroup.com/en/annualreport/2025/management-report/fundamental-information-about-the-group/research-and-development/electronics.html",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "차세대 선택 금속화 제품군. 공식 개발·솔루션 자료이며 고객 양산 채택·제품 등급은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "teos",
+      "name": "TEOS 산화막 전구체",
+      "group": "증착 전구체",
+      "aliases": [
+        "TEOS",
+        "테오스"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "merck",
+          "source": "https://www.merckgroup.com/content/dam/web/corporate/non-images/business-specifics/electronics/semiconductors/us/05_media/05b_technical-resources/EMD_Global%20Semiconductor%20Solutions%20Insights_Apr%202023.pdf",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "fujifilm",
+          "source": "https://www.fujifilm.com/my/en/business/semiconductor-materials/cvd-precursors-chemical-delivery/dielectric-dopant-sources",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        },
+        {
+          "company": "entegris",
+          "source": "https://www.entegris.com/shop/en/USD/By-Industry/Microelectronics/Semiconductor/Deposition/Precursors/c/industries-microelectronics-semiconductor-deposition-precursors",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0.4,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "btbas",
+      "name": "BTBAS 실리콘 전구체",
+      "group": "증착 전구체",
+      "aliases": [
+        "BTBAS"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "merck",
+          "source": "https://www.merckgroup.com/content/dam/web/corporate/non-images/business-specifics/electronics/semiconductors/us/05_media/05b_technical-resources/EMD_Global%20Semiconductor%20Solutions%20Insights_Apr%202023.pdf",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "hmds",
+      "name": "HMDS 표면처리제",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "HMDS",
+        "헥사메틸디실라잔"
+      ],
+      "processes": [
+        "포토"
+      ],
+      "suppliers": [
+        {
+          "company": "fujifilm",
+          "source": "https://www.ccpc.ie/business/wp-content/uploads/sites/3/2023/06/M.23.026-Determination-Public.pdf",
+          "evidence": "관련 제품군 자료만 확인. 이 소재의 개별 제품·상용 등급·고객 납품은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "acetone",
+      "name": "고순도 아세톤",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "아세톤",
+        "acetone"
+      ],
+      "processes": [
+        "포토",
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "nmp",
+      "name": "NMP 박리·용제",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "NMP",
+        "엔메틸피롤리돈"
+      ],
+      "processes": [
+        "포토",
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "methanol",
+      "name": "고순도 메탄올",
+      "group": "세정·습식 화학품",
+      "aliases": [
+        "메탄올",
+        "methanol"
+      ],
+      "processes": [
+        "포토",
+        "식각"
+      ],
+      "suppliers": [
+        {
+          "company": "kanto",
+          "source": "https://www.kanto.co.jp/english/products/denshi/ultra_pure_chemicals.html",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": null,
+      "recipe_note": "선택 공정 레시피 가정. 실제 고객·공장·등급별 양산 납품은 미확인.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    },
+    {
+      "id": "fluorine",
+      "name": "챔버 세정 불소(F2)",
+      "group": "특수가스",
+      "aliases": [
+        "불소 가스",
+        "F2"
+      ],
+      "processes": [
+        "증착·이온주입"
+      ],
+      "suppliers": [
+        {
+          "company": "linde",
+          "source": "https://www.linde-gas.com/products-and-services/gases/specialty-gases-for-electronics",
+          "evidence": "공식 자료에 제품 종류 명시. 고객별 등급·납품·현재 공급 가능량은 미확인."
+        }
+      ],
+      "inventory_days": 14,
+      "alt_capacity": 0,
+      "qualification_days": 30,
+      "ramp_days": 14,
+      "upstream": "fluorspar",
+      "recipe_note": "등록한 F2 공급 경로. NF3와의 공정별 호환성은 검증하지 않았으며 자동 화학 대체는 하지 않음.",
+      "route_status": "모델 가정",
+      "actual_share_pct": null,
+      "production_country": null
+    }
+  ]
+}

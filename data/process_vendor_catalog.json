@@ -1,0 +1,1118 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29",
+  "stages": [
+    "웨이퍼",
+    "산화·열처리",
+    "포토",
+    "식각·세정",
+    "증착·이온주입",
+    "금속배선·CMP",
+    "EDS·검사",
+    "패키징"
+  ],
+  "groups": {
+    "polished-wafer": {
+      "stage": "웨이퍼",
+      "name": "폴리시드 웨이퍼",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "polished-wafer",
+      "item_ids": [
+        "polished-wafer"
+      ]
+    },
+    "epi-wafer": {
+      "stage": "웨이퍼",
+      "name": "에피 웨이퍼",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "epi-wafer",
+      "item_ids": [
+        "epi-wafer"
+      ]
+    },
+    "photoresist": {
+      "stage": "포토",
+      "name": "포토레지스트 PR",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "photoresist",
+      "item_ids": [
+        "photoresist"
+      ]
+    },
+    "hf": {
+      "stage": "식각·세정",
+      "name": "불산 HF",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "hf",
+      "item_ids": [
+        "hf"
+      ]
+    },
+    "bhf": {
+      "stage": "식각·세정",
+      "name": "완충 식각액 BOE/BHF",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "bhf",
+      "item_ids": [
+        "bhf"
+      ]
+    },
+    "nf3": {
+      "stage": "식각·세정",
+      "name": "NF3 가스",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "nf3",
+      "item_ids": [
+        "nf3"
+      ]
+    },
+    "etch-gas": {
+      "stage": "식각·세정",
+      "name": "CF4 가스",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "etch-gas",
+      "item_ids": [
+        "etch-gas"
+      ]
+    },
+    "sf6": {
+      "stage": "식각·세정",
+      "name": "SF6 가스",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "sf6",
+      "item_ids": [
+        "sf6"
+      ]
+    },
+    "c4f8": {
+      "stage": "식각·세정",
+      "name": "C4F8 가스",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "c4f8",
+      "item_ids": [
+        "c4f8"
+      ]
+    },
+    "silane": {
+      "stage": "증착·이온주입",
+      "name": "실란 SiH4",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "silane",
+      "item_ids": [
+        "silane"
+      ]
+    },
+    "cmp-copper": {
+      "stage": "금속배선·CMP",
+      "name": "구리 CMP 슬러리",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "cmp-copper",
+      "item_ids": [
+        "cmp-copper"
+      ]
+    },
+    "cmp-tungsten": {
+      "stage": "금속배선·CMP",
+      "name": "텅스텐 CMP 슬러리",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "cmp-tungsten",
+      "item_ids": [
+        "cmp-tungsten"
+      ]
+    },
+    "cmp-barrier": {
+      "stage": "금속배선·CMP",
+      "name": "배리어 CMP 슬러리",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "cmp-barrier",
+      "item_ids": [
+        "cmp-barrier"
+      ]
+    },
+    "cmp-cobalt": {
+      "stage": "금속배선·CMP",
+      "name": "코발트 CMP 슬러리",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "cmp-cobalt",
+      "item_ids": [
+        "cmp-cobalt"
+      ]
+    },
+    "cmp-molybdenum": {
+      "stage": "금속배선·CMP",
+      "name": "몰리브덴 CMP 슬러리",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "cmp-molybdenum",
+      "item_ids": [
+        "cmp-molybdenum"
+      ]
+    },
+    "cmp-oxide": {
+      "stage": "금속배선·CMP",
+      "name": "산화막 CMP 슬러리",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "cmp-oxide",
+      "item_ids": [
+        "cmp-oxide"
+      ]
+    },
+    "ceria-abrasive": {
+      "stage": "금속배선·CMP",
+      "name": "산화세륨 연마재",
+      "kind": "material",
+      "condition": "등급·직경/노광 방식·순도/농도·대상 막·고객 승인을 대조해야 합니다.",
+      "catalog_item": "ceria-abrasive",
+      "item_ids": [
+        "ceria-abrasive"
+      ]
+    },
+    "oxidation-furnace": {
+      "stage": "산화·열처리",
+      "name": "산화·확산 퍼니스",
+      "kind": "equipment",
+      "condition": "산화 방식·온도·막질·웨이퍼 직경·공정 레시피 검증 필요.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "rtp": {
+      "stage": "산화·열처리",
+      "name": "급속 열처리 RTP",
+      "kind": "equipment",
+      "condition": "램프/레이저·온도 균일도·열 예산·활성화 조건 비교. 배치 퍼니스와 구분.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "laser-anneal": {
+      "stage": "산화·열처리",
+      "name": "레이저 어닐링",
+      "kind": "equipment",
+      "condition": "파장·에너지·도핑 활성화 및 기판 조건을 비교.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "euv-tool": {
+      "stage": "포토",
+      "name": "EUV 노광 장비",
+      "kind": "equipment",
+      "condition": "현재 목록에 같은 목적의 대체 장비 기업 근거가 없습니다. PR·마스크 업체를 노광기 대안으로 연결하지 않습니다.",
+      "catalog_item": null,
+      "item_ids": [
+        "lithography"
+      ]
+    },
+    "mask-blank": {
+      "stage": "포토",
+      "name": "블랭크 마스크",
+      "kind": "material",
+      "condition": "DUV/EUV·기판·막 구조·결함 규격을 구분. 완성 포토마스크와 구분.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "pellicle": {
+      "stage": "포토",
+      "name": "펠리클",
+      "kind": "component",
+      "condition": "광원·투과율·내열성·치수 검증 필요. EUV 호환을 자동 인정하지 않습니다.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "dry-etch": {
+      "stage": "식각·세정",
+      "name": "건식 식각 장비",
+      "kind": "equipment",
+      "condition": "도전막/절연막·플라즈마 방식·선택비·종횡비·설치 공정 검증 필요.",
+      "catalog_item": null,
+      "item_ids": [
+        "etch-tool"
+      ]
+    },
+    "dry-strip": {
+      "stage": "식각·세정",
+      "name": "PR 제거·드라이 스트립",
+      "kind": "equipment",
+      "condition": "PR 제거/잔사 세정용. 산화막 형성 퍼니스나 식각 장비의 직접 대체가 아닙니다.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "ald": {
+      "stage": "증착·이온주입",
+      "name": "ALD 증착 장비",
+      "kind": "equipment",
+      "condition": "열/플라즈마·전구체·막질·스텝 커버리지·공정 온도·레시피 검증 필요.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "cvd": {
+      "stage": "증착·이온주입",
+      "name": "CVD 증착 장비",
+      "kind": "equipment",
+      "condition": "LPCVD/PECVD·열/플라즈마 방식과 막질이 일치해야 합니다.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "ion-implant": {
+      "stage": "증착·이온주입",
+      "name": "이온주입 장비",
+      "kind": "equipment",
+      "condition": "이온종·주입 에너지·선량·기판 조건 검증. 증착 장비와 구분.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "teos": {
+      "stage": "증착·이온주입",
+      "name": "TEOS 전구체",
+      "kind": "material",
+      "condition": "수분·금속 불순물·용기·증착 레시피 및 공급 규격 확인.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "pvd": {
+      "stage": "금속배선·CMP",
+      "name": "PVD·스퍼터 장비",
+      "kind": "equipment",
+      "condition": "전공정 배선/패키지 UBM·RDL 용도와 타깃·막질 조건을 대조.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "cmp-tool": {
+      "stage": "금속배선·CMP",
+      "name": "CMP 장비",
+      "kind": "equipment",
+      "condition": "슬러리와 구분. 대상 막·웨이퍼 직경·헤드·패드·세정·종말점 검증.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "cu-plating": {
+      "stage": "금속배선·CMP",
+      "name": "구리 전기도금액",
+      "kind": "material",
+      "condition": "첨가제 조성·순도·전기도금 장비와 공정 레시피를 대조.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "memory-tester": {
+      "stage": "EDS·검사",
+      "name": "메모리 전기 검사장비",
+      "kind": "equipment",
+      "condition": "DRAM/NAND·웨이퍼/패키지·채널·속도·테스트 프로그램을 대조. 번인과 구분.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "burn-in": {
+      "stage": "EDS·검사",
+      "name": "번인 검사장비",
+      "kind": "equipment",
+      "condition": "웨이퍼/패키지·메모리/로직·온도·보드·테스트 조건을 대조.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "test-service": {
+      "stage": "EDS·검사",
+      "name": "웨이퍼 테스트 서비스",
+      "kind": "service",
+      "condition": "장비 구매와 구분. 디바이스 종류·프로브카드·프로그램·검사 승인·처리 여력 확인.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "test-socket": {
+      "stage": "EDS·검사",
+      "name": "테스트 핀·소켓",
+      "kind": "component",
+      "condition": "피치·핀 수·접촉저항·주파수·패키지·테스터 인터페이스 검증.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "osat": {
+      "stage": "패키징",
+      "name": "반도체 조립·패키징 서비스",
+      "kind": "service",
+      "condition": "패키지 타입·다이 구조·신뢰성 시험·고객 승인·가용 생산능력 확인. HBM 수행 가능성은 별도.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "wlp": {
+      "stage": "패키징",
+      "name": "웨이퍼 레벨 패키징 서비스",
+      "kind": "service",
+      "condition": "Fan-in/Fan-out·RDL·범핑·다이 크기·패키지 규격과 고객 승인 확인.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "tc-bonder": {
+      "stage": "패키징",
+      "name": "TC 본더",
+      "kind": "equipment",
+      "condition": "다이·범프·접합 방식·정렬·열 압력 조건 확인. OSAT 서비스를 대안으로 표시하지 않습니다.",
+      "catalog_item": null,
+      "item_ids": []
+    },
+    "laser-dicing": {
+      "stage": "패키징",
+      "name": "레이저 다이싱",
+      "kind": "equipment",
+      "condition": "레이저 파장·절단/그루빙 방식·기판·두께·손상 조건 대조.",
+      "catalog_item": null,
+      "item_ids": []
+    }
+  },
+  "offerings": [
+    {
+      "id": "tel:oxidation-furnace",
+      "company_id": "tel",
+      "name": "Tokyo Electron",
+      "group": "oxidation-furnace",
+      "product": "TELINDY PLUS / EVAROS",
+      "source": "https://www.tel.com/product/telindy.html",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "wonik-ips:oxidation-furnace",
+      "company_id": "wonik-ips",
+      "name": "원익IPS",
+      "group": "oxidation-furnace",
+      "product": "300series Oxidation / Anneal",
+      "source": "https://expo.semi.org/europa2025/public/eBooth.aspx?BoothID=656491",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "wonik-ips:ald",
+      "company_id": "wonik-ips",
+      "name": "원익IPS",
+      "group": "ald",
+      "product": "HyEta ALD",
+      "source": "https://expo.semi.org/europa2025/public/eBooth.aspx?BoothID=656491",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "wonik-ips:cvd",
+      "company_id": "wonik-ips",
+      "name": "원익IPS",
+      "group": "cvd",
+      "product": "GEMINI / QUANTA CVD",
+      "source": "https://expo.semi.org/europa2025/public/eBooth.aspx?BoothID=656491",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "yest:oxidation-furnace",
+      "company_id": "yest",
+      "name": "예스티",
+      "group": "oxidation-furnace",
+      "product": "Diffusion Furnace",
+      "source": "https://www.yest.co.kr/en/semiconductor.asp",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "ap-systems:rtp",
+      "company_id": "ap-systems",
+      "name": "AP시스템",
+      "group": "rtp",
+      "product": "Rapid Thermal Process",
+      "source": "https://www.apsystems.co.kr/business/semiconductor.asp",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "ap-systems:laser-anneal",
+      "company_id": "ap-systems",
+      "name": "AP시스템",
+      "group": "laser-anneal",
+      "product": "Laser Annealing",
+      "source": "https://www.apsystems.co.kr/business/semiconductor.asp",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "ap-systems:pvd",
+      "company_id": "ap-systems",
+      "name": "AP시스템",
+      "group": "pvd",
+      "product": "Package UBM / RDL Sputter System",
+      "source": "https://www.apsystems.co.kr/business/semiconductor.asp",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "ap-systems:laser-dicing",
+      "company_id": "ap-systems",
+      "name": "AP시스템",
+      "group": "laser-dicing",
+      "product": "Laser Dicing",
+      "source": "https://www.apsystems.co.kr/business/semiconductor.asp",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "applied:rtp",
+      "company_id": "applied",
+      "name": "Applied Materials",
+      "group": "rtp",
+      "product": "Rapid Thermal Processing and Treatments",
+      "source": "https://www.appliedmaterials.com/us/en/semiconductor/products/processes/rapid-thermal-processing-treatments.html",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "eo-technics:laser-anneal",
+      "company_id": "eo-technics",
+      "name": "이오테크닉스",
+      "group": "laser-anneal",
+      "product": "Wafer / Power Device Laser Annealing",
+      "source": "https://www.eotechnics.com/page/products/equipment_catno3.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "eo-technics:laser-dicing",
+      "company_id": "eo-technics",
+      "name": "이오테크닉스",
+      "group": "laser-dicing",
+      "product": "LMC3200G / LMC3200D Grooving & Dicing",
+      "source": "https://www.eotechnics.com/page/products/equipment_catno3.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "asml:euv-tool",
+      "company_id": "asml",
+      "name": "ASML",
+      "group": "euv-tool",
+      "product": "EUV lithography systems",
+      "source": "https://www.asml.com/en/products",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "sns-tech:mask-blank",
+      "company_id": "sns-tech",
+      "name": "에스앤에스텍",
+      "group": "mask-blank",
+      "product": "Binary / Phase Shift / Hardmask Blank",
+      "source": "https://www.snstech.co.kr/renew/html/sub01_04.asp",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "hoya:mask-blank",
+      "company_id": "hoya",
+      "name": "HOYA",
+      "group": "mask-blank",
+      "product": "Semiconductor mask blanks",
+      "source": "https://www.hoya.com/en/contact/lsi/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "shinetsu:mask-blank",
+      "company_id": "shinetsu",
+      "name": "Shin-Etsu Chemical",
+      "group": "mask-blank",
+      "product": "Photomask blanks",
+      "source": "https://www.shinetsu.co.jp/en/products-2/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "shinetsu:pellicle",
+      "company_id": "shinetsu",
+      "name": "Shin-Etsu Chemical",
+      "group": "pellicle",
+      "product": "LSI Pellicle",
+      "source": "https://www.shinetsu.co.jp/en/products/functional-materials/pellicles/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "fst:pellicle",
+      "company_id": "fst",
+      "name": "에프에스티",
+      "group": "pellicle",
+      "product": "Semiconductor pellicles",
+      "source": "https://www.fstc.co.kr/bbs/board.php?bo_table=page_pellicle_ko_1",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "psk:dry-strip",
+      "company_id": "psk",
+      "name": "PSK",
+      "group": "dry-strip",
+      "product": "SUPRA Dry Strip",
+      "source": "https://pskinc.com/index.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "vm:dry-etch",
+      "company_id": "vm",
+      "name": "브이엠",
+      "group": "dry-etch",
+      "product": "Poly / Metal / Oxide Etcher",
+      "source": "https://www.vmsemi.com/kor/Index",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "tel:dry-etch",
+      "company_id": "tel",
+      "name": "Tokyo Electron",
+      "group": "dry-etch",
+      "product": "Tactras / Episode UL",
+      "source": "https://www.tel.com/product/index.html",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "lam:dry-etch",
+      "company_id": "lam",
+      "name": "Lam Research",
+      "group": "dry-etch",
+      "product": "Conductor / Dielectric etch systems",
+      "source": "https://www.lamresearch.com/products/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "applied:dry-etch",
+      "company_id": "applied",
+      "name": "Applied Materials",
+      "group": "dry-etch",
+      "product": "Sym3 Z Magnum",
+      "source": "https://investor.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-transistor-and-wiring-innovations",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "asm:ald",
+      "company_id": "asm",
+      "name": "ASM",
+      "group": "ald",
+      "product": "ALD / PEALD equipment",
+      "source": "https://www.asm.com/our-company",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "asm:cvd",
+      "company_id": "asm",
+      "name": "ASM",
+      "group": "cvd",
+      "product": "CVD equipment",
+      "source": "https://www.asm.com/our-company",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "jusung:ald",
+      "company_id": "jusung",
+      "name": "주성엔지니어링",
+      "group": "ald",
+      "product": "Semiconductor ALD",
+      "source": "https://jusung.com/eng/document/semiconductor",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "eugene-tech:cvd",
+      "company_id": "eugene-tech",
+      "name": "유진테크",
+      "group": "cvd",
+      "product": "BlueJay Single Thermal LPCVD",
+      "source": "https://kind.krx.co.kr/external/2026/03/11/001241/20260311003091/00591.htm",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "tes:cvd",
+      "company_id": "tes",
+      "name": "테스",
+      "group": "cvd",
+      "product": "Semiconductor PECVD",
+      "source": "https://hites.co.kr/bbs/board.php?bo_table=a1",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "tel:ald",
+      "company_id": "tel",
+      "name": "Tokyo Electron",
+      "group": "ald",
+      "product": "NT333 / TELINDY IRad",
+      "source": "https://www.tel.com/product/index.html",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "tel:cvd",
+      "company_id": "tel",
+      "name": "Tokyo Electron",
+      "group": "cvd",
+      "product": "Trias e+ Ti/TiN",
+      "source": "https://www.tel.com/product/triase.html",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "lam:ald",
+      "company_id": "lam",
+      "name": "Lam Research",
+      "group": "ald",
+      "product": "ALTUS CVD / ALD",
+      "source": "https://www.lamresearch.com/product/altus-product-family/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "lam:cvd",
+      "company_id": "lam",
+      "name": "Lam Research",
+      "group": "cvd",
+      "product": "ALTUS CVD / ALD",
+      "source": "https://www.lamresearch.com/product/altus-product-family/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "applied:ald",
+      "company_id": "applied",
+      "name": "Applied Materials",
+      "group": "ald",
+      "product": "Spectral ALD",
+      "source": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-unveils-deposition-and-selective-etch-systems/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "applied:cvd",
+      "company_id": "applied",
+      "name": "Applied Materials",
+      "group": "cvd",
+      "product": "Producer XP Pioneer CVD",
+      "source": "https://www.appliedmaterials.com/sg/en/semiconductor/products/processes/cvd/applied-producer-xp-pioneer-cvd.html",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "applied:ion-implant",
+      "company_id": "applied",
+      "name": "Applied Materials",
+      "group": "ion-implant",
+      "product": "VIISta Trident",
+      "source": "https://www.appliedmaterials.com/us/en/product-library/viista-trident.html",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "soulbrain:teos",
+      "company_id": "soulbrain",
+      "name": "솔브레인",
+      "group": "teos",
+      "product": "TEOS deposition precursor",
+      "source": "https://www.soulbrain.co.kr/m21.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "soulbrain:cu-plating",
+      "company_id": "soulbrain",
+      "name": "솔브레인",
+      "group": "cu-plating",
+      "product": "TCE-C copper plating solution",
+      "source": "https://www.soulbrain.co.kr/m21.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "tel:pvd",
+      "company_id": "tel",
+      "name": "Tokyo Electron",
+      "group": "pvd",
+      "product": "LEXIA-EX PVD",
+      "source": "https://www.tel.com/product/exim.html",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "kc-tech:cmp-tool",
+      "company_id": "kc-tech",
+      "name": "케이씨텍",
+      "group": "cmp-tool",
+      "product": "W / Cu / Oxide CMP equipment",
+      "source": "https://www.kctech.com/eng/page/product1.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "advantest:memory-tester",
+      "company_id": "advantest",
+      "name": "Advantest",
+      "group": "memory-tester",
+      "product": "T5500 / T5800 memory test systems",
+      "source": "https://www.advantest.com/en/products/semiconductor-test-system/memory/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "advantest:burn-in",
+      "company_id": "advantest",
+      "name": "Advantest",
+      "group": "burn-in",
+      "product": "B6700 / H5620 burn-in systems",
+      "source": "https://www.advantest.com/en/products/semiconductor-test-system/memory/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "teradyne:memory-tester",
+      "company_id": "teradyne",
+      "name": "Teradyne",
+      "group": "memory-tester",
+      "product": "Magnum E2 memory test",
+      "source": "https://investors.teradyne.com/news-events/press-releases/detail/451/teradyne-announces-magnum-e2-to-address-next-generation-memory-test-demands-driven-by-ai-and-high-performance-computing",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "yc:memory-tester",
+      "company_id": "yc",
+      "name": "와이씨",
+      "group": "memory-tester",
+      "product": "MT6122 NAND / MT6133·6135S·8311 DRAM wafer tester",
+      "source": "https://www.yccorp.com/kr/index.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "di:burn-in",
+      "company_id": "di",
+      "name": "디아이",
+      "group": "burn-in",
+      "product": "Monitoring / Test / Logic Burn-In Tester",
+      "source": "https://www.di.co.kr/main/main.aspx",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "tesna:test-service",
+      "company_id": "tesna",
+      "name": "두산테스나",
+      "group": "test-service",
+      "product": "Wafer / package testing services",
+      "source": "https://www.doosan.com/en/media-center/press-release_view?id=20172383",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "hana-micron:osat",
+      "company_id": "hana-micron",
+      "name": "하나마이크론",
+      "group": "osat",
+      "product": "Package / Bump service",
+      "source": "https://hanamicron.com/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "hana-micron:test-service",
+      "company_id": "hana-micron",
+      "name": "하나마이크론",
+      "group": "test-service",
+      "product": "Wafer / Package Test service",
+      "source": "https://hanamicron.com/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "nepes:osat",
+      "company_id": "nepes",
+      "name": "네패스",
+      "group": "osat",
+      "product": "Bumping / SiP packaging service",
+      "source": "https://www.nepes.co.kr/kr/business/semiconductor/overview.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "nepes:wlp",
+      "company_id": "nepes",
+      "name": "네패스",
+      "group": "wlp",
+      "product": "WLP / FOWLP / PLP service",
+      "source": "https://www.nepes.co.kr/kr/business/semiconductor/overview.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "nepes:test-service",
+      "company_id": "nepes",
+      "name": "네패스",
+      "group": "test-service",
+      "product": "Wafer Test service",
+      "source": "https://www.nepes.co.kr/kr/business/semiconductor/overview.php",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "leeno:test-socket",
+      "company_id": "leeno",
+      "name": "리노공업",
+      "group": "test-socket",
+      "product": "LEENO PIN / IC TEST SOCKET",
+      "source": "https://kind.krx.co.kr/external/2026/03/18/000195/20260318000896/11011.htm",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "ase:osat",
+      "company_id": "ase",
+      "name": "ASE Technology Holding",
+      "group": "osat",
+      "product": "Assembly / SiP packaging service",
+      "source": "https://ase.aseglobal.com/system-in-package/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "ase:wlp",
+      "company_id": "ase",
+      "name": "ASE Technology Holding",
+      "group": "wlp",
+      "product": "Wafer Level Packaging service",
+      "source": "https://ase.aseglobal.com/system-in-package/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "amkor:osat",
+      "company_id": "amkor",
+      "name": "Amkor Technology",
+      "group": "osat",
+      "product": "Semiconductor packaging service",
+      "source": "https://amkor.com/packaging/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "amkor:wlp",
+      "company_id": "amkor",
+      "name": "Amkor Technology",
+      "group": "wlp",
+      "product": "Wafer Level Packaging service",
+      "source": "https://amkor.com/packaging/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "sfa-semicon:osat",
+      "company_id": "sfa-semicon",
+      "name": "SFA반도체",
+      "group": "osat",
+      "product": "Semiconductor assembly / packaging",
+      "source": "https://kind.krx.co.kr/external/2026/05/15/002777/20260515006322/11013.htm",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    },
+    {
+      "id": "hanmi:tc-bonder",
+      "company_id": "hanmi",
+      "name": "한미반도체",
+      "group": "tc-bonder",
+      "product": "HBM TC BONDER / 2.5D TC BONDER",
+      "source": "https://www.hanmisemi.com/",
+      "checked_at": "2026-10-29",
+      "status": "product_family",
+      "customer_qualification": "unverified",
+      "additional_capacity": "unverified",
+      "customer_edges": []
+    }
+  ],
+  "limits": "같은 제품군은 조사 출발점이며 상호 호환·공급 승인·회복 확정이 아닙니다. 기업 규모·점유율·독점 순위는 모델에 사용하지 않습니다."
+}

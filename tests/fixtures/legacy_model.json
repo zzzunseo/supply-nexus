@@ -1,0 +1,263 @@
+{
+  "notice": "모든 배분율·재고일수·대체 여력은 검증용 가정입니다. 실제 시장 점유율이나 생산 예측을 의미하지 않습니다.",
+  "processes": [
+    {
+      "name": "웨이퍼 제조",
+      "order": 1,
+      "required_inputs": [
+        {
+          "item_id": "p1-i1",
+          "name": "웨이퍼 소재",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r01",
+              "share_pct": 60
+            },
+            {
+              "edge_id": "r02",
+              "share_pct": 40
+            }
+          ],
+          "buffer_days": 5,
+          "substitute_fraction": 0.15,
+          "substitute_lead_days": 7,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        }
+      ]
+    },
+    {
+      "name": "산화",
+      "order": 2,
+      "required_inputs": [
+        {
+          "item_id": "p2-i1",
+          "name": "공정 가스",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r03",
+              "share_pct": 60
+            },
+            {
+              "edge_id": "r04",
+              "share_pct": 40
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        }
+      ]
+    },
+    {
+      "name": "포토",
+      "order": 3,
+      "required_inputs": [
+        {
+          "item_id": "p3-i1",
+          "name": "노광 장비",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r05",
+              "share_pct": 60
+            },
+            {
+              "edge_id": "r06",
+              "share_pct": 40
+            }
+          ],
+          "buffer_days": 0,
+          "substitute_fraction": 0,
+          "substitute_lead_days": 0,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        },
+        {
+          "item_id": "p3-i2",
+          "name": "감광 소재",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r07",
+              "share_pct": 100
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 7,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        }
+      ]
+    },
+    {
+      "name": "식각",
+      "order": 4,
+      "required_inputs": [
+        {
+          "item_id": "p4-i1",
+          "name": "공정 가스",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r04",
+              "share_pct": 100
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        },
+        {
+          "item_id": "p4-i2",
+          "name": "식각 장비",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r08",
+              "share_pct": 100
+            }
+          ],
+          "buffer_days": 0,
+          "substitute_fraction": 0,
+          "substitute_lead_days": 0,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        }
+      ]
+    },
+    {
+      "name": "증착·이온주입",
+      "order": 5,
+      "required_inputs": [
+        {
+          "item_id": "p5-i1",
+          "name": "공정 가스",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r03",
+              "share_pct": 100
+            }
+          ],
+          "buffer_days": 3,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 3,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        },
+        {
+          "item_id": "p5-i2",
+          "name": "증착 장비",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r09",
+              "share_pct": 100
+            }
+          ],
+          "buffer_days": 0,
+          "substitute_fraction": 0,
+          "substitute_lead_days": 0,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        }
+      ]
+    },
+    {
+      "name": "금속배선",
+      "order": 6,
+      "required_inputs": [
+        {
+          "item_id": "p6-i1",
+          "name": "배선 소재",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r10",
+              "share_pct": 60
+            },
+            {
+              "edge_id": "r11",
+              "share_pct": 40
+            }
+          ],
+          "buffer_days": 4,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 7,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        }
+      ]
+    },
+    {
+      "name": "EDS",
+      "order": 7,
+      "required_inputs": [
+        {
+          "item_id": "p7-i1",
+          "name": "검사 장비",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r12",
+              "share_pct": 50
+            },
+            {
+              "edge_id": "r13",
+              "share_pct": 50
+            }
+          ],
+          "buffer_days": 0,
+          "substitute_fraction": 0,
+          "substitute_lead_days": 0,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        }
+      ]
+    },
+    {
+      "name": "패키징",
+      "order": 8,
+      "required_inputs": [
+        {
+          "item_id": "p8-i1",
+          "name": "가공 웨이퍼",
+          "critical": true,
+          "suppliers": [
+            {
+              "edge_id": "r14",
+              "share_pct": 60
+            },
+            {
+              "edge_id": "r15",
+              "share_pct": 40
+            }
+          ],
+          "buffer_days": 2,
+          "substitute_fraction": 0.1,
+          "substitute_lead_days": 7,
+          "source": "검증용 가정값 · 실제 수치 확인 필요",
+          "source_year": null
+        }
+      ]
+    }
+  ],
+  "additional_scenarios": [
+    {
+      "name": "일본·대만 동시 중단 · 예시",
+      "affected": [
+        "tokyo",
+        "taipei"
+      ],
+      "description": "일본과 대만의 예시 거점에 연결된 공급 능력을 함께 낮춥니다."
+    }
+  ]
+}

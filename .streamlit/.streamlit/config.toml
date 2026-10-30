@@ -1,0 +1,18 @@
+[theme]
+base = "dark"
+primaryColor = "#4DE5F4"
+backgroundColor = "#050B16"
+secondaryBackgroundColor = "#0B1526"
+textColor = "#E6F0FA"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+address = "127.0.0.1"
+enableCORS = true
+enableXsrfProtection = true
+enableStaticServing = true
+runOnSave = true
+fileWatcherType = "poll"

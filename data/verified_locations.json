@@ -1,0 +1,1291 @@
+{
+  "checked_at": "2026-10-26",
+  "notice": "Only sourced facilities/buildings are map anchors. No jitter, process display points or country centroids.",
+  "locations": {
+    "samsung-giheung": {
+      "id": "samsung-giheung",
+      "company_id": "samsung",
+      "name": "삼성전자 기흥캠퍼스",
+      "location_type": "chip_fab",
+      "country": "한국",
+      "address": "1 Samsung-ro, Giheung-gu, Yongin-si, Korea",
+      "lat": 37.2288151,
+      "lon": 127.0842349,
+      "source": "https://semiconductor.samsung.com/kr/about-us/locations/",
+      "coordinate_source": "https://www.openstreetmap.org/way/326869111",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [
+        "산화",
+        "포토",
+        "식각",
+        "증착·이온주입",
+        "금속배선"
+      ],
+      "role_note": "공식 Chip fabrication 사업장. 개별 공정 라인·장비 좌표와 생산 비중은 미확인.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "samsung-giheung",
+          "url": "https://www.openstreetmap.org/way/326869111",
+          "result": "within_source_bounds",
+          "bounds": [
+            37.2229429,
+            127.0756152,
+            37.2347267,
+            127.0934616
+          ],
+          "tags": {
+            "landuse": "industrial",
+            "name": "삼성전자 기흥캠퍼스",
+            "name:en": "Samsung Electronics Giheung Campus",
+            "name:ko": "삼성전자 기흥캠퍼스"
+          }
+        }
+      }
+    },
+    "samsung-pyeongtaek": {
+      "id": "samsung-pyeongtaek",
+      "company_id": "samsung",
+      "name": "삼성전자 평택캠퍼스",
+      "location_type": "chip_fab",
+      "country": "한국",
+      "address": "114 Samsung-ro, Pyeongtaek-si, Korea",
+      "lat": 37.0355596,
+      "lon": 127.0601548,
+      "source": "https://semiconductor.samsung.com/kr/about-us/locations/",
+      "coordinate_source": "https://www.openstreetmap.org/relation/10723148",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [
+        "산화",
+        "포토",
+        "식각",
+        "증착·이온주입",
+        "금속배선"
+      ],
+      "role_note": "공식 생산 캠퍼스. 공정군 연계는 일반 팹 제조 흐름이며 개별 장비 위치가 아님.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "samsung-pyeongtaek",
+          "url": "https://www.openstreetmap.org/relation/10723148",
+          "result": "within_source_bounds",
+          "bounds": [
+            37.0274701,
+            127.0414564,
+            37.0435805,
+            127.0679516
+          ],
+          "tags": {
+            "landuse": "industrial",
+            "landuse_1": "construction",
+            "name": "삼성전자평택캠퍼스",
+            "name:en": "Samsung Electronics Pyeongtaek Campus",
+            "name:ko": "삼성전자평택캠퍼스",
+            "type": "multipolygon"
+          }
+        }
+      }
+    },
+    "tsmc-fab12a": {
+      "id": "tsmc-fab12a",
+      "company_id": "tsmc",
+      "name": "TSMC 본사·Fab 12A",
+      "location_type": "chip_fab_hq",
+      "country": "대만",
+      "address": "8 Li-Hsin Rd. 6, Hsinchu Science Park, Taiwan",
+      "lat": 24.7727316,
+      "lon": 121.0142216,
+      "source": "https://www.tsmc.com/english/aboutTSMC/TSMC_Fabs",
+      "coordinate_source": "https://goo.gl/maps/6vzykSvvudfoKC8v8",
+      "coordinate_precision": "기업 공식 위치 페이지가 연결한 지도 POI 좌표",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [
+        "산화",
+        "포토",
+        "식각",
+        "증착·이온주입",
+        "금속배선"
+      ],
+      "role_note": "공식 12인치 팹·본사. 특정 기업 공급이 이 팹에 도착한다는 계약 근거는 아님.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "map_resolved",
+        "summary": "공식 지도 POI 좌표 일치",
+        "evidence": {
+          "id": "tsmc-fab12a",
+          "url": "https://goo.gl/maps/6vzykSvvudfoKC8v8",
+          "result": "map_resolved",
+          "resolved_url": "https://www.google.com/maps/place/Morris+Chang+Building/@24.7724756,121.0116516,16.02z/data=!4m5!3m4!1s0x34683620de9cefbd:0x90b5255a52640204!8m2!3d24.7727316!4d121.0142216?shorturl=1",
+          "coordinate_candidates": [
+            [
+              "24.7727316",
+              "121.0142216"
+            ]
+          ]
+        }
+      }
+    },
+    "tsmc-fab18": {
+      "id": "tsmc-fab18",
+      "company_id": "tsmc",
+      "name": "TSMC 타이난 Fab 18 캠퍼스",
+      "location_type": "chip_fab",
+      "country": "대만",
+      "address": "8 Beiyuan Rd. 2, Tainan, Taiwan",
+      "lat": 23.116067,
+      "lon": 120.2614511,
+      "source": "https://www.tsmc.com/english/aboutTSMC/TSMC_Fabs",
+      "coordinate_source": "https://www.openstreetmap.org/way/718032164",
+      "coordinate_precision": "OSM Fab 18 캠퍼스 대표점 · Fab 18A/18B 개별 생산동 구분 아님",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [
+        "산화",
+        "포토",
+        "식각",
+        "증착·이온주입",
+        "금속배선"
+      ],
+      "role_note": "공식 팹 소재지와 OSM 캠퍼스 대조. 개별 식각 장비의 위치/가동률은 미확인.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "tsmc-fab18",
+          "url": "https://www.openstreetmap.org/way/718032164",
+          "result": "within_source_bounds",
+          "bounds": [
+            23.1102195,
+            120.2564735,
+            23.1219707,
+            120.2660963
+          ],
+          "tags": {
+            "man_made": "works",
+            "name": "台積電南科18廠",
+            "name:en": "TSMC Fab 18",
+            "name:zh": "台積電南科18廠",
+            "operator": "台積電",
+            "product": "electronics"
+          }
+        }
+      }
+    },
+    "seh-shirakawa": {
+      "id": "seh-shirakawa",
+      "company_id": "shinetsu",
+      "name": "신에츠 반도체 시라카와 공장",
+      "location_type": "wafer_plant",
+      "country": "일본",
+      "address": "150 Oh-hira, Odakura, Nishigo, Fukushima, Japan",
+      "lat": 37.11366,
+      "lon": 140.166744,
+      "source": "https://www.shinetsu.co.jp/seh/shirakawa/factory/",
+      "coordinate_source": "https://maps.app.goo.gl/e6RPNPFXymoaBw4i9",
+      "coordinate_precision": "기업 공식 위치 페이지가 연결한 지도 POI 좌표",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [
+        "웨이퍼 제조"
+      ],
+      "role_note": "공식 자료에 단결정·폴리시드·에피 웨이퍼 일관 생산을 명시. 고객별 납품 비중은 미확인.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "map_resolved",
+        "summary": "공식 지도 POI 좌표 일치",
+        "evidence": {
+          "id": "seh-shirakawa",
+          "url": "https://maps.app.goo.gl/e6RPNPFXymoaBw4i9",
+          "result": "map_resolved",
+          "resolved_url": "https://www.google.com/maps/place/%E4%BF%A1%E8%B6%8A%E5%8D%8A%E5%B0%8E%E4%BD%93%E3%88%B1%E7%99%BD%E6%B2%B3%E5%B7%A5%E5%A0%B4/@37.11366,140.1641691,17z/data=!3m2!4b1!5s0x6020253d1dbc761f:0x1a32b8f2efd386e9!4m6!3m5!1s0x6020253cbe9d43a5:0x8c26f34c3de30ade!8m2!3d37.11366!4d140.166744!16s%2Fg%2F1tykvg_g?authuser=0&entry=tts&g_ep=EgoyMDI0MTAxNS4wIPu8ASoASAFQAw%3D%3D",
+          "coordinate_candidates": [
+            [
+              "37.11366",
+              "140.166744"
+            ]
+          ]
+        }
+      }
+    },
+    "sumco-imari": {
+      "id": "sumco-imari",
+      "company_id": "sumco",
+      "name": "SUMCO 이마리·구바라 공장",
+      "location_type": "wafer_plant",
+      "country": "일본",
+      "address": "1-52 Kubara, Yamashiro-cho, Imari, Saga, Japan",
+      "lat": 33.3063591,
+      "lon": 129.8179004,
+      "source": "https://www.sumcosi.com/english/corporate/profile.html",
+      "coordinate_source": "https://www.openstreetmap.org/way/640977291",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [
+        "웨이퍼 제조"
+      ],
+      "role_note": "공식 인증서에 반도체용 단결정 실리콘 제품 생산 사업장으로 명시.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "role_source": "https://www.sumcosi.com/english/corporate/pdf/IATF16949-SUMCO%20Kubara.pdf",
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "sumco-imari",
+          "url": "https://www.openstreetmap.org/way/640977291",
+          "result": "within_source_bounds",
+          "bounds": [
+            33.3040768,
+            129.8148179,
+            33.3090301,
+            129.8213047
+          ],
+          "tags": {
+            "addr:block_number": "1番地52",
+            "addr:city": "伊万里市",
+            "addr:postcode": "849-4256",
+            "addr:province": "佐賀県",
+            "addr:quarter": "山代町久原",
+            "industrial": "semiconductor",
+            "landuse": "industrial",
+            "man_made": "works",
+            "name": "SUMCO九州事業所久原工場",
+            "name:en": "SUMCO Kyushu Kubara Factory",
+            "name:ja": "SUMCO九州事業所久原工場",
+            "name:ja-Hira": "さむこきゅうしゅうじぎょうしょくばらこうじょう",
+            "operator": "SUMCO",
+            "operator:website": "https://www.sumcosi.com/",
+            "operator:wikidata": "Q2208172",
+            "operator:wikipedia": "ja:SUMCO",
+            "product": "electronics"
+          }
+        }
+      }
+    },
+    "airliquide-hq": {
+      "id": "airliquide-hq",
+      "company_id": "airliquide",
+      "name": "Air Liquide 파리 본사",
+      "location_type": "hq",
+      "country": "프랑스",
+      "address": "75 Quai d Orsay, Paris, France",
+      "lat": 48.8622331,
+      "lon": 2.3047133,
+      "source": "https://electronics.airliquide.com/air-liquide-france",
+      "coordinate_source": "https://www.openstreetmap.org/node/1191423990",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "airliquide-hq",
+          "url": "https://www.openstreetmap.org/node/1191423990",
+          "result": "within_source_bounds",
+          "bounds": [
+            48.8622331,
+            2.3047133,
+            48.8622331,
+            2.3047133
+          ],
+          "tags": {
+            "addr:housenumber": "75",
+            "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+          }
+        }
+      }
+    },
+    "airproducts-hq": {
+      "id": "airproducts-hq",
+      "company_id": "airproducts",
+      "name": "Air Products 앨런타운 본사",
+      "location_type": "hq",
+      "country": "미국",
+      "address": "1940 Air Products Boulevard, Allentown, PA, USA",
+      "lat": 40.561224,
+      "lon": -75.5811013,
+      "source": "https://investors.airproducts.com/static-files/c828aa86-b3a8-4dfb-97b9-dee499c4d136",
+      "coordinate_source": "https://www.openstreetmap.org/way/1273201926",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "airproducts-hq",
+          "url": "https://www.openstreetmap.org/way/1273201926",
+          "result": "within_source_bounds",
+          "bounds": [
+            40.5606066,
+            -75.5817074,
+            40.5618623,
+            -75.5802793
+          ],
+          "tags": {
+            "addr:city": "Allentown",
+            "addr:postcode": "18106",
+            "addr:state": "PA",
+            "building": "office",
+            "building:levels": "2",
+            "name": "Air Products",
+            "roof:shape": "flat",
+            "website": "https://www.airproducts.com/"
+          }
+        }
+      }
+    },
+    "jsr-hq": {
+      "id": "jsr-hq",
+      "company_id": "jsr",
+      "name": "JSR 시오도메 본사",
+      "location_type": "hq",
+      "country": "일본",
+      "address": "1-9-2 Higashi-Shimbashi, Minato-ku, Tokyo, Japan",
+      "lat": 35.6621587,
+      "lon": 139.7601064,
+      "source": "https://www.jsr.co.jp/jsr_e/sustainability/corporate_information/",
+      "coordinate_source": "https://www.openstreetmap.org/way/151481808",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "jsr-hq",
+          "url": "https://www.openstreetmap.org/way/151481808",
+          "result": "within_source_bounds",
+          "bounds": [
+            35.6616185,
+            139.7595561,
+            35.6626988,
+            139.7606566
+          ],
+          "tags": {
+            "addr:housename": "汐留住友ビル",
+            "building": "commercial",
+            "building:levels": "23",
+            "name": "汐留住友ビル",
+            "name:en": "Shiodome Sumitomo Building",
+            "name:es": "Edificio Shiodome Sumitomo",
+            "source": "Bing, 2007",
+            "wikidata": "Q11550514",
+            "wikimedia_commons": "Category:Shiodome Sumitomo Building",
+            "wikipedia": "ja:汐留住友ビル"
+          }
+        }
+      }
+    },
+    "tok-hq": {
+      "id": "tok-hq",
+      "company_id": "tok",
+      "name": "TOK 가와사키 본사",
+      "location_type": "hq",
+      "country": "일본",
+      "address": "150 Nakamaruko, Nakahara-ku, Kawasaki, Japan",
+      "lat": 35.5705036,
+      "lon": 139.6613322,
+      "source": "https://www.tok.co.jp/eng/company/outline",
+      "coordinate_source": "https://www.openstreetmap.org/way/267903058",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "tok-hq",
+          "url": "https://www.openstreetmap.org/way/267903058",
+          "result": "within_source_bounds",
+          "bounds": [
+            35.5702336,
+            139.6609235,
+            35.5709057,
+            139.661625
+          ],
+          "tags": {
+            "building": "yes",
+            "name": "東京応化工業",
+            "source": "Bing"
+          }
+        }
+      }
+    },
+    "fujifilm-hq": {
+      "id": "fujifilm-hq",
+      "company_id": "fujifilm",
+      "name": "Fujifilm 도쿄 미드타운 본사",
+      "location_type": "hq",
+      "country": "일본",
+      "address": "Midtown West, 9-7-3 Akasaka, Minato-ku, Tokyo, Japan",
+      "lat": 35.6658408,
+      "lon": 139.7309232,
+      "source": "https://www.fujifilm.com/jp/en/about/corporate/overview",
+      "coordinate_source": "https://www.openstreetmap.org/way/568692883",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "공식 본사 주소가 있는 도쿄 미드타운 단지의 중심점. 해당 사무실 층/출입구 위치가 아님.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "fujifilm-hq",
+          "url": "https://www.openstreetmap.org/way/568692883",
+          "result": "within_source_bounds",
+          "bounds": [
+            35.6644898,
+            139.728984,
+            35.6671461,
+            139.7328912
+          ],
+          "tags": {
+            "architect": "Skidmore, Owings and Merrill",
+            "architect:wikidata": "Q459464",
+            "contact:instagram": "midtown.tokyo",
+            "contact:phone": "+81 3-3475-3100",
+            "contact:tripadvisor": "1574646",
+            "contact:twitter": "tokyomidtown_jp",
+            "contact:website": "https://www.tokyo-midtown.com/jp/",
+            "contact:youtube": "UCztMUelG7JoZaBChcfNXrKg",
+            "landuse": "commercial",
+            "name": "東京ミッドタウン",
+            "name:en": "Tokyo Midtown",
+            "name:es": "Tokyo Midtown",
+            "name:fr": "Tokyo Midtown",
+            "name:ja-Hira": "とうきょうミッドタウン",
+            "name:ja-Latn": "Tōkyō-middotaun",
+            "name:ko": "도쿄 미드타운",
+            "name:zh": "東京中城",
+            "opening_hours": "Mo-Su 11:00-24:00; Jan 01 off",
+            "start_date": "2007-03-30",
+            "wheelchair": "yes",
+            "wikidata": "Q1364393",
+            "wikimedia_commons": "Category:Tokyo Midtown",
+            "wikipedia": "ja:東京ミッドタウン"
+          }
+        }
+      }
+    },
+    "asml-campus": {
+      "id": "asml-campus",
+      "company_id": "asml",
+      "name": "ASML 펠트호번 본사 캠퍼스",
+      "location_type": "hq_campus",
+      "country": "네덜란드",
+      "address": "De Run 6501, Veldhoven, Netherlands",
+      "lat": 51.4032168,
+      "lon": 5.4143667,
+      "source": "https://www.asml.com/en/contact-us",
+      "coordinate_source": "https://www.openstreetmap.org/way/770919809",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "asml-campus",
+          "url": "https://www.openstreetmap.org/way/770919809",
+          "result": "within_source_bounds",
+          "bounds": [
+            51.3999863,
+            5.4057321,
+            51.4064794,
+            5.4193532
+          ],
+          "tags": {
+            "man_made": "works",
+            "name": "ASML",
+            "official_name": "ASML Holding N.V.",
+            "website": "https://www.asml.com",
+            "wikidata": "Q297879",
+            "wikimedia_commons": "Category:ASML",
+            "wikipedia": "nl:ASML"
+          }
+        }
+      }
+    },
+    "lam-hq": {
+      "id": "lam-hq",
+      "company_id": "lam",
+      "name": "Lam Research 프리몬트 본사",
+      "location_type": "hq",
+      "country": "미국",
+      "address": "4650 Cushing Parkway, Fremont, California, USA",
+      "lat": 37.4886142,
+      "lon": -121.9569958,
+      "source": "https://www.lamresearch.com/company/locations/",
+      "coordinate_source": "https://www.openstreetmap.org/way/129929554",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "lam-hq",
+          "url": "https://www.openstreetmap.org/way/129929554",
+          "result": "within_source_bounds",
+          "bounds": [
+            37.4881787,
+            -121.9579611,
+            37.4890323,
+            -121.9561073
+          ],
+          "tags": {
+            "addr:city": "Fremont",
+            "addr:housenumber": "4650",
+            "addr:postcode": "94538",
+            "addr:state": "CA",
+            "addr:street": "Cushing Parkway",
+            "building": "office",
+            "description": "per http://www.lamresearch.com/contact-us",
+            "name": "Lam Research",
+            "operator": "LAM Research",
+            "ref": "CA-01",
+            "source": "Bing",
+            "website": "https://www.lamresearch.com/"
+          }
+        }
+      }
+    },
+    "applied-hq": {
+      "id": "applied-hq",
+      "company_id": "applied",
+      "name": "Applied Materials Bowers 본사 사업장",
+      "location_type": "hq_campus",
+      "country": "미국",
+      "address": "3050 Bowers Avenue, Santa Clara, California, USA",
+      "lat": 37.37760875,
+      "lon": -121.97876855000001,
+      "source": "https://www.appliedmaterials.com/us/en/contact.html",
+      "coordinate_source": "https://www.openstreetmap.org/way/205830299",
+      "coordinate_precision": "공식 Bowers 본사 주소와 대조한 OSM Building 1 도형의 경계상자 중심 · 사무실/출하 장소 미확인",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "기업 대표용 본사 사업장 위치. OSM Applied Materials Building 1 기준이며 특정 증착·배선 장비 제조·출하 공장이라는 근거가 아님.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "corrected_building",
+        "summary": "도로 참조 오류 → 사업장 건물로 교정",
+        "evidence": {
+          "id": "applied-hq",
+          "url": "https://www.openstreetmap.org/way/205830299",
+          "result": "corrected_building",
+          "previous": {
+            "lat": 37.376829,
+            "lon": -121.97789,
+            "coordinate_source": "https://www.openstreetmap.org/way/28484970"
+          },
+          "bounds": [
+            37.3770823,
+            -121.9792594,
+            37.3781352,
+            -121.9782777
+          ],
+          "tags": {
+            "building": "yes",
+            "name": "Applied Materials Building 1",
+            "office": "company",
+            "website": "https://www.appliedmaterials.com/",
+            "wikidata": "Q621610",
+            "wikipedia": "en:Applied Materials"
+          }
+        }
+      }
+    },
+    "merck-hq": {
+      "id": "merck-hq",
+      "company_id": "merck",
+      "name": "Merck 다름슈타트 본사 사업장",
+      "location_type": "hq_campus",
+      "country": "독일",
+      "address": "Frankfurter Strasse 250, Darmstadt, Germany",
+      "lat": 49.8958849,
+      "lon": 8.6543607,
+      "source": "https://www.reports.emdgroup.com/en/annualreport/2025/services/imprint.html",
+      "coordinate_source": "https://www.openstreetmap.org/way/1103133550",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "merck-hq",
+          "url": "https://www.openstreetmap.org/way/1103133550",
+          "result": "within_source_bounds",
+          "bounds": [
+            49.8956276,
+            8.6542943,
+            49.8960892,
+            8.6544456
+          ],
+          "tags": {
+            "area": "yes",
+            "bench": "yes",
+            "bin": "yes",
+            "lit": "yes",
+            "name": "Merck",
+            "network": "RMV",
+            "public_transport": "platform",
+            "railway": "platform",
+            "shelter": "yes",
+            "tactile_paving": "yes",
+            "tram": "yes"
+          }
+        }
+      }
+    },
+    "advantest-hq": {
+      "id": "advantest-hq",
+      "company_id": "advantest",
+      "name": "Advantest 도쿄 본사",
+      "location_type": "hq",
+      "country": "일본",
+      "address": "Shin Marunouchi Center Bldg., 1-6-2 Marunouchi, Tokyo, Japan",
+      "lat": 35.684129,
+      "lon": 139.766408,
+      "source": "https://www.advantest.com/en/about/offices/japan-offices/",
+      "coordinate_source": "https://maps.app.goo.gl/wdj5jzw6spH9fLNm8",
+      "coordinate_precision": "기업 공식 위치 페이지가 연결한 지도 POI 좌표",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "map_resolved",
+        "summary": "공식 지도 POI 좌표 일치",
+        "evidence": {
+          "id": "advantest-hq",
+          "url": "https://maps.app.goo.gl/wdj5jzw6spH9fLNm8",
+          "result": "map_resolved",
+          "resolved_url": "https://www.google.com/maps/place/%E3%88%B1%E3%82%A2%E3%83%89%E3%83%90%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88/@35.6841333,139.7638277,16z/data=!3m2!4b1!5s0x60188bf8e726bb31:0xe42f2814e2b97257!4m7!3m6!1s0x60188bf8e735c08d:0x7851ebfd5fc434a!8m2!3d35.684129!4d139.766408!15sChjjiLHjgqLjg4njg5Djg7Pjg4bjgrnjg4giA4gBAZIBGWVsZWN0cm9uaWNfcGFydHNfc3VwcGxpZXKqAXsKDS9nLzExYjdxNXFtaHAKCS9tLzA3aDJiaxABKh0iGeOIsSDjgqLjg4njg5Djg7Pjg4bjgrnjg4goCDIfEAEiGzfY-Odt-fkSyiDoENqW5FGeFIwuCBArZvCoGzIdEAIiGeOIsSDjgqLjg4njg5Djg7Pjg4bjgrnjg4jgAQA!16s%2Fg%2F1tf57wlc?entry=tts&g_ep=EgoyMDI1MTAxNC4wIPu8ASoASAFQAw%3D%3D&skid=45d43059-1960-4733-b19c-cbfc406bf44e",
+          "coordinate_candidates": [
+            [
+              "35.684129",
+              "139.766408"
+            ]
+          ]
+        }
+      }
+    },
+    "teradyne-hq": {
+      "id": "teradyne-hq",
+      "company_id": "teradyne",
+      "name": "Teradyne 노스리딩 본사",
+      "location_type": "hq",
+      "country": "미국",
+      "address": "600 Riverpark Drive, North Reading, MA, USA",
+      "lat": 42.5556183,
+      "lon": -71.1356049,
+      "source": "https://www.teradyne.com/company/contact-teradyne/",
+      "coordinate_source": "https://www.openstreetmap.org/way/214897688",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "teradyne-hq",
+          "url": "https://www.openstreetmap.org/way/214897688",
+          "result": "within_source_bounds",
+          "bounds": [
+            42.5542991,
+            -71.1372409,
+            42.5568886,
+            -71.1342698
+          ],
+          "tags": {
+            "addr:city": "North Reading",
+            "addr:housenumber": "600",
+            "addr:postcode": "01864",
+            "addr:state": "MA",
+            "addr:street": "Riverpark Drive",
+            "building": "commercial",
+            "name": "Teradyne",
+            "smoking": "outside"
+          }
+        }
+      }
+    },
+    "ase-k7": {
+      "id": "ase-k7",
+      "company_id": "ase",
+      "name": "ASE 가오슝 K7 사업장",
+      "location_type": "assembly_test",
+      "country": "대만",
+      "address": "109 Neihuan N. Rd., Nanzi, Kaohsiung, Taiwan",
+      "lat": 22.723549,
+      "lon": 120.3002558,
+      "source": "https://asekh.aseglobal.com/Uploads/Pdfs/28baaf8b-cf5c-4ec4-85a5-08d72a72f3eb.pdf",
+      "coordinate_source": "https://www.openstreetmap.org/way/255792592",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [
+        "패키징"
+      ],
+      "role_note": "공식 인증서의 K7 패키징/검사 사업장. wafer EDS 전용 위치로 단정하지 않음.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "ase-k7",
+          "url": "https://www.openstreetmap.org/way/255792592",
+          "result": "within_source_bounds",
+          "bounds": [
+            22.7229309,
+            120.2995135,
+            22.7243351,
+            120.3009923
+          ],
+          "tags": {
+            "building": "industrial",
+            "name": "日月光K7",
+            "name:en": "ASE K7",
+            "name:zh": "日月光K7"
+          }
+        }
+      }
+    },
+    "amkor-hq": {
+      "id": "amkor-hq",
+      "company_id": "amkor",
+      "name": "Amkor 템피 본사",
+      "location_type": "hq",
+      "country": "미국",
+      "address": "2045 E. Innovation Circle, Tempe, AZ, USA",
+      "lat": 33.3357794,
+      "lon": -111.8988351,
+      "source": "https://amkor.com/contact-us/",
+      "coordinate_source": "https://www.openstreetmap.org/way/982143765",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "amkor-hq",
+          "url": "https://www.openstreetmap.org/way/982143765",
+          "result": "within_source_bounds",
+          "bounds": [
+            33.335257,
+            -111.8997587,
+            33.3359967,
+            -111.8986543
+          ],
+          "tags": {
+            "addr:city": "Tempe",
+            "addr:housenumber": "2045",
+            "addr:postcode": "85284",
+            "addr:state": "AZ",
+            "addr:street": "East Innovation Circle",
+            "building": "yes",
+            "name": "Amkor Technology Inc",
+            "office": "yes"
+          }
+        }
+      }
+    },
+    "sibelco-quartz": {
+      "id": "sibelco-quartz",
+      "company_id": "sibelco",
+      "name": "Sibelco Spruce Pine Quartz Site",
+      "location_type": "mine_processing",
+      "country": "미국",
+      "address": "7638 South Highway 226, Spruce Pine, NC, USA",
+      "lat": 35.9368259,
+      "lon": -82.0971914,
+      "source": "https://www.sibelco.com/en/sites/quartz",
+      "coordinate_source": "https://www.openstreetmap.org/way/1259538388",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "공식 주소와 OSM 광산·분리 사업장 일치. 특정 채굴 지점/계약별 물량은 미확인.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "sibelco-quartz",
+          "url": "https://www.openstreetmap.org/way/1259538388",
+          "result": "within_source_bounds",
+          "bounds": [
+            35.936769,
+            -82.0973486,
+            35.9369561,
+            -82.0970341
+          ],
+          "tags": {
+            "addr:city": "Spruce Pine",
+            "addr:housenumber": "7638",
+            "addr:postcode": "28777",
+            "addr:state": "NC",
+            "addr:street": "South Highway 226",
+            "building": "yes",
+            "name": "Sibelco Quartz Site",
+            "office": "company",
+            "phone": "+1 828 765 4283",
+            "website": "https://www.sibelco.com/en/sites/quartz"
+          }
+        }
+      }
+    },
+    "wacker-burghausen": {
+      "id": "wacker-burghausen",
+      "company_id": "wacker",
+      "name": "WACKER 부르크하우젠 사업장",
+      "location_type": "materials_campus",
+      "country": "독일",
+      "address": "Johannes-Hess-Strasse 24, 84489 Burghausen, Germany",
+      "lat": 48.1845241,
+      "lon": 12.846597,
+      "source": "https://www.wacker.com/cms/media/asset/about_wacker/wacker_at_a_glance/corporate_strategy_and_policy_guidelines/ims/certifications/iso_3/wacker_group_iso50001_de.pdf",
+      "coordinate_source": "https://www.openstreetmap.org/way/305194854",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "공식 반도체급 폴리실리콘 생산 지역과 OSM 사업장 도형의 중심점. 특정 생산동 좌표가 아님.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "wacker-burghausen",
+          "url": "https://www.openstreetmap.org/way/305194854",
+          "result": "within_source_bounds",
+          "bounds": [
+            48.1768316,
+            12.8266266,
+            48.1920456,
+            12.8572171
+          ],
+          "tags": {
+            "landuse": "industrial",
+            "name": "Wacker Chemie AG",
+            "operator": "Wacker Chemie AG",
+            "phone": "+49 8677 830",
+            "website": "https://www.wacker.com/",
+            "wikidata": "Q535517",
+            "wikipedia": "de:Wacker Chemie"
+          }
+        }
+      }
+    },
+    "hoya-hq": {
+      "id": "hoya-hq",
+      "company_id": "hoya",
+      "name": "HOYA 니시신주쿠 본사",
+      "location_type": "hq",
+      "country": "일본",
+      "address": "6-10-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo, Japan",
+      "lat": 35.6945819,
+      "lon": 139.6908403,
+      "source": "https://www.hoya.com/en/company/profile/",
+      "coordinate_source": "https://www.openstreetmap.org/relation/12426478",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "hoya-hq",
+          "url": "https://www.openstreetmap.org/relation/12426478",
+          "result": "within_source_bounds",
+          "bounds": [
+            35.6943707,
+            139.6904236,
+            35.694776,
+            139.6909908
+          ],
+          "tags": {
+            "addr:block_number": "10",
+            "addr:housename": "日土地西新宿ビル",
+            "addr:housenumber": "1",
+            "addr:neighbourhood": "6",
+            "addr:postcode": "160-0023",
+            "addr:province": "東京都",
+            "addr:quarter": "西新宿",
+            "addr:suburb": "新宿区",
+            "building": "yes",
+            "building:colour": "#76909b",
+            "building:levels": "23",
+            "building:material": "glass",
+            "height": "109",
+            "name": "日土地西新宿ビル",
+            "name:ja_rm": "Ni~Tsu tochi Nishishinjuku biru",
+            "roof:colour": "#a8b4c9",
+            "type": "multipolygon",
+            "wikidata": "Q22009327"
+          }
+        }
+      }
+    },
+    "agc-hq": {
+      "id": "agc-hq",
+      "company_id": "agc",
+      "name": "AGC 마루노우치 본사",
+      "location_type": "hq",
+      "country": "일본",
+      "address": "1-5-1 Marunouchi, Chiyoda-ku, Tokyo, Japan",
+      "lat": 35.6826907,
+      "lon": 139.7643437,
+      "source": "https://www.agc.com/en/company/profile/index.html",
+      "coordinate_source": "https://www.openstreetmap.org/relation/3816171",
+      "coordinate_precision": "주소·명칭 일치 OSM 사업장/건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "agc-hq",
+          "url": "https://www.openstreetmap.org/relation/3816171",
+          "result": "within_source_bounds",
+          "bounds": [
+            35.6820804,
+            139.7637399,
+            35.6831028,
+            139.7648495
+          ],
+          "tags": {
+            "addr:block_number": "5",
+            "addr:city": "千代田区",
+            "addr:housenumber": "1",
+            "addr:neighbourhood": "一丁目",
+            "addr:postcode": "100-6590",
+            "addr:province": "東京都",
+            "addr:quarter": "丸の内",
+            "alt_name:en": "New Inner Circle Building",
+            "alt_name:fr": "Nouveau Building de Marunouchi",
+            "alt_name:zh": "新丸之內大樓",
+            "building": "commercial",
+            "building:levels": "38",
+            "building:levels:underground": "4",
+            "contact:tripadvisor": "1991065",
+            "contact:website": "https://www.marunouchi.com/building/shinmaru/",
+            "height": "197.6",
+            "loc_name": "新丸ビル",
+            "loc_name:ja-Hira": "しん まる ビル",
+            "loc_name:ja-Latn": "Shin Maru Biru",
+            "name": "新丸の内ビルディング",
+            "name:en": "Shin Marunouchi Building",
+            "name:es": "Shin Marunouchi Building",
+            "name:fr": "Building Shin Marunouchi",
+            "name:ja-Hira": "しん まるのうビルディング",
+            "name:ja-Latn": "Shin-marunouchi-birudingu",
+            "name:ko": "신마루노우치 빌딩",
+            "name:zh": "新丸之內大廈",
+            "note": "estimate",
+            "start_date": "2007-04-19",
+            "type": "multipolygon",
+            "wikidata": "Q1134387",
+            "wikimedia_commons": "Category:Shin-Marunouchi Building",
+            "wikipedia": "ja:新丸の内ビルディング"
+          }
+        }
+      }
+    },
+    "jx-hq": {
+      "id": "jx-hq",
+      "company_id": "jx",
+      "name": "JX Advanced Metals 도쿄 본사",
+      "location_type": "hq",
+      "country": "일본",
+      "address": "Okura Prestige Tower, 2-10-4 Toranomon, Tokyo, Japan",
+      "lat": 35.6669114,
+      "lon": 139.7439991,
+      "source": "https://www.jx-nmm.com/english/company/network/office/",
+      "coordinate_source": "https://goo.gl/maps/ubxRjhBK1yGTVgn68",
+      "coordinate_precision": "기업 공식 위치 페이지가 연결한 지도 POI 좌표",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "map_resolved",
+        "summary": "공식 지도 POI 좌표 일치",
+        "evidence": {
+          "id": "jx-hq",
+          "url": "https://goo.gl/maps/ubxRjhBK1yGTVgn68",
+          "result": "map_resolved",
+          "resolved_url": "https://www.google.co.jp/maps/place/%E3%82%AA%E3%83%BC%E3%82%AF%E3%83%A9+%E3%83%97%E3%83%AC%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8%E3%82%BF%E3%83%AF%E3%83%BC/@35.6669114,139.7418104,17z/data=!4m5!3m4!1s0x60188b7d5a82960b:0xe317eb491922c811!8m2!3d35.6669114!4d139.7439991?hl=en&shorturl=1",
+          "coordinate_candidates": [
+            [
+              "35.6669114",
+              "139.7439991"
+            ]
+          ]
+        }
+      }
+    },
+    "posco-gwangyang": {
+      "id": "posco-gwangyang",
+      "company_id": "posco-neon",
+      "name": "POSCO 광양제철소",
+      "location_type": "materials_campus",
+      "country": "한국",
+      "address": "Gwangyang, Jeollanam-do, Korea",
+      "lat": 34.9094638,
+      "lon": 127.752543,
+      "source": "https://newsroom.posco.com/kr/포스코에어솔루션-준공-반도체-및-우주항공用-희귀/",
+      "coordinate_source": "https://www.openstreetmap.org/way/398314725",
+      "coordinate_precision": "OSM 광양제철소 전체 부지 대표점 · 동호안 희귀가스 공장 건물 좌표는 미확인",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "광양제철소의 광역 부지 위치. 공식 자료는 동호안 희귀가스 공장을 설명하나 이 점을 해당 공장 건물 위치로 해석하면 안 됨.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "posco-gwangyang",
+          "url": "https://www.openstreetmap.org/way/398314725",
+          "result": "within_source_bounds",
+          "bounds": [
+            34.8865863,
+            127.7044482,
+            34.9316978,
+            127.7844131
+          ],
+          "tags": {
+            "industrial": "steel",
+            "landuse": "industrial",
+            "name": "POSCO 광양제철소",
+            "name:ja": "POSCO 光陽製鉄所"
+          }
+        }
+      }
+    },
+    "heraeus-hanau": {
+      "id": "heraeus-hanau",
+      "company_id": "heraeus",
+      "name": "Heraeus Electronics 하나우 사업장",
+      "location_type": "materials_campus",
+      "country": "독일",
+      "address": "Heraeusstrasse 12-14, Hanau, Germany",
+      "lat": 50.131773,
+      "lon": 8.9255364,
+      "source": "https://www.heraeus-electronics.com/dam/jcr%3Af83ae61b-c488-4325-8b15-e91874116561/Germany_ISO%209001%202015.pdf",
+      "coordinate_source": "https://www.openstreetmap.org/way/115649294",
+      "coordinate_precision": "공식 주소와 일치하는 OSM 건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [
+        "패키징"
+      ],
+      "role_note": "공식 인증서의 본딩 와이어·솔더·소결 소재 사업장. 고객·원산지 물량은 미확인.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "heraeus-hanau",
+          "url": "https://www.openstreetmap.org/way/115649294",
+          "result": "within_source_bounds",
+          "bounds": [
+            50.1316694,
+            8.9253933,
+            50.131875,
+            8.9256731
+          ],
+          "tags": {
+            "addr:city": "Hanau",
+            "addr:country": "DE",
+            "addr:housenumber": "12-14",
+            "addr:postcode": "63450",
+            "addr:street": "Heraeusstraße",
+            "building": "industrial",
+            "name": "602"
+          }
+        }
+      }
+    },
+    "dongjin-hq": {
+      "id": "dongjin-hq",
+      "company_id": "dongjin",
+      "name": "동진쎄미켐 서울 본사",
+      "location_type": "hq",
+      "country": "한국",
+      "address": "KGIT Center 23F, 402 World Cup buk-ro, Mapo-gu, Seoul, Korea",
+      "lat": 37.5800864,
+      "lon": 126.8886944,
+      "source": "https://www.dongjin.com/en/company/be_domestic.php",
+      "coordinate_source": "https://www.openstreetmap.org/way/691116434",
+      "coordinate_precision": "공식 본사 주소와 일치하는 OSM 건물 도형 내부 대표점",
+      "checked_at": "2026-10-26",
+      "status": "출처 있음",
+      "process_roles": [],
+      "role_note": "본사 위치. PR 생산 공장·출하 장소로 표시하지 않음. 우회 선은 기업 간 가정 관계.",
+      "site_impact_share": null,
+      "route_allocation": null,
+      "coordinate_audit": {
+        "checked_at": "2026-10-26",
+        "method": "within_source_bounds",
+        "summary": "사업장·건물 도형 범위 대조",
+        "evidence": {
+          "id": "dongjin-hq",
+          "url": "https://www.openstreetmap.org/way/691116434",
+          "result": "within_source_bounds",
+          "bounds": [
+            37.5798533,
+            126.8884073,
+            37.580325,
+            126.888993
+          ],
+          "tags": {
+            "building": "office",
+            "building:levels": "24",
+            "height": "99",
+            "name": "KGIT센터",
+            "start_date": "2007"
+          }
+        }
+      }
+    }
+  },
+  "bindings": {
+    "samsung": "samsung-giheung",
+    "tsmc": "tsmc-fab12a",
+    "shinetsu": "seh-shirakawa",
+    "sumco": "sumco-imari",
+    "airliquide": "airliquide-hq",
+    "airproducts": "airproducts-hq",
+    "jsr": "jsr-hq",
+    "tok": "tok-hq",
+    "fujifilm": "fujifilm-hq",
+    "asml": "asml-campus",
+    "lam": "lam-hq",
+    "applied": "applied-hq",
+    "merck": "merck-hq",
+    "advantest": "advantest-hq",
+    "teradyne": "teradyne-hq",
+    "ase": "ase-k7",
+    "amkor": "amkor-hq",
+    "sibelco": "sibelco-quartz",
+    "wacker": "wacker-burghausen",
+    "hoya": "hoya-hq",
+    "agc": "agc-hq",
+    "jx": "jx-hq",
+    "posco-neon": "posco-gwangyang",
+    "heraeus": "heraeus-hanau",
+    "dongjin": "dongjin-hq"
+  },
+  "raw_bindings": {
+    "raw:quartz": "sibelco-quartz"
+  },
+  "unlocated_policy": "hide_on_globe_keep_in_model",
+  "attribution": "OpenStreetMap contributors, ODbL. https://www.openstreetmap.org/copyright",
+  "review_note": "27 registered anchors rechecked. 22 original OSM references within source bounds, 4 official POIs match, 1 road reference corrected to building. Geometry bounds alone do not verify office identity, production lines or deliveries."
+}

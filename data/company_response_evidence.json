@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29",
+  "sources": {
+    "company_tsmc_2025": {
+      "id": "company_tsmc_2025",
+      "title": "TSMC 2025 공급사 발표",
+      "url": "https://pr.tsmc.com/english/news/3274",
+      "edition": "2025-11-26",
+      "checked_at": "2026-10-29",
+      "scope": "공급사 수상 관계. 특정 품목·등급·공장·현행 물량의 계약 아님",
+      "status": "reviewed"
+    },
+    "company_sumco_awards": {
+      "id": "company_sumco_awards",
+      "title": "SUMCO 고객 발표",
+      "url": "https://www.sumcosi.com/english/corporate/evaluation.html",
+      "edition": "2025",
+      "checked_at": "2026-10-29",
+      "scope": "TSMC·Samsung·Kioxia·Sony 관련 고객 수상·지원 기록",
+      "status": "reviewed"
+    },
+    "company_akm_fire": {
+      "id": "company_akm_fire",
+      "title": "AKM 공장 화재 안내",
+      "url": "https://www.akm.com/jp/ja/about-us/news/information/20201030-information/",
+      "edition": "2020-10-30",
+      "checked_at": "2026-10-29",
+      "scope": "노베오카 화재·조기 복구 어려움·대체 생산 준비",
+      "status": "reviewed"
+    },
+    "company_rme_manual": {
+      "id": "company_rme_manual",
+      "title": "RME ADI-2 DAC 매뉴얼",
+      "url": "https://www.rme-audio.de/download/adi2dacr_e.pdf",
+      "edition": null,
+      "checked_at": "2026-10-29",
+      "scope": "4쪽에 기록된 기존 AKM 칩과 ESS 칩 전환. 최신 모든 제품 아님",
+      "status": "reviewed"
+    },
+    "route_maersk_2026": {
+      "id": "route_maersk_2026",
+      "title": "Maersk ME11·MECL 우회 안내",
+      "url": "https://www.maersk.com/~/media_sc9/maersk/Local%20information/Files/West%20Central%20Asia/Pakistan/overview/customer-advisory-re-routing-me11-and-mecl-service.pdf",
+      "edition": "2026-03-01",
+      "checked_at": "2026-10-29",
+      "scope": "해당 날짜 서비스 우회 발표. 현재 운항편·반도체 화물 취급 보증 아님",
+      "status": "reviewed"
+    },
+    "route_hapag_gemini": {
+      "id": "route_hapag_gemini",
+      "title": "Hapag-Lloyd Gemini 네트워크 안내",
+      "url": "https://www.hapag-lloyd.com/en/services-information/news/2024/10/gemini-network-update.html",
+      "edition": "2024-10",
+      "checked_at": "2026-10-29",
+      "scope": "2025-02 희망봉 네트워크 도입 결정 발표. 현재 운항 상황 별도 확인",
+      "status": "reviewed"
+    },
+    "route_wallenius_2024": {
+      "id": "route_wallenius_2024",
+      "title": "Wallenius Wilhelmsen 홍해 우회 발표",
+      "url": "https://www.walleniuswilhelmsen.com/news/red-sea-situation-vessels-re-routing-amid-safety-concerns",
+      "edition": "2024-01-09",
+      "checked_at": "2026-10-29",
+      "scope": "과거 우회 결정. 자동차·장비 해상운송 사업과 반도체 화물 적합성 구분",
+      "status": "reviewed"
+    }
+  },
+  "profiles": [
+    {
+      "name": "TSMC",
+      "role": "반도체 고객·파운드리",
+      "aliases": [
+        "TSMC"
+      ],
+      "source_ids": [
+        "company_tsmc_2025"
+      ]
+    },
+    {
+      "name": "Samsung Electronics",
+      "role": "반도체 고객",
+      "aliases": [
+        "Samsung Electronics"
+      ],
+      "source_ids": [
+        "company_sumco_awards"
+      ]
+    },
+    {
+      "name": "Kioxia",
+      "role": "메모리 고객",
+      "aliases": [
+        "Kioxia"
+      ],
+      "source_ids": [
+        "company_sumco_awards"
+      ]
+    },
+    {
+      "name": "Sony Semiconductor Solutions",
+      "role": "이미지센서 고객",
+      "aliases": [
+        "Sony Semiconductor Solutions"
+      ],
+      "source_ids": [
+        "company_sumco_awards"
+      ]
+    },
+    {
+      "name": "AKM",
+      "role": "반도체 부품 제조사",
+      "aliases": [
+        "AKM"
+      ],
+      "source_ids": [
+        "company_akm_fire"
+      ]
+    },
+    {
+      "name": "RME",
+      "role": "오디오 제품 고객",
+      "aliases": [
+        "RME"
+      ],
+      "source_ids": [
+        "company_rme_manual"
+      ]
+    },
+    {
+      "name": "ESS Technology",
+      "role": "대체 DAC 칩 제조사 기록",
+      "aliases": [
+        "ESS Technology"
+      ],
+      "source_ids": [
+        "company_rme_manual"
+      ]
+    },
+    {
+      "name": "Merck",
+      "role": "공급사 관계 발표",
+      "aliases": [
+        "Merck"
+      ],
+      "source_ids": [
+        "company_tsmc_2025"
+      ]
+    },
+    {
+      "name": "Resonac",
+      "role": "공급사 관계 발표",
+      "aliases": [
+        "Resonac"
+      ],
+      "source_ids": [
+        "company_tsmc_2025"
+      ]
+    },
+    {
+      "name": "Lam Research",
+      "role": "장비 공급사 관계 발표",
+      "aliases": [
+        "Lam Research"
+      ],
+      "source_ids": [
+        "company_tsmc_2025"
+      ]
+    },
+    {
+      "name": "Maersk",
+      "role": "컨테이너 선사 우회 발표",
+      "aliases": [
+        "Maersk"
+      ],
+      "source_ids": [
+        "route_maersk_2026"
+      ]
+    },
+    {
+      "name": "Hapag-Lloyd",
+      "role": "선사 네트워크 발표",
+      "aliases": [
+        "Hapag-Lloyd"
+      ],
+      "source_ids": [
+        "route_hapag_gemini"
+      ]
+    },
+    {
+      "name": "Wallenius Wilhelmsen",
+      "role": "차량·장비 해상운송 우회 발표",
+      "aliases": [
+        "Wallenius Wilhelmsen"
+      ],
+      "source_ids": [
+        "route_wallenius_2024"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "supplier": "JSR",
+      "customer": "TSMC",
+      "kind": "supplier_award",
+      "year": 2025,
+      "statement": "공식 공급사 수상 명단에 포함된 기업 관계",
+      "source_ids": [
+        "company_tsmc_2025"
+      ],
+      "limit": "특정 공장·제품 등급·현행 물량·사건 피해를 확인한 연결이 아님"
+    },
+    {
+      "supplier": "Shin-Etsu 그룹 · SEH",
+      "customer": "TSMC",
+      "kind": "supplier_award",
+      "year": 2025,
+      "statement": "공식 공급사 수상 명단에 포함된 기업 관계",
+      "source_ids": [
+        "company_tsmc_2025"
+      ],
+      "limit": "명단 법인은 Shin-Etsu Handotai이며 그룹 전체의 계약이 아님. 특정 공장·제품 등급·현행 물량·사건 피해를 확인한 연결이 아님"
+    },
+    {
+      "supplier": "SUMCO",
+      "customer": "TSMC",
+      "kind": "supplier_award",
+      "year": 2025,
+      "statement": "공식 공급사 수상 명단에 포함된 기업 관계",
+      "source_ids": [
+        "company_tsmc_2025"
+      ],
+      "limit": "특정 공장·제품 등급·현행 물량·사건 피해를 확인한 연결이 아님"
+    },
+    {
+      "supplier": "Merck",
+      "customer": "TSMC",
+      "kind": "supplier_award",
+      "year": 2025,
+      "statement": "공식 공급사 수상 명단에 포함된 기업 관계",
+      "source_ids": [
+        "company_tsmc_2025"
+      ],
+      "limit": "특정 공장·제품 등급·현행 물량·사건 피해를 확인한 연결이 아님"
+    },
+    {
+      "supplier": "Resonac",
+      "customer": "TSMC",
+      "kind": "supplier_award",
+      "year": 2025,
+      "statement": "공식 공급사 수상 명단에 포함된 기업 관계",
+      "source_ids": [
+        "company_tsmc_2025"
+      ],
+      "limit": "특정 공장·제품 등급·현행 물량·사건 피해를 확인한 연결이 아님"
+    },
+    {
+      "supplier": "Lam Research",
+      "customer": "TSMC",
+      "kind": "supplier_award",
+      "year": 2025,
+      "statement": "공식 공급사 수상 명단에 포함된 기업 관계",
+      "source_ids": [
+        "company_tsmc_2025"
+      ],
+      "limit": "장비 도입과 기존 설치 장비의 운전 영향을 구분. 특정 공장·제품 등급·현행 물량·사건 피해를 확인한 연결이 아님"
+    },
+    {
+      "supplier": "SUMCO",
+      "customer": "Samsung Electronics",
+      "kind": "customer_announcement",
+      "year": 2025,
+      "statement": "300mm 로직용 실리콘 웨이퍼 공급 관련 기록",
+      "source_ids": [
+        "company_sumco_awards"
+      ],
+      "limit": "PW/EPI 세부 구성·고객별 공장·물량·실제 피해는 별도 확인"
+    },
+    {
+      "supplier": "SUMCO",
+      "customer": "Kioxia",
+      "kind": "customer_announcement",
+      "year": 2025,
+      "statement": "300mm 메모리용 웨이퍼 품질·공급 지원 기록",
+      "source_ids": [
+        "company_sumco_awards"
+      ],
+      "limit": "PW/EPI 세부 구성·고객별 공장·물량·실제 피해는 별도 확인"
+    },
+    {
+      "supplier": "SUMCO",
+      "customer": "Sony Semiconductor Solutions",
+      "kind": "customer_announcement",
+      "year": 2025,
+      "statement": "이미지센서 기술 개발 지원·고객 수상 관계 기록",
+      "source_ids": [
+        "company_sumco_awards"
+      ],
+      "limit": "PW/EPI 세부 구성·고객별 공장·물량·실제 피해는 별도 확인"
+    },
+    {
+      "supplier": "AKM",
+      "customer": "RME",
+      "kind": "component_adoption",
+      "year": 2020,
+      "statement": "ADI-2 DAC의 기존 AKM 칩 사용과 화재 이후 조달 제약을 매뉴얼에 기록",
+      "source_ids": [
+        "company_rme_manual"
+      ],
+      "limit": "특정 제품 계열의 과거 기록 · 고객 손실 미산정"
+    }
+  ],
+  "responses": [
+    {
+      "id": "akm_rme_ess",
+      "original": "AKM",
+      "alternative": "ESS Technology",
+      "customer": "RME",
+      "statement": "매뉴얼에 기록된 ADI-2 DAC 버전의 AK4493 → ES9028Q2M 부품 전환",
+      "source_ids": [
+        "company_rme_manual"
+      ],
+      "limit": "다른 AKM 고객의 호환성·즉시 대체 가능성을 뜻하지 않음"
+    }
+  ],
+  "routes": [
+    {
+      "id": "maersk_me11_mecl",
+      "carrier": "Maersk",
+      "original": "홍해·수에즈 방향",
+      "alternative": "희망봉 방향",
+      "scope": "ME11·MECL 서비스",
+      "source_ids": [
+        "route_maersk_2026"
+      ],
+      "status": "dated_announcement",
+      "limit": "출발·도착·기항·화물 취급·운항일·예약 여력·운임은 새로 확인. 현재 추천 운항편이 아님"
+    },
+    {
+      "id": "hapag_gemini",
+      "carrier": "Hapag-Lloyd",
+      "original": "홍해·수에즈 방향",
+      "alternative": "희망봉 방향",
+      "scope": "Gemini 네트워크 도입 결정",
+      "source_ids": [
+        "route_hapag_gemini"
+      ],
+      "status": "dated_announcement",
+      "limit": "출발·도착·기항·화물 취급·운항일·예약 여력·운임은 새로 확인. 현재 추천 운항편이 아님"
+    },
+    {
+      "id": "wallenius_redsea",
+      "carrier": "Wallenius Wilhelmsen",
+      "original": "홍해·수에즈 방향",
+      "alternative": "희망봉 방향",
+      "scope": "당시 홍해 통항 예정 선박 우회 발표",
+      "source_ids": [
+        "route_wallenius_2024"
+      ],
+      "status": "dated_announcement",
+      "limit": "출발·도착·기항·화물 취급·운항일·예약 여력·운임은 새로 확인. 현재 추천 운항편이 아님"
+    }
+  ],
+  "limits": [
+    "자료상 기업 관계와 사건으로 인한 실제 고객 피해를 구분",
+    "제품 자료가 있는 벤더는 인증·공급 여력 확인 전 검토 후보",
+    "우회 발표는 해당 시점 기록이며 현재 운항·화물 적합성을 보증하지 않음",
+    "엔진·지도에 새로운 고객 관계를 자동 생성하지 않음"
+  ]
+}
