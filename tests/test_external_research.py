@@ -86,13 +86,18 @@ class ExternalResearchTests(unittest.TestCase):
         app.radio(key='ai_workspace_task').set_value('사건·공정 영향 조사').run()
         app.selectbox(key='research_example').select('공장 중단 → 공정').run()
         app.button(key='research_load').click().run()
-        self.assertEqual(app.session_state.research_mode,'공정 영향')
+        self.assertEqual(app.session_state.research_mode,'자동')
+        from news.external_research import suggest_mode
+        self.assertEqual(suggest_mode(app.session_state.research_query),'공정 영향')
         app.text_input(key='shared_api_input_research').set_value('synthetic-key').run()
         with patch('ui.external_research.research_external',return_value=dict(result,provenance=dict(model='synthetic-model'))):
             app.button(key='research_run').click().run()
         self.assertFalse(app.exception)
         self.assertIn('영향 검토 공정',[t.label for t in app.tabs])
         self.assertNotIn('대체 벤더',[t.label for t in app.tabs])
+        app.text_area(key='research_query').set_value('NF3 대체 공급사는?').run()
+        self.assertEqual(suggest_mode(app.session_state.research_query),'대체 벤더')
+        self.assertNotIn('research_report',app.session_state)
 
     def test_two_calls_search_required_then_schema_and_no_secret_in_input(self):
         calls=[]

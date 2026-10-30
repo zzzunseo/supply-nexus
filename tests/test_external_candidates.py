@@ -1,7 +1,7 @@
 import unittest
 from copy import deepcopy
 from unittest.mock import patch
-from news.external_research import question_intent,make_research_context
+from news.external_research import question_intent,make_research_context,suggest_mode
 from news.external_candidates import validate_candidates,fetch_public_page
 from ui.research_map import map_matches,focus_candidate
 from company_evidence import evidence_bundle
@@ -59,7 +59,7 @@ class ExternalCandidateUITests(unittest.TestCase):
         app.radio(key='demo_review_view').set_value('AI 분석').run()
         q='NF3 순도 99.999% 이상 대체 공급사'
         app.text_area(key='research_query').set_value(q).run()
-        context=make_research_context(evidence_bundle(),q,external_candidates=True)
+        context=make_research_context(evidence_bundle(),q,suggest_mode(q),external_candidates=True)
         app.session_state['research_report']=dict(context_id=context['id'],answer_only=True,question=q,search=dict(text='외부 후보 NF3 검토',sources=[],blocks=[],citation_count=1),external_candidates=[candidate])
         app.run()
         self.assertFalse(app.exception)

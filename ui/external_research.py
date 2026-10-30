@@ -1,6 +1,7 @@
 """Grounded external research cards and a separately labeled local library."""
 import json
 import os
+import re
 from urllib.parse import urlsplit
 import streamlit as st
 from .api_credentials import api_key, render_credentials, api_model, render_model
@@ -25,8 +26,8 @@ def clear_research():
 
 def load_question():
     clear_research();st.session_state.research_query=EXAMPLES[st.session_state.research_example]
-    if '→ 공정' in st.session_state.research_example:st.session_state.research_mode='공정 영향'
-    else:st.session_state.research_mode='통합 검토'
+    st.session_state.research_mode='자동'
+    st.session_state.research_intent='자동'
 
 
 def update_secret():
@@ -138,8 +139,13 @@ def render_report(report):
             st.warning('참조 자료는 있으나 문장별 인용이 없습니다. 아래 내용은 검토 초안입니다.')
         # Plain text prevents model-generated links/images from bypassing native source validation.
         answer=report['search']['text'].strip()
-        preview=answer.split('\n\n')[0]
-        if len(preview)>400:preview=preview[:400]+'…'
+        # Keep the substantive findings, not just the first caveat paragraph.
+        # Still render as plain text; validated source links are separate.
+        preview=re.sub(r'!?\[([^\]]*)\]\([^\n]*?\)',r'\1',answer)
+        preview=re.sub(r'(?m)^#{1,6}\s*','',preview).replace('**','')
+        preview=re.sub(r'(?m)^[ \t]*\|?[-:| \t]+\|[ \t]*$','',preview)
+        preview=re.sub(r'(?m)^[ \t]*\|[ \t]*','• ',preview).replace('|',' · ')
+        if len(preview)>650:preview=preview[:650].rsplit(' ',1)[0]+'…'
         st.text(preview)
         if preview!=answer:
             with st.expander('전체 답변 보기',expanded=False):st.text(answer)
@@ -273,6 +279,12 @@ def render_external_research(show_header=True,network=None):
             if saved.get('candidate_error'):st.warning(saved['candidate_error'])
             elif context.get('external_candidates') and not saved.get('external_candidates'):st.caption('이번 검색에서 원문 근거까지 연결된 외부 후보가 없습니다. 등록 후보는 아래에서 비교할 수 있습니다.')
         elif partial:
+            diagnosis=partial['search'].get('diagnostics',{})
+            reason=diagnosis.get('failure_reason')
+            if reason:
+                st.info({'missing_sources':'검색 응답에 인용·참조 URL이 없습니다. 출처 없는 답변은 분석 결과로 채택하지 않았습니다.',
+                    'urls_rejected':'응답의 출처 URL이 공개 HTTPS 검사에서 제외됐습니다. 진단에서 제외 개수를 확인할 수 있습니다.',
+                    'missing_answer':'검색 후 최종 답변이 비어 있습니다. 확보된 출처가 있으면 아래에서 정리만 재시도할 수 있습니다.'}.get(reason,'검색 응답의 상세 진단을 확인하세요.'))
             st.warning('출처가 있는 검색 초안은 보관했습니다. 상세 카드 정리는 완료되지 않았습니다.' if partial['search']['sources'] else '검색 도구는 실행됐지만 출처를 확보하지 못했습니다. 검증 가능한 답변이 아직 없습니다.')
             st.download_button('검색 초안·출처 보관',json.dumps(partial,ensure_ascii=False,indent=2),file_name='unreviewed-search-draft.json',mime='application/json',key='research_partial_download')
             if partial['search']['sources']:
@@ -330,7 +342,7 @@ def render_external_research(show_header=True,network=None):
             if network is not None:
                 from .research_map import render_research_map
                 render_research_map(network,context['query'],saved['search']['text'] if saved else '',candidates,
-                    selected_candidate=candidate['name'] if candidate else None)
+                    selected_candidate=candidate['name'] if candidate else None,facility_id=facility_id)
             else:st.info('현재 화면에는 지도 데이터가 연결되지 않았습니다.')
         if context.get('facility_scope',{}).get('facilities'):
             factories,overview,details=st.tabs(['공장 · 내부 거점','지도 · 조건 비교','대체 기업 · 제품 근거'])

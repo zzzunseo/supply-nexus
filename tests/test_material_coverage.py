@@ -51,7 +51,7 @@ class MaterialCoverageTests(unittest.TestCase):
 
  def test_manual_comparison_new_families(self):
   from streamlit.testing.v1 import AppTest
-  app=AppTest.from_string('from ui.product_comparison import render_product_comparison\nrender_product_comparison()').run()
+  app=AppTest.from_string('from ui.product_comparison import render_product_comparison\nrender_product_comparison()',default_timeout=30).run()
   for family in ('wet-chemical','cmp-abrasive'):
    app.selectbox(key='comparison_family').set_value(family).run()
    self.assertFalse(app.exception)

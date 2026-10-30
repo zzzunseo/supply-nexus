@@ -8,6 +8,28 @@ class ResearchMapTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):cls.network=build_network()
 
+    def test_wafer_impurity_mention_does_not_add_oxygen_supply_chain(self):
+        data=map_matches(self.network,'SUMCO 300mm 폴리시드 실리콘 웨이퍼 대안',
+            'Siltronic의 비저항과 산소 관리 기준을 확인하세요.')
+        self.assertNotIn('고순도 산소',data['materials'])
+        self.assertNotIn('산화',data['processes'])
+        self.assertIn('Siltronic',{m['name'] for m in data['markers']})
+
+    def test_hf_is_not_hydrogen_and_has_evidence_based_etch_scope(self):
+        data=map_matches(self.network,'고순도 불화수소 수용액 49% 대체 공급사')
+        self.assertFalse(mentions('불화수소','수소'))
+        self.assertNotIn('고순도 수소',data['materials'])
+        self.assertIn('불화수소',data['materials'])
+        self.assertIn('식각',data['processes'])
+
+    def test_named_factory_uses_factory_region_instead_of_headquarters(self):
+        data=map_matches(self.network,'TSMC Fab 14 중단을 가정')
+        markers={m['id']:m for m in data['markers']}
+        self.assertNotIn('tsmc',markers)
+        self.assertEqual(markers['facility:tsmc-14']['site'],'타이난')
+        self.assertIn('개략점',markers['facility:tsmc-14']['role_label'])
+        self.assertEqual(data['routes'],[])
+
     def test_company_and_route_use_registered_coordinates(self):
         data=map_matches(self.network,'SUMCO 수에즈','희망봉 우회')
         ids={m['id'] for m in data['markers']}

@@ -9,13 +9,14 @@ from pathlib import Path
 def mentions(text, name):
     text=unicodedata.normalize('NFKC',text).casefold()
     name=unicodedata.normalize('NFKC',name).casefold().strip()
-    if len(name)<2:return False
+    if len(name)<2 or name not in text:return False
     pattern=re.escape(name)
     if name.isascii():pattern=r'(?<![a-z0-9])'+pattern+r'(?![a-z0-9])'
+    else:pattern=r'(?<![가-힣a-z0-9])'+pattern
     return bool(re.search(pattern,text))
 
 
-def map_matches(network,question,answer='',candidates=None):
+def map_matches(network,question,answer='',candidates=None,facility_id=''):
     # Research-only anchors include explicitly labeled address approximations.
     # They do not add nodes, capacities or contracts to the simulation engine.
     registry=json.loads((Path(__file__).resolve().parents[1]/'data/research_vendor_locations.json').read_text(encoding='utf-8'))
@@ -25,6 +26,11 @@ def map_matches(network,question,answer='',candidates=None):
             map_location=dict(place,name=place['site']))
     network=dict(network,entities=entities)
     rows={};materials=[];processes=[];comparisons=[];routes=[]
+    from news.material_scope import material_scope
+    scope=material_scope(question)
+    if scope.get('processes'):
+        materials.append(scope['kind'])
+        processes.extend(scope['processes'])
     def add(key,reason,origin):
         entity=network['entities'].get(key) or network['logistics'].get(key)
         if not entity:return
@@ -48,6 +54,11 @@ def map_matches(network,question,answer='',candidates=None):
             aliases=item.get('aliases',[])+[item['name']]
             for node in network['nodes'].values():
                 if node.get('item_id')==item['id']:aliases+=node.get('aliases',[])
+            # An answer can discuss impurities (e.g. wafer oxygen) without
+            # asking for that material's supply chain. Only canonical product
+            # names expand material suppliers from prose; question aliases and
+            # explicitly named companies/candidates remain supported.
+            if origin=='답변 언급':aliases=[item['name']]
             if not any(mentions(text,n) for n in aliases):continue
             if item['name'] not in materials:materials.append(item['name'])
             for process in item.get('processes',[]):
@@ -70,6 +81,17 @@ def map_matches(network,question,answer='',candidates=None):
             if any(n.casefold()==entity['name'].casefold() or n.casefold() in [a.casefold() for a in entity.get('aliases',[])] for n in names):
                 add(key,' / '.join(candidate['products'])+' · 등록 제품 비교','등록 후보')
                 if key in rows:rows[key].update(role='alternative',role_label='대체 검토 후보 · '+rows[key]['facility_kind'],origin='등록 후보',reason=' / '.join(candidate['products']),candidate_name=candidate['name'])
+    from news.facility_scope import facility_scope
+    facilities=facility_scope(question,facility_id)
+    selected=facilities.get('selected')
+    if selected:
+        rows.pop(selected['group'],None)
+        source=next(iter(facilities['sources'].values()),{})
+        rows[selected['id']]=dict(id=selected['id'],name=selected['name'],lat=selected['lat'],lon=selected['lon'],
+            site=selected['city'],score=None,role='supplier',role_label='선택 공장 지역 · 개략점',
+            reason='질문 또는 공장 선택으로 지정한 시설 · 피해 사실 미확정',origin='선택 공장',
+            facility_kind='공장 지역',precision=selected['coordinate_precision'],location_source=source.get('url'),
+            coordinate_source=None,scope=selected['note'])
     # Fixed, registered comparison pairs. These arcs connect comparison points,
     # not vessel tracks or inferred customer/supplier relationships.
     if any(word in question for word in ('우회','봉쇄','통항','막히','통과하지')):
@@ -85,7 +107,7 @@ def map_matches(network,question,answer='',candidates=None):
             comparisons.append(dict(original=point['name'],alternative=network['logistics'][alternative]['name'],
                 source=network['logistics'][alternative].get('source')))
     return dict(markers=list(rows.values()),routes=routes,comparisons=comparisons,review=True,applied=False,response=False,
-                context=sha256((question+'\n'+answer).encode()).hexdigest()[:20],
+                context=sha256((question+'\n'+answer+'\n'+facility_id).encode()).hexdigest()[:20],
                 status_label='질문·답변의 등록 위치 · 피해 판정 아님',
                 title='질문·답변과 일치하는 등록 위치',process=' · '.join(processes),loss=0,
                 materials=materials,processes=processes)
@@ -104,9 +126,9 @@ def focus_candidate(data,name):
     return data,marker
 
 
-def render_research_map(network,question,answer='',candidates=None,selected_candidate=None):
+def render_research_map(network,question,answer='',candidates=None,selected_candidate=None,facility_id=''):
     import streamlit as st
-    data,focused=focus_candidate(map_matches(network,question,answer,candidates),selected_candidate)
+    data,focused=focus_candidate(map_matches(network,question,answer,candidates,facility_id),selected_candidate)
     if selected_candidate:
         if focused:st.caption('선택 위치: '+focused['site']+' · '+focused['facility_kind'])
         else:st.info(selected_candidate+'의 확인된 위치가 없습니다. 전체 지도를 유지하며 조건 비교는 오른쪽에서 확인할 수 있습니다.')

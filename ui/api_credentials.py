@@ -38,7 +38,7 @@ def render_credentials(panel):
 
 def api_model():
     if 'ai_api_model' not in st.session_state:
-        st.session_state.ai_api_model=st.session_state.get('research_model') or os.environ.get('SUPPLY_AI_MODEL','gpt-4.1-mini')
+        st.session_state.ai_api_model=st.session_state.get('research_model') or os.environ.get('SUPPLY_AI_MODEL','gpt-6.1-sol')
     return st.session_state.ai_api_model
 
 def update_model(widget):
