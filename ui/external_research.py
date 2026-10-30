@@ -260,34 +260,50 @@ def render_external_research(show_header=True,network=None):
             except ValueError as error:st.error(str(error))
             finally:progress.empty()
         if not key:st.info('AI 분석을 실행하려면 오른쪽 ‘API 연결 설정’에 키를 입력하세요.')
+    map_panel,result_panel=st.columns([1.6,1],gap='large')
+    with result_panel:
+        if saved:
+            if saved.get('answer_only'):
+                render_report(saved)
+            else:
+                st.subheader('분석 결과')
+                st.write(saved['summary'])
+                with st.expander('상세 분석 · 근거 출처',expanded=False):
+                    render_report(saved)
+            if saved.get('candidate_error'):st.warning(saved['candidate_error'])
+            elif context.get('external_candidates') and not saved.get('external_candidates'):st.caption('이번 검색에서 원문 근거까지 연결된 외부 후보가 없습니다. 등록 후보는 아래에서 비교할 수 있습니다.')
+        elif partial:
+            st.warning('출처가 있는 검색 초안은 보관했습니다. 상세 카드 정리는 완료되지 않았습니다.' if partial['search']['sources'] else '검색 도구는 실행됐지만 출처를 확보하지 못했습니다. 검증 가능한 답변이 아직 없습니다.')
+            st.download_button('검색 초안·출처 보관',json.dumps(partial,ensure_ascii=False,indent=2),file_name='unreviewed-search-draft.json',mime='application/json',key='research_partial_download')
+            if partial['search']['sources']:
+                st.caption('검색을 다시 하지 않고 정리 요청만 1회 실행할 수 있습니다. 별도 사용료가 발생할 수 있으며 자동 재시도하지 않습니다.')
+                if st.button('저장된 검색으로 보고서 정리만 재시도',key='research_format_retry',disabled=not bool(key),width='stretch'):
+                    try:
+                        with st.spinner('기존 검색 초안을 정리하고 있습니다…'):
+                            result=format_research(context,partial['search'],key,api_model(),reuse=True)
+                        st.session_state.research_report=result
+                        st.session_state.pop('research_partial',None)
+                        st.rerun()
+                    except ValueError as error:st.error(str(error))
+            with st.expander('미검증 검색 초안·참조 자료'):
+                st.caption('검색 답변의 사건·수치·용도는 원문 확인 전입니다. 인용 링크가 있다고 주장이 검증된 것은 아닙니다.')
+                st.text(partial['search']['text'])
+                for source in partial['search']['sources']:source_link(source)
+            if not partial['search']['sources']:
+                st.info('출처 누락은 질문의 구체성만으로 설명할 수 없습니다. 반복 실행 전에 검색 진단을 확인하세요. 원인을 확인할 때까지 추가 결제는 필요하지 않습니다.')
+                with st.expander('검색 응답 형식 진단 · 키 제외'):
+                    st.json(partial['search'].get('diagnostics',{'안내':'이전 버전의 초안에는 형식 진단이 없습니다. 현재 보관 파일과 검색 초안을 먼저 확인하세요.'}))
+                render_registered_query(bundle,context['query'])
+        else:
+            st.subheader('분석 결과')
+            st.info('질문을 입력하고 분석하기를 누르면 결과가 표시됩니다.')
+            st.markdown('**확인할 내용**')
+            st.write('관련 기업·소재·공정')
+            st.write('대체 후보와 전환 조건')
+            st.write('주장을 뒷받침하는 출처')
+            st.caption('현재 지도는 질문과 연결된 등록 자료이며 AI 분석 결과가 아닙니다.')
     from .research_history import render_history
     render_history()
-    if saved:
-        render_report(saved)
-        if saved.get('candidate_error'):st.warning(saved['candidate_error'])
-        elif context.get('external_candidates') and not saved.get('external_candidates'):st.caption('이번 검색에서 원문 근거까지 연결된 외부 후보가 없습니다. 등록 후보는 아래에서 비교할 수 있습니다.')
-    elif partial:
-        st.warning('출처가 있는 검색 초안은 보관했습니다. 상세 카드 정리는 완료되지 않았습니다.' if partial['search']['sources'] else '검색 도구는 실행됐지만 출처를 확보하지 못했습니다. 검증 가능한 답변이 아직 없습니다.')
-        st.download_button('검색 초안·출처 보관',json.dumps(partial,ensure_ascii=False,indent=2),file_name='unreviewed-search-draft.json',mime='application/json',key='research_partial_download')
-        if partial['search']['sources']:
-            st.caption('검색을 다시 하지 않고 정리 요청만 1회 실행할 수 있습니다. 별도 사용료가 발생할 수 있으며 자동 재시도하지 않습니다.')
-            if st.button('저장된 검색으로 보고서 정리만 재시도',key='research_format_retry',disabled=not bool(key),width='stretch'):
-                try:
-                    with st.spinner('기존 검색 초안을 정리하고 있습니다…'):
-                        result=format_research(context,partial['search'],key,api_model(),reuse=True)
-                    st.session_state.research_report=result
-                    st.session_state.pop('research_partial',None)
-                    st.rerun()
-                except ValueError as error:st.error(str(error))
-        with st.expander('미검증 검색 초안·참조 자료'):
-            st.caption('검색 답변의 사건·수치·용도는 원문 확인 전입니다. 인용 링크가 있다고 주장이 검증된 것은 아닙니다.')
-            st.text(partial['search']['text'])
-            for source in partial['search']['sources']:source_link(source)
-        if not partial['search']['sources']:
-            st.info('출처 누락은 질문의 구체성만으로 설명할 수 없습니다. 반복 실행 전에 검색 진단을 확인하세요. 원인을 확인할 때까지 추가 결제는 필요하지 않습니다.')
-            with st.expander('검색 응답 형식 진단 · 키 제외'):
-                st.json(partial['search'].get('diagnostics',{'안내':'이전 버전의 초안에는 형식 진단이 없습니다. 현재 보관 파일과 검색 초안을 먼저 확인하세요.'}))
-            render_registered_query(bundle,context['query'])
     from news.material_scope import render_material_scope
     with st.expander('소재별 검토 기준',expanded=False):
         render_material_scope(context['query']+' '+context.get('cargo',''))
@@ -302,13 +318,20 @@ def render_external_research(show_header=True,network=None):
             candidates.append(external)
             bundle['sources'].update(external['sources'])
     requirements,requirement_notes=question_requirements(comparison_query)
-    with st.expander('후보·지도 비교',expanded=bool(saved)):
+    with st.expander('후보별 조건 · 제품 근거',expanded=False):
         candidate=None
         if candidates:
             labels=['전체 보기']+[c['name'] for c in candidates]
             if st.session_state.get('research_candidate_source') not in labels:st.session_state.research_candidate_source='전체 보기'
             chosen=st.selectbox('후보 선택 · 지도와 조건 함께 보기',labels,key='research_candidate_source')
             candidate=next((c for c in candidates if c['name']==chosen),None)
+        with map_panel:
+            st.subheader('공급망 지도')
+            if network is not None:
+                from .research_map import render_research_map
+                render_research_map(network,context['query'],saved['search']['text'] if saved else '',candidates,
+                    selected_candidate=candidate['name'] if candidate else None)
+            else:st.info('현재 화면에는 지도 데이터가 연결되지 않았습니다.')
         if context.get('facility_scope',{}).get('facilities'):
             factories,overview,details=st.tabs(['공장 · 내부 거점','지도 · 조건 비교','대체 기업 · 제품 근거'])
         else:
@@ -321,32 +344,29 @@ def render_external_research(show_header=True,network=None):
                 from .research_map import render_research_map
                 answer=saved['search']['text'] if saved else ''
                 if candidate:
-                    map_col,condition_col=st.columns([1.8,1],gap='medium')
-                    with map_col:render_research_map(network,context['query'],answer,candidates,selected_candidate=candidate['name'])
-                    with condition_col:
-                        with st.container(border=True):
-                            st.markdown('**'+candidate['name']+' · 조건 비교**')
-                            st.caption(candidate.get('origin','등록 자료 후보'))
-                            if candidate.get('origin'):
-                                st.write(candidate['reason'])
-                                st.caption(candidate['location_note'])
-                                st.caption('원문 발췌 일치 확인 · AI의 제품 연결·규격 해석은 검토 필요')
-                            evaluations=[e for e in candidate['evaluations'] if e['product'] in candidate['products']]
-                            product=st.selectbox('비교 제품',[e['product'] for e in evaluations],key='research_compare_product')
-                            evaluation=next(e for e in evaluations if e['product']==product)
-                            st.caption(STATUS[evaluation['status']])
-                            if not evaluation['checks']:st.info('질문에 구체적인 규격 조건이 없습니다. 같은 제품 종류를 기준으로 찾은 후보입니다.')
-                            for check in evaluation['checks']:
-                                label={'match':'✓ 일치','mismatch':'× 불일치','unknown':'? 자료 부족'}[check['state']]
-                                st.write(label+' · '+check['field'])
-                                st.caption(check['reason'])
-                            st.caption('고객 인증 · 추가 공급 여력 · 납기: 미확인')
-                            with st.expander('제품 근거 확인'):
-                                if candidate.get('product_quote'):st.text(candidate['product_quote'])
-                                for sid in candidate['source_ids']:source_link(bundle['sources'][sid])
+                    with st.container(border=True):
+                        st.markdown('**'+candidate['name']+' · 조건 비교**')
+                        st.caption(candidate.get('origin','등록 자료 후보'))
+                        if candidate.get('origin'):
+                            st.write(candidate['reason'])
+                            st.caption(candidate['location_note'])
+                            st.caption('원문 발췌 일치 확인 · AI의 제품 연결·규격 해석은 검토 필요')
+                        evaluations=[e for e in candidate['evaluations'] if e['product'] in candidate['products']]
+                        product=st.selectbox('비교 제품',[e['product'] for e in evaluations],key='research_compare_product')
+                        evaluation=next(e for e in evaluations if e['product']==product)
+                        st.caption(STATUS[evaluation['status']])
+                        if not evaluation['checks']:st.info('질문에 구체적인 규격 조건이 없습니다. 같은 제품 종류를 기준으로 찾은 후보입니다.')
+                        for check in evaluation['checks']:
+                            label={'match':'✓ 일치','mismatch':'× 불일치','unknown':'? 자료 부족'}[check['state']]
+                            st.write(label+' · '+check['field'])
+                            st.caption(check['reason'])
+                        st.caption('고객 인증 · 추가 공급 여력 · 납기: 미확인')
+                        with st.expander('제품 근거 확인'):
+                            if candidate.get('product_quote'):st.text(candidate['product_quote'])
+                            for sid in candidate['source_ids']:source_link(bundle['sources'][sid])
                     from .candidate_flow import render_candidate_flow
                     if not candidate.get('origin'):render_candidate_flow(network,bundle,candidate['name'],product)
-                else:render_research_map(network,context['query'],answer,candidates)
+                else:st.caption('위 지도에서 관련 기업을 확인하고 후보를 선택하면 제품 조건을 비교할 수 있습니다.')
             else:st.info('현재 화면에는 지도 데이터가 연결되지 않았습니다.')
         with details:
             if candidates:
