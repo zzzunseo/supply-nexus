@@ -26,12 +26,11 @@ SOURCES = {
 
 
 def render_case_sources(case):
-    with st.container(border=True):
-        st.markdown('**핵심 근거 · 이 자료부터 확인하세요**')
-        for col, (claim, title, supports, locator, url) in zip(st.columns(len(SOURCES[case])), SOURCES[case]):
-            with col:
-                st.markdown('**'+claim+'**')
-                st.caption(title)
-                st.write(supports)
-                st.caption('찾을 위치: '+locator)
-                st.link_button(claim+' 원문 열기 ↗', url, width='stretch')
+    for col, (claim, title, supports, locator, url) in zip(st.columns(len(SOURCES[case])), SOURCES[case]):
+        with col:
+            st.link_button(claim+' 원문 ↗', url, width='stretch')
+    with st.expander('출처에서 확인할 내용',expanded=False):
+        for claim,title,supports,locator,url in SOURCES[case]:
+            st.markdown('**'+title+'**')
+            st.write(supports)
+            st.caption(locator)
