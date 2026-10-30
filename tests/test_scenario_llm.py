@@ -73,7 +73,7 @@ class ScenarioLLMTests(unittest.TestCase):
 
     def test_ui_real_mode_success_and_failure_preserves_scenario(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         app.selectbox(key='rr_chat_mode').set_value('실제 LLM 시뮬레이션').run(timeout=30)

@@ -33,7 +33,7 @@ class UIReadabilityReviewTests(unittest.TestCase):
         self.assertEqual(state['rr_flow_process'], '포토')
 
     def test_initial_detail_click_and_both_requested_scenarios_keep_shared_selection(self):
-        app = AppTest.from_file(str(ROOT / 'app.py'))
+        app = AppTest.from_file(str(ROOT / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=60)
         def pills(key):
@@ -62,8 +62,7 @@ class UIReadabilityReviewTests(unittest.TestCase):
                 company = app.session_state['rr_network']['entities']['samsung']
                 self.assertTrue(any(company['name'] in item.value and company['map_location']['name'] in item.value
                                     for item in app.markdown if '선택 기업:' in item.value))
-                flow_expander = next(item for item in app.expander if item.label.startswith('공급 흐름'))
-                self.assertIn(process, flow_expander.label)
+                flow_expander = next(item for item in app.expander if item.label == '공정 상세 흐름 · 추가 정보')
                 self.assertFalse(flow_expander.proto.expanded)
                 self.assertEqual(app.session_state['rr_result'], calculation)
         pills('rr_process').select('전체').run(timeout=60)

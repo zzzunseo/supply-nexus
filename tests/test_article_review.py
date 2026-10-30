@@ -85,8 +85,9 @@ class ArticleReviewTests(unittest.TestCase):
 class ArticleReviewUITests(unittest.TestCase):
     def test_article_to_review_to_sources_to_map_preserves_the_existing_scenario(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
+        app.session_state['rr_chat_mode'] = '기사 검토 · 모의 대화'
         app.run(timeout=30)
         app.text_input(key='rr_issue_text').set_value('일본 포토레지스트 공급 중단 30일')
         next(b for b in app.button if b.label=='이슈 적용 → 소재 계산').click().run(timeout=30)
@@ -117,8 +118,9 @@ class ArticleReviewUITests(unittest.TestCase):
 
     def test_details_with_repeated_source_urls_have_unique_link_controls(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
+        app.session_state['rr_chat_mode'] = '기사 검토 · 모의 대화'
         app.run(timeout=30)
         network=app.session_state['rr_network']
         body='Air Products는 산소와 수소 공급에 대해 설명했다.'

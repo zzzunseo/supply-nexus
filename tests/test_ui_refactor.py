@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class UIRefactorTests(unittest.TestCase):
     def load_app(self):
-        app = AppTest.from_file(str(ROOT / "app.py"))
+        app = AppTest.from_file(str(ROOT / "tests/fixtures/panel_components.py"))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         self.assertEqual(len(app.exception), 0)

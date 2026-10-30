@@ -174,7 +174,7 @@ class PortSettingsUITests(unittest.TestCase):
     def test_edit_save_reopen_and_vendor_toggle(self):
         from streamlit.testing.v1 import AppTest
         root = Path(__file__).resolve().parents[1]
-        app = AppTest.from_file(str(root / 'app.py'))
+        app = AppTest.from_file(str(root / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         app.button[0].click().run(timeout=30)

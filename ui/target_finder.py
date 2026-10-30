@@ -17,6 +17,7 @@ def choose_target(state, network, target, use_question=False):
     if not node or node['kind'] not in KINDS['지역·물류']:
         raise ValueError('등록된 소재·기업·물류 대상 하나를 선택하세요.')
     state['rr_focus']=target
+    state['detail_focus']=target
     state['rr_process']='전체'
     longitude=node.get('lon')
     state['rr_view']='미주' if longitude is not None and longitude<-30 else '유럽' if longitude is not None and longitude<60 else '아시아'

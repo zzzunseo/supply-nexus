@@ -76,7 +76,7 @@ class QuickDetourUITests(unittest.TestCase):
             path = Path(temporary) / 'usual.json'
             with patch('ui.quick_detours.read_profiles', side_effect=lambda n: read_profiles(n, path)), \
                  patch('ui.logistics.save_profile', side_effect=lambda n, cp, v: save_profile(n, cp, v, path)):
-                app = AppTest.from_file(str(root / 'app.py'))
+                app = AppTest.from_file(str(root / 'tests/fixtures/panel_components.py'))
                 app.session_state['rr_workspace_mode'] = '상세 모드'
                 app.run(timeout=30)
                 self.assertFalse(app.exception)
@@ -97,7 +97,7 @@ class QuickDetourUITests(unittest.TestCase):
                 self.assertEqual(app.session_state['rr_result']['overall'], 0)
                 app.toggle(key='rr_quick_logistics_kaohsiung').set_value(True).run(timeout=30)
                 self.assertEqual(app.session_state['rr_network']['port_detours']['logistics:kaohsiung']['extra_days'], 6)
-                fresh = AppTest.from_file(str(root / 'app.py'))
+                fresh = AppTest.from_file(str(root / 'tests/fixtures/panel_components.py'))
                 fresh.session_state['rr_workspace_mode'] = '상세 모드'
                 fresh.run(timeout=30)
                 self.assertFalse(fresh.toggle(key='rr_quick_logistics_kaohsiung').value)

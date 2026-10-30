@@ -76,8 +76,9 @@ class ArticleMapTests(unittest.TestCase):
 class ArticleMapUITests(unittest.TestCase):
     def test_open_and_select_article_map_keeps_calculation_and_main_map_selection_unchanged(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
+        app.session_state['rr_chat_mode'] = '기사 검토 · 모의 대화'
         app.run(timeout=30)
         body='JSR의 한 공장 사건에 관한 검증용 가상 사례다.'
         review=review_article(app.session_state['rr_network'],article_draft(app.session_state['rr_network'],'가상 기사',body),'jsr',body)

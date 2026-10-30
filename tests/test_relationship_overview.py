@@ -66,6 +66,12 @@ class RelationshipOverviewTests(unittest.TestCase):
         next(b for b in app.button if b.label=='지구본에서 선택').click().run(timeout=30)
         self.assertFalse(app.exception)
         self.assertEqual(app.session_state['rr_focus'],'tsmc')
+        self.assertEqual(app.selectbox(key='detail_focus').value,'tsmc')
+        app.run(timeout=30)
+        self.assertEqual(app.session_state['rr_focus'],'tsmc')
+        app.button(key='detail_process_0').click().run(timeout=30)
+        self.assertFalse(app.exception)
+        self.assertIsNone(app.session_state['rr_focus'])
         self.assertFalse(app.session_state['rr_relationship_open'])
 
 

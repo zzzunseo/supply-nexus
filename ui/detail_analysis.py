@@ -10,6 +10,8 @@ from relationship_audit import vendor_catalog
 
 
 def choose_process(process):
+    st.session_state.detail_focus=None
+    st.session_state.rr_focus=None
     st.session_state.rr_process=process
     select_globe_process(st.session_state)
 
@@ -41,10 +43,13 @@ def render_detail_analysis(network):
     process=st.session_state.rr_flow_process
     flow=build_flow(network,result,process)
     options=[None,*sorted({c['node_id'] for col in flow['columns'] for c in col['cards'] if c['node_id'] in network['entities']},key=lambda k:network['nodes'][k]['name'])]
+    selected=st.session_state.get('rr_focus')
+    if selected in network['entities'] and selected not in options:options.append(selected)
     if st.session_state.get('detail_focus') not in options:st.session_state.detail_focus=None
     focus=st.selectbox('기업·소재 선택',options,key='detail_focus',format_func=lambda k:network['nodes'][k]['name'] if k else '선택 공정 전체 연결')
     st.session_state.rr_focus=focus
-    figure=build_network_globe(network,result,st.session_state.rr_view,focus,process=process)
+    map_process='전체' if focus and st.session_state.rr_process=='전체' else process
+    figure=build_network_globe(network,result,st.session_state.rr_view,focus,process=map_process)
     st.plotly_chart(figure,key='detail_network_globe',height=480,width='stretch',theme=None,config=dict(displayModeBar=False,topojsonURL='/app/static/',scrollZoom=True))
     st.subheader('공급 기업 → 소재 → 공정 → 영향 기업')
     render_flow_panel(network,result,compact=True)

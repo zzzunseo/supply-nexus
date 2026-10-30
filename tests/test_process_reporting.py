@@ -157,7 +157,7 @@ class ProcessReportingTests(unittest.TestCase):
         self.assertEqual(network, before)
 
     def test_app_switches_chart_and_opens_company_comparison_without_exception(self):
-        app = AppTest.from_file(str(ROOT / 'app.py'))
+        app = AppTest.from_file(str(ROOT / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         app.text_input(key='rr_issue_text').input('머크 박막 전구체 공급 중단 30일')

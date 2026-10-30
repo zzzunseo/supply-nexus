@@ -47,8 +47,9 @@ class BriefingTests(unittest.TestCase):
     def test_offline_ui_hides_api_and_keeps_scenario_while_showing_briefing(self):
         from streamlit.testing.v1 import AppTest
         with patch('ui.article_llm.extract_article',side_effect=AssertionError('API must not run')) as api:
-            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
             app.session_state['rr_workspace_mode'] = '상세 모드'
+            app.session_state['rr_chat_mode'] = '기사 검토 · 모의 대화'
             app.run(timeout=30)
             before=deepcopy(app.session_state['rr_result'])
             app.button(key='rr_article_open').click().run(timeout=30)

@@ -33,7 +33,7 @@ class TargetFinderTests(unittest.TestCase):
 
     def test_dialog_selection_syncs_existing_map_search_and_question_without_api(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         app.selectbox(key='rr_chat_mode').set_value('기사 검토 · 모의 대화').run(timeout=30)

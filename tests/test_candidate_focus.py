@@ -17,7 +17,9 @@ class FocusTests(unittest.TestCase):
         self.assertEqual(focused['selected']['id'],'research:sk-siltron')
         other,_=focus_candidate(data,'Shin-Etsu 그룹 · SEH')
         self.assertNotEqual(focused['camera_context'],other['camera_context'])
-        missing,marker=focus_candidate(data,'Siltronic')
+        # Simulate a candidate lacking a verified marker, independently of live catalog additions.
+        without_location=dict(focused,markers=[m for m in data['markers'] if m.get('candidate_name')!='Siltronic'])
+        missing,marker=focus_candidate(without_location,'Siltronic')
         self.assertIsNone(marker)
         self.assertNotIn('camera_focus',missing)
         self.assertNotIn('selected',data)

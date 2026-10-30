@@ -63,14 +63,17 @@ class RelationshipAuditTests(unittest.TestCase):
     def test_audit_panel_and_filters_render_in_guided_flow(self):
         app=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'),default_timeout=30).run()
         self.assertFalse(app.exception)
-        self.assertEqual(len(app.dataframe),4)
+        self.assertTrue(any({'벤더','소재·제품','제품 출처'} <= set(frame.value.columns) for frame in app.dataframe))
         app.selectbox(key='audit_vendor_item').select('photoresist').run()
         app.selectbox(key='audit_route_port').select('가오슝항').run()
+        vendor_frame=next(frame.value for frame in app.dataframe if '벤더' in frame.value.columns)
+        expected={r['supplier'] for r in vendor_catalog(self.network) if r['product_group']=='photoresist'}
+        self.assertEqual(set(vendor_frame['벤더']),expected)
         self.assertFalse(app.exception)
         app.button(key='demo_apply').click().run()
         app.button(key='demo_next').click().run()
         self.assertFalse(app.exception)
-        self.assertEqual(len(app.dataframe),4)
+        self.assertTrue(any({'벤더','소재·제품','제품 출처'} <= set(frame.value.columns) for frame in app.dataframe))
 
 
 if __name__=='__main__':unittest.main()

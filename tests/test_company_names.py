@@ -5,7 +5,7 @@ from streamlit.testing.v1 import AppTest
 
 class CompanyNamesTests(unittest.TestCase):
     def test_selection_keeps_full_company_and_facility_names_after_rerun(self):
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py'))
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         self.assertEqual(len(app.exception), 0)

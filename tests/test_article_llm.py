@@ -120,8 +120,9 @@ class ArticleLLMUITests(unittest.TestCase):
     def test_apply_save_provenance_clear_key_and_keep_scenario_unchanged(self):
         from unittest.mock import patch
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
+        app.session_state['rr_chat_mode'] = '기사 검토 · 모의 대화'
         app.run(timeout=30)
         app.button(key='rr_article_open').click().run(timeout=30)
         body = 'JSR의 공장에서 화재가 발생했다. 출하 영향은 미확인이다.'

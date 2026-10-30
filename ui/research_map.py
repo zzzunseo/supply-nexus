@@ -93,6 +93,8 @@ def map_matches(network,question,answer='',candidates=None):
 
 def focus_candidate(data,name):
     data=dict(data)
+    data.pop('camera_focus',None)
+    data.pop('selected',None)
     data['camera_context']=data['context']+':'+(name or 'overview')
     marker=next((m for m in data['markers'] if name and m.get('candidate_name')==name),None)
     if marker:

@@ -87,7 +87,7 @@ class ProcessGlobeTests(unittest.TestCase):
         self.assertEqual(state['rr_flow_process'], '포토')
 
     def test_app_globe_and_flow_process_controls_sync_without_changing_results(self):
-        app = AppTest.from_file(str(ROOT / 'app.py'))
+        app = AppTest.from_file(str(ROOT / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=60)
         self.assertEqual(len(app.exception), 0)

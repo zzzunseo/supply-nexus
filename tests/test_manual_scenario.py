@@ -48,7 +48,7 @@ class ManualScenarioTests(unittest.TestCase):
     def test_ui_direct_selection_applies_immediately_and_restores_without_api(self):
         from streamlit.testing.v1 import AppTest
         with patch('news.scenario_llm.urlopen',side_effect=AssertionError('No API')) as api:
-            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
             app.session_state['rr_workspace_mode'] = '상세 모드'
             app.run(timeout=30)
             self.assertFalse(app.exception)
@@ -76,7 +76,7 @@ class ManualScenarioTests(unittest.TestCase):
 
     def test_country_filter_and_company_material_changes_never_apply_on_selection(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         app.selectbox(key='rr_manual_country').set_value('일본').run(timeout=30)

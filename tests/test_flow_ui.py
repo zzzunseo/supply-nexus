@@ -101,7 +101,7 @@ class FlowUITests(unittest.TestCase):
         self.assertIn(self.network['entities']['samsung']['map_location']['name'], labels[0])
 
     def test_process_pills_switch_flow_without_changing_calculation(self):
-        app = AppTest.from_file(str(ROOT / 'app.py'))
+        app = AppTest.from_file(str(ROOT / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         self.assertEqual(len(app.exception), 0)
@@ -116,7 +116,7 @@ class FlowUITests(unittest.TestCase):
         self.assertEqual(app.session_state['rr_result'], before)
 
     def test_requested_issues_load_flow_with_zero_app_exceptions(self):
-        app = AppTest.from_file(str(ROOT / 'app.py'))
+        app = AppTest.from_file(str(ROOT / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         for text, processes in [

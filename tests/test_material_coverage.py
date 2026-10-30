@@ -26,6 +26,9 @@ class MaterialCoverageTests(unittest.TestCase):
  def test_anhydrous_not_aqueous(self):
   candidates=registered_candidates(evidence_bundle(),'무수 HF 대체 공급사')
   self.assertFalse(candidates)
+  rejected=registered_candidates(evidence_bundle(),'무수 HF 대체 공급사',include_rejected=True)
+  self.assertTrue(rejected)
+  self.assertTrue(all(c['excluded'] and not c['products'] for c in rejected))
  def test_ceria_is_not_finished_slurry(self):
   self.assertFalse(registered_candidates(evidence_bundle(),'산화세륨 완성 슬러리 대체 공급사'))
   candidates=registered_candidates(evidence_bundle(),'산화세륨 연마재 대체 공급사')

@@ -105,7 +105,7 @@ class Stage2Tests(unittest.TestCase):
         self.assertEqual(tuple(fig.layout.yaxis.range), (0, 100))
 
     def test_app_observation_period_does_not_change_issue_default_or_duration(self):
-        app = AppTest.from_file(str(ROOT / 'app.py'))
+        app = AppTest.from_file(str(ROOT / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         app.number_input(key='rr_days').set_value(60).run(timeout=30)
@@ -121,7 +121,7 @@ class Stage2Tests(unittest.TestCase):
         self.assertEqual(app.session_state['rr_days'], 60)
 
     def test_app_issue_editor_and_deletion_recalculate(self):
-        app = AppTest.from_file(str(ROOT / 'app.py'))
+        app = AppTest.from_file(str(ROOT / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         app.text_input(key='rr_issue_text').input('일본 포토레지스트 공급 중단 30일')

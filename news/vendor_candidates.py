@@ -104,7 +104,9 @@ def registered_candidates(bundle,query,include_rejected=False):
                         if evaluation['status']=='meets_documented':evaluation['status']='insufficient'
                 evaluations.append(dict(product=v['name'],**evaluation,
                     evidence=[dict(field=k,value=f['value'],unit=f.get('unit'),locator=f['locator'],source_id=f['source_id']) for k,f in v['fields'].items()]))
-                if evaluation['status'] not in ('mismatch','reference_only'):matches.append(v)
+                # An explicit physical form requires evidence; generic HF/BOE is not a form match.
+                form_ok = not requirements.get('product_form') or v['fields'].get('product_form', {}).get('value') == requirements['product_form']
+                if evaluation['status'] not in ('mismatch','reference_only') and form_ok:matches.append(v)
                 break
         if matches or include_rejected and evaluations:
             eligible=matches or [v for v in p['products'] if v['name'] in {e['product'] for e in evaluations}]

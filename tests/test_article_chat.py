@@ -67,8 +67,9 @@ class ConversationTests(unittest.TestCase):
     def test_conversation_scenario_requires_button_and_updates_only_explicit_values(self):
         from streamlit.testing.v1 import AppTest
         with patch('news.article_llm.urlopen',side_effect=AssertionError('No API')) as api:
-            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
             app.session_state['rr_workspace_mode'] = '상세 모드'
+            app.session_state['rr_chat_mode'] = '기사 검토 · 모의 대화'
             app.run(timeout=30)
             app.selectbox(key='rr_chat_mode').set_value('기사 검토 · 모의 대화').run(timeout=30)
             before=deepcopy(app.session_state['rr_result'])

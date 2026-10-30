@@ -167,7 +167,7 @@ class EvidenceGateTests(unittest.TestCase):
         self.assertAlmostEqual(rows[4]['overall'], 90)
 
     def test_app_explains_why_reference_only_wafer_input_has_no_supply_effect(self):
-        app = AppTest.from_file(str(ROOT / 'app.py'))
+        app = AppTest.from_file(str(ROOT / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         app.text_input(key='rr_issue_text').input('삼성 가공 웨이퍼 공급 중단 30일')
@@ -178,7 +178,7 @@ class EvidenceGateTests(unittest.TestCase):
         self.assertIn('패키징', app.session_state['rr_result']['incomplete_processes'])
 
     def test_app_shows_partial_model_and_coverage_warning_without_exception(self):
-        app = AppTest.from_file(str(ROOT / 'app.py'))
+        app = AppTest.from_file(str(ROOT / 'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         self.assertEqual(len(app.exception), 0)

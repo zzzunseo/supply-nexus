@@ -87,7 +87,7 @@ class ScenarioToolTests(unittest.TestCase):
     def test_chat_tool_mode_applies_only_after_clarification_and_preserves_engine_on_invalid_input(self):
         from streamlit.testing.v1 import AppTest
         with patch('news.article_llm.urlopen',side_effect=AssertionError('No API')) as api:
-            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+            app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
             app.session_state['rr_workspace_mode'] = '상세 모드'
             app.run(timeout=30)
             app.selectbox(key='rr_chat_mode').set_value('모의 시뮬레이션').run(timeout=30)
@@ -112,7 +112,7 @@ class ScenarioToolTests(unittest.TestCase):
 
     def test_review_edits_replace_only_confirmed_event_and_mode_change_clears_pending(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'app.py'))
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1]/'tests/fixtures/panel_components.py'))
         app.session_state['rr_workspace_mode'] = '상세 모드'
         app.run(timeout=30)
         app.selectbox(key='rr_chat_mode').set_value('모의 시뮬레이션').run(timeout=30)
