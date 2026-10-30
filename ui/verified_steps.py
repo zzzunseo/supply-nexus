@@ -22,6 +22,8 @@ def render_verified_steps(material):
     subtitle='금 가격·조달 부담 → 제품 검증 → 금(Au)에서 PdCu로 전환' if material else '홍해 통항 위험 → 운항 조정 → 아프리카 남단 우회'
     st.markdown('<div class="verified-hero"><b>'+html.escape(title)+'</b><span>'+html.escape(subtitle)+'</span></div>',unsafe_allow_html=True)
     st.caption('공식 발표 기록 비교 · 지정 제품의 변경 통지와 검증 완료를 확인합니다. 앱이 수행한 재료 시험이나 출하 실적 검증은 아닙니다.' if material else '공식 발표 기록 비교 · 선사의 우회 결정을 확인합니다. 특정 반도체 화물의 실제 항적이나 생산 피해를 검증한 결과는 아닙니다.')
+    from .case_sources import render_case_sources
+    render_case_sources('material' if material else 'shipping')
     for i,col in enumerate(st.columns(3),1):
         with col:st.button(str(i)+'　'+['기업·소재 연결','영향 범위','대응 비교'][i-1],key='verified_step_'+str(i),width='stretch',type='primary' if step==i else 'secondary',on_click=lambda n=i:st.session_state.update(verified_step=n))
     after=False
@@ -65,7 +67,6 @@ def render_verified_steps(material):
             st.write('공식 안내: 2023-12-18 / 대상 예: Maersk Hanoi·Maersk Athabasca')
             st.caption('물류 우회 사례입니다. 특정 반도체 소재의 선적 여부·고객사 생산 피해와 연결하지 않습니다.')
             source='https://www.maersk.com/~/media_sc9/maersk/local-information/files/asia-pacific/cambodia/overview/181223-temporary-vessel-diversion.pdf'
-        st.markdown('[공식 원문 확인]('+source+')')
         if step<3:st.button('다음 단계 →',key='verified_next',type='primary',width='stretch',on_click=lambda:st.session_state.update(verified_step=step+1))
         if step>1:st.button('← 이전 단계',key='verified_previous',width='stretch',on_click=lambda:st.session_state.update(verified_step=step-1))
     if step==3:

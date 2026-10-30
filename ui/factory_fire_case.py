@@ -13,6 +13,8 @@ def render_factory_fire():
     st.subheader('AKM 공장 화재 → 고객 제품의 대체 칩 채택')
     st.caption('2020-10-20 · 일본 노베오카 반도체 공장 화재 / 고객 제품: 독일 RME ADI-2 DAC')
     st.markdown('**실제 대응 기록** · 공장 화재 → 고객의 부품 조달 제약 → 다른 제조사의 칩 채택')
+    from .case_sources import render_case_sources
+    render_case_sources('fire')
     for i,col in enumerate(st.columns(3),1):
         with col:st.button(str(i)+'　'+['기업·부품 연결','공장 피해와 영향','대체 전후 비교'][i-1],key='verified_step_'+str(i),width='stretch',type='primary' if step==i else 'secondary',on_click=lambda n=i:st.session_state.update(verified_step=n))
     after=False
@@ -38,8 +40,6 @@ def render_factory_fire():
             st.markdown('**'+('ESS ES9028Q2M 채택' if after else 'AKM AK4493 사용')+'**')
             st.write('RME는 해당 공식 매뉴얼에 기록된 ADI-2 DAC 버전에서 ESS ES9028Q2M을 채택해 제품 제공을 이어갔다고 설명합니다. 주요 기능은 거의 동일하게 유지되지만 필터 등 칩 의존 기능에는 차이가 있습니다.')
             st.caption('자동으로 꽂아 바꾸는 호환 부품이라는 의미는 아닙니다. 특정 RME 제품에서 확인된 설계·부품 전환이며 다른 AKM 고객 전체로 일반화하지 않습니다.')
-        st.markdown('[AKM 공식 화재 안내]('+FIRE_SOURCE+')')
-        st.markdown('[RME 공식 매뉴얼 · 4쪽]('+MANUAL+')')
         if step<3:st.button('다음 단계 →',key='verified_next',type='primary',width='stretch',on_click=lambda:st.session_state.update(verified_step=step+1))
         if step>1:st.button('← 이전 단계',key='verified_previous',width='stretch',on_click=lambda:st.session_state.update(verified_step=step-1))
     if step==3:
@@ -48,7 +48,7 @@ def render_factory_fire():
             {'항목':'고객 제품','대체 전':'RME ADI-2 DAC','대체 후':'같은 제품 계열 유지 · 칩 의존 기능 차이'},
             {'항목':'근거','대체 전':'RME 매뉴얼의 기존 채택 이력','대체 후':'동일 매뉴얼의 화재 대응·변경 설명'}],hide_index=True)
         st.success('공식 자료로 확인되는 연결: 공장 화재 → 고객의 공급 제약 → 다른 기업의 칩 채택')
-    with st.expander('사실·추론 구분과 확인 범위'):
+    with st.expander('추가 설명 · 해석 한계와 지도 위치 자료',expanded=False):
         st.caption('원문 재확인: 2026-10-29 · 과거 사건·제품 변경 기록이며 현재 모든 제품의 부품 구성을 뜻하지 않습니다.')
         st.dataframe([
             {'주장':'노베오카 공장 화재','근거':'AKM 공식 안내 · 2020-10-30','확인 범위':'발생 10월 20일 / 진화 10월 24일 · 진화일은 생산 복구일이 아님','출처':FIRE_SOURCE},
