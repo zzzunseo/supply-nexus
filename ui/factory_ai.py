@@ -76,11 +76,11 @@ def render_factory_ai(network,show_header=True):
         st.caption('AKM의 노베오카 시설과 2020년 사건은 별도 확인한 사례입니다. 그 외 기업은 시설·제품 연결 근거가 부족하면 고객 영향 연결을 보류합니다.')
     left,right=st.columns([2,1],gap='large')
     with right:
-        st.markdown('**API 설정**')
-        server_key=os.environ.get('SUPPLY_AI_API_KEY') or os.environ.get('OPENAI_API_KEY','')
-        render_credentials('factory')
-        st.caption('공개 기사 본문·등록 근거를 전송합니다. 클릭당 1회 요청하며 자동 재시도하지 않습니다.')
-        render_model('factory')
+        with st.expander('API 연결 설정',expanded=False):
+            server_key=os.environ.get('SUPPLY_AI_API_KEY') or os.environ.get('OPENAI_API_KEY','')
+            render_credentials('factory')
+            st.caption('공개 기사 본문·등록 근거를 전송합니다. 클릭당 1회 요청하며 자동 재시도하지 않습니다.')
+            render_model('factory')
         with st.expander('API 없이 검증 동작 살펴보기'):
             example=st.selectbox('검증 예시',list(EXAMPLES),format_func=lambda k:EXAMPLES[k]['label'],key='factory_ai_example')
             st.caption('직접 작성한 예시 문장과 예상 초안입니다. 실제 AI 응답·저장된 API 결과·AI 정확도 평가가 아닙니다. AKM 문장도 공식 원문의 직접 발췌가 아닙니다.')

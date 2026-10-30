@@ -131,13 +131,14 @@ def render_product_comparison(enable_ai=False,network=None):
         records=[r for r in data['records'] if r['family']==family and (legacy or not r['legacy'])]
         results={r['id']:compare_record(r,required) for r in records}
         render_candidates(data,records,results)
-        render_side_by_side(records,results,network)
-        st.markdown('**전체 조건 비교**')
-        counts=st.columns(3)
-        for col,status,label in zip(counts,['meets_documented','insufficient','mismatch'],['조건 일치 항목','자료 부족 항목','조건 불일치 항목']):
-            col.metric(label,sum(r['status']==status for r in results.values()))
-        st.dataframe([{'기업':r['supplier'],'제품·등급':r['name'],'결과':STATUS[results[r['id']]['status']],
-            '확인 항목':' / '.join(c['field']+': '+c['reason'] for c in results[r['id']]['checks'])} for r in records],hide_index=True,width='stretch',height=250)
+        with st.expander('전체 규격 비교표',expanded=False):
+            render_side_by_side(records,results,network)
+            st.markdown('**전체 조건 비교**')
+            counts=st.columns(3)
+            for col,status,label in zip(counts,['meets_documented','insufficient','mismatch'],['조건 일치 항목','자료 부족 항목','조건 불일치 항목']):
+                col.metric(label,sum(r['status']==status for r in results.values()))
+            st.dataframe([{'기업':r['supplier'],'제품·등급':r['name'],'결과':STATUS[results[r['id']]['status']],
+                '확인 항목':' / '.join(c['field']+': '+c['reason'] for c in results[r['id']]['checks'])} for r in records],hide_index=True,width='stretch',height=250)
         with st.expander('제품별 원문·규격 상세',expanded=False):
             if st.session_state.get('comparison_record') not in {r['id'] for r in records}:
                 st.session_state.comparison_record=records[0]['id']

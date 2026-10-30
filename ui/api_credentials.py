@@ -77,7 +77,7 @@ def render_model(panel):
 
 
 def render_request_history():
-    with st.expander('실제 API 호출 기록 · 부문별 성공/실패 비교',expanded=True):
+    with st.expander('API 호출 기록 · 문제 확인',expanded=False):
         st.caption('이번 수정 이후의 실제 요청만 최근 30건 기록합니다. 같은 세션에서 연결 식별값이 같으면 같은 키입니다. 키·본문·응답 내용은 저장하지 않습니다. API 응답 완료는 이후 분석 검증의 성공까지 뜻하지 않습니다.')
         rows=st.session_state.get('ai_request_history',[])
         if not rows:

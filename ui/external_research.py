@@ -132,13 +132,18 @@ def render_process_visual(report):
 def render_report(report):
     if report.get('answer_only'):
         st.divider()
-        st.subheader('② 핵심 답변')
+        st.subheader('분석 결과')
         st.caption('웹 검색 1회 기반 · AI 해설 · 원문 확인 필요')
         if not report['search'].get('citation_count'):
             st.warning('참조 자료는 있으나 문장별 인용이 없습니다. 아래 내용은 검토 초안입니다.')
         # Plain text prevents model-generated links/images from bypassing native source validation.
-        with st.container(height=210,border=False):
-            st.text(report['search']['text'])
+        answer=report['search']['text'].strip()
+        preview=answer.split('\n\n')[0]
+        if len(preview)>400:preview=preview[:400]+'…'
+        st.text(preview)
+        if preview!=answer:
+            with st.expander('전체 답변 보기',expanded=False):st.text(answer)
+        for source in report['search']['sources'][:3]:source_link(source)
         with st.expander('출처 · 전체 답변 보관'):
             st.caption('아래 문장은 검색 답변의 인용 범위입니다. 원문 발췌·독립 사실 검증과는 구분합니다.')
             by_id={s['id']:s for s in report['search']['sources']}
@@ -187,54 +192,52 @@ def render_report(report):
 def render_external_research(show_header=True,network=None):
     bundle=evidence_bundle()
     if show_header:st.subheader('AI · 사건과 소재의 공정 영향 검토')
-    st.markdown('**① 질문 입력　 →　 ② 근거 확인　 →　 ③ 후보·지도 비교**')
     left,right=st.columns([2,1],gap='large')
     with right:
-        example=st.selectbox('질문 예시',list(EXAMPLES),key='research_example')
-        st.button('질문만 불러오기',key='research_load',on_click=load_question,width='stretch')
+        with st.expander('질문 예시',expanded=False):
+            example=st.selectbox('질문 예시',list(EXAMPLES),key='research_example')
+            st.button('질문만 불러오기',key='research_load',on_click=load_question,width='stretch')
         server_key=os.environ.get('SUPPLY_AI_API_KEY') or os.environ.get('OPENAI_API_KEY','')
-        with st.expander('검색 API 설정',expanded=not bool(server_key or st.session_state.get('research_secret'))):
-            st.caption('검색 처리 버전 · 2026-10-29 r5 · 간단 질문 / 검색 답변 우선')
+        with st.expander('API 연결 설정',expanded=False):
             render_credentials('research')
             render_model('research')
             st.caption('간단 답변은 API 요청 1회, 상세 카드는 2회이며 웹 검색 도구 사용료가 발생할 수 있습니다. 검색 도구 호출은 최대 3회로 제한하며 자동 재시도하지 않습니다. 공개 질문·등록 자료를 전송합니다.')
 
     with left:
-        st.selectbox('검토 범위',['자동']+list(MODES),key='research_mode',on_change=clear_research)
         if 'research_query' not in st.session_state:st.session_state.research_query=EXAMPLES['공장 중단 → 공정']
-        st.markdown('**질문 작성법**　대상 + 상황 + 알고 싶은 내용')
-        st.caption('기업: SUMCO 공급이 중단되면 영향과 대체 기업은?\n\n소재: NF3 공급이 끊기면 영향 공정과 다른 공급사는?\n\n항로: 말라카 해협이 막히면 우회 경로는?')
         st.text_area('무엇이 궁금한가요?',height=100,max_chars=3000,key='research_query',on_change=clear_research,placeholder='예: SUMCO가 멈추면 대체 기업은?')
-        from news.external_research import INTENTS,question_intent
-        intent=st.selectbox('질문의 목적',INTENTS,key='research_intent',on_change=clear_research)
-        st.caption('질문 해석: '+question_intent(st.session_state.research_query,intent)+' · 목적이 다르면 위에서 변경하세요.')
-        from news.facility_scope import facility_scope
-        scope=facility_scope(st.session_state.research_query)
-        facility_id=''
-        if scope['facilities']:
-            from hashlib import sha256
-            options={'':'질문에서 확인 · 미지정이면 전체 거점'}
-            options.update({f['id']:f['name'] for f in scope['facilities']})
-            facility_id=st.selectbox('검토할 공장 · 피해 사실을 확정하는 선택이 아닙니다',list(options),format_func=options.get,
-                key='research_facility_'+sha256(st.session_state.research_query.encode()).hexdigest()[:10],on_change=clear_research)
-            active=facility_scope(st.session_state.research_query,facility_id)
-            st.caption('공장 범위: '+(active['selected']['name'] if active['selected'] else '미지정 · 기업 전체 피해로 확대하지 않음'))
-        enrich=st.checkbox('외부 대체 기업도 근거·조건 비교',value=True,key='research_enrich',on_change=clear_research)
-        if enrich:st.caption('후보 정리 API 요청 1회 추가 · 공개 출처 원문 최대 6개 확인 · 위치 근거가 없으면 카드만 표시')
-        simple=st.checkbox('간단 답변 · 핵심 설명과 출처 보기',value=True,key='research_simple',on_change=clear_research)
+        with st.expander('분석 조건 · 선택',expanded=False):
+            st.selectbox('검토 범위',['자동']+list(MODES),key='research_mode',on_change=clear_research)
+            from news.external_research import INTENTS,question_intent
+            intent=st.selectbox('질문의 목적',INTENTS,key='research_intent',on_change=clear_research)
+            st.caption('질문 해석: '+question_intent(st.session_state.research_query,intent)+' · 목적이 다르면 위에서 변경하세요.')
+            from news.facility_scope import facility_scope
+            scope=facility_scope(st.session_state.research_query)
+            facility_id=''
+            if scope['facilities']:
+                from hashlib import sha256
+                options={'':'질문에서 확인 · 미지정이면 전체 거점'}
+                options.update({f['id']:f['name'] for f in scope['facilities']})
+                facility_id=st.selectbox('검토할 공장 · 피해 사실을 확정하는 선택이 아닙니다',list(options),format_func=options.get,
+                    key='research_facility_'+sha256(st.session_state.research_query.encode()).hexdigest()[:10],on_change=clear_research)
+                active=facility_scope(st.session_state.research_query,facility_id)
+                st.caption('공장 범위: '+(active['selected']['name'] if active['selected'] else '미지정 · 기업 전체 피해로 확대하지 않음'))
+            enrich=st.checkbox('외부 대체 기업도 근거·조건 비교',value=True,key='research_enrich',on_change=clear_research)
+            if enrich:st.caption('후보 정리 API 요청 1회 추가 · 공개 출처 원문 최대 6개 확인 · 위치 근거가 없으면 카드만 표시')
+            simple=st.checkbox('간단 답변 · 핵심 설명과 출처 보기',value=True,key='research_simple',on_change=clear_research)
 
-        mode=suggest_mode(st.session_state.research_query) if st.session_state.research_mode=='자동' else st.session_state.research_mode
-        st.caption('이번 질문의 검토 범위: '+mode)
-        with st.expander('추가 조건 · 소재·출발지·도착지'):
-            route=mode in ('항로 우회','통합 검토')
-            origin=destination=''
-            if route:
-                with st.expander('항로 조건 · 항로 검토 시 입력',expanded=st.session_state.research_mode=='항로 우회'):
-                    a,b=st.columns(2)
-                    with a:origin=st.text_input('출발지',key='research_origin',on_change=clear_research)
-                    with b:destination=st.text_input('도착지',key='research_destination',on_change=clear_research)
-            st.text_input('화물·취급 조건 · 선택' if route else '소재·제품 정보 · 선택',key='research_cargo',max_chars=200,on_change=clear_research,
-                placeholder='예: 일반 컨테이너 / 위험물·특수가스' if route else '예: ArF 액침 포토레지스트 / NF3 / 피해 공장·중단 품목')
+            mode=suggest_mode(st.session_state.research_query) if st.session_state.research_mode=='자동' else st.session_state.research_mode
+            st.caption('이번 질문의 검토 범위: '+mode)
+            with st.expander('추가 조건 · 소재·출발지·도착지'):
+                route=mode in ('항로 우회','통합 검토')
+                origin=destination=''
+                if route:
+                    with st.expander('항로 조건 · 항로 검토 시 입력',expanded=st.session_state.research_mode=='항로 우회'):
+                        a,b=st.columns(2)
+                        with a:origin=st.text_input('출발지',key='research_origin',on_change=clear_research)
+                        with b:destination=st.text_input('도착지',key='research_destination',on_change=clear_research)
+                st.text_input('화물·취급 조건 · 선택' if route else '소재·제품 정보 · 선택',key='research_cargo',max_chars=200,on_change=clear_research,
+                    placeholder='예: 일반 컨테이너 / 위험물·특수가스' if route else '예: ArF 액침 포토레지스트 / NF3 / 피해 공장·중단 품목')
         try:context=make_research_context(bundle,st.session_state.research_query,mode,origin,destination,st.session_state.research_cargo,intent=intent,external_candidates=enrich,facility_id=facility_id)
         except ValueError as error:
             st.info(str(error));return
@@ -243,7 +246,7 @@ def render_external_research(show_header=True,network=None):
         partial=st.session_state.get('research_partial')
         if partial and partial['context_id']!=context['id']:clear_research();partial=None
         key=api_key()
-        if st.button('근거를 찾아 답변하기',key='research_run',type='primary',disabled=not bool(key),width='stretch'):
+        if st.button('분석하기',key='research_run',type='primary',disabled=not bool(key),width='stretch'):
             clear_research();saved=None;partial=None;progress=st.empty()
             try:
                 saved=research_external(context,key,api_model(),on_progress=progress.info,simple=simple)
@@ -256,7 +259,7 @@ def render_external_research(show_header=True,network=None):
                 st.session_state.research_partial=partial
             except ValueError as error:st.error(str(error))
             finally:progress.empty()
-        if not key:st.info('API 키를 설정하면 실제 외부 검색을 실행할 수 있습니다. 아래 라이브러리는 API 없이 확인할 수 있습니다.')
+        if not key:st.info('AI 분석을 실행하려면 오른쪽 ‘API 연결 설정’에 키를 입력하세요.')
     from .research_history import render_history
     render_history()
     if saved:
@@ -286,7 +289,8 @@ def render_external_research(show_header=True,network=None):
                 st.json(partial['search'].get('diagnostics',{'안내':'이전 버전의 초안에는 형식 진단이 없습니다. 현재 보관 파일과 검색 초안을 먼저 확인하세요.'}))
             render_registered_query(bundle,context['query'])
     from news.material_scope import render_material_scope
-    render_material_scope(context['query']+' '+context.get('cargo',''))
+    with st.expander('소재별 검토 기준',expanded=False):
+        render_material_scope(context['query']+' '+context.get('cargo',''))
     from news.vendor_candidates import registered_candidates
     from news.vendor_candidates import question_requirements
     from product_comparison import LABELS,STATUS
@@ -298,78 +302,79 @@ def render_external_research(show_header=True,network=None):
             candidates.append(external)
             bundle['sources'].update(external['sources'])
     requirements,requirement_notes=question_requirements(comparison_query)
-    st.subheader('③ 후보·지도 비교')
-    candidate=None
-    if candidates:
-        labels=['전체 보기']+[c['name'] for c in candidates]
-        if st.session_state.get('research_candidate_source') not in labels:st.session_state.research_candidate_source='전체 보기'
-        chosen=st.selectbox('후보 선택 · 지도와 조건 함께 보기',labels,key='research_candidate_source')
-        candidate=next((c for c in candidates if c['name']==chosen),None)
-    if context.get('facility_scope',{}).get('facilities'):
-        factories,overview,details=st.tabs(['공장 · 내부 거점','지도 · 조건 비교','대체 기업 · 제품 근거'])
-    else:
-        overview,details,factories=st.tabs(['지도 · 조건 비교','대체 기업 · 제품 근거','공장 · 내부 거점'])
-    with factories:
-        from .facility_scope import render_facility_scope
-        render_facility_scope(context['query'],facility_id)
-    with overview:
-        if network is not None:
-            from .research_map import render_research_map
-            answer=saved['search']['text'] if saved else ''
-            if candidate:
-                map_col,condition_col=st.columns([1.8,1],gap='medium')
-                with map_col:render_research_map(network,context['query'],answer,candidates,selected_candidate=candidate['name'])
-                with condition_col:
-                    with st.container(border=True):
-                        st.markdown('**'+candidate['name']+' · 조건 비교**')
-                        st.caption(candidate.get('origin','등록 자료 후보'))
-                        if candidate.get('origin'):
-                            st.write(candidate['reason'])
-                            st.caption(candidate['location_note'])
-                            st.caption('원문 발췌 일치 확인 · AI의 제품 연결·규격 해석은 검토 필요')
-                        evaluations=[e for e in candidate['evaluations'] if e['product'] in candidate['products']]
-                        product=st.selectbox('비교 제품',[e['product'] for e in evaluations],key='research_compare_product')
-                        evaluation=next(e for e in evaluations if e['product']==product)
-                        st.caption(STATUS[evaluation['status']])
-                        if not evaluation['checks']:st.info('질문에 구체적인 규격 조건이 없습니다. 같은 제품 종류를 기준으로 찾은 후보입니다.')
-                        for check in evaluation['checks']:
-                            label={'match':'✓ 일치','mismatch':'× 불일치','unknown':'? 자료 부족'}[check['state']]
-                            st.write(label+' · '+check['field'])
-                            st.caption(check['reason'])
-                        st.caption('고객 인증 · 추가 공급 여력 · 납기: 미확인')
-                        with st.expander('제품 근거 확인'):
-                            if candidate.get('product_quote'):st.text(candidate['product_quote'])
-                            for sid in candidate['source_ids']:source_link(bundle['sources'][sid])
-                from .candidate_flow import render_candidate_flow
-                if not candidate.get('origin'):render_candidate_flow(network,bundle,candidate['name'],product)
-            else:render_research_map(network,context['query'],answer,candidates)
-        else:st.info('현재 화면에는 지도 데이터가 연결되지 않았습니다.')
-    with details:
+    with st.expander('후보·지도 비교',expanded=bool(saved)):
+        candidate=None
         if candidates:
-            st.caption('등록 자료 후보와 외부 검색 후보 · 고객 인증·세부 규격·공급 여력은 추가 확인')
-            if requirements:st.write('인식한 조건: '+' · '.join(LABELS.get(k,k)+' = '+str(v) for k,v in requirements.items()))
-            for note in requirement_notes:st.caption(note)
-            st.dataframe([{'검토 기업':c['name'],'근거 구분':c.get('origin','등록 자료'),'제품 종류':' / '.join(c['products']),
-                '조건 비교':' / '.join(dict.fromkeys(STATUS[e['status']] for e in c['evaluations'] if e['product'] in c['products']))} for c in candidates],hide_index=True,width='stretch',height=min(250,36*(len(candidates)+1)))
-            inspected=candidate or candidates[0]
-            with st.expander(inspected['name']+' · 선정 이유와 근거',expanded=bool(candidate)):
-                for evaluation in inspected['evaluations']:
-                    st.markdown('**'+evaluation['product']+' · '+STATUS[evaluation['status']]+'**')
-                    for check in evaluation['checks']:st.write({'match':'✓ 일치','mismatch':'× 불일치','unknown':'? 자료 부족'}[check['state']]+' · '+check['field']+' · '+check['reason'])
-                    for evidence in evaluation['evidence']:
-                        st.caption(LABELS.get(evidence['field'],evidence['field'])+': '+str(evidence['value'])+' '+str(evidence.get('unit') or '')+' · 자료 위치: '+evidence['locator'])
-                for sid in inspected['source_ids']:source_link(bundle['sources'][sid])
-            st.caption('등록 위치 또는 인용 원문에서 주소·좌표를 확인한 후보만 지도에 표시됩니다. 실제 거래·대체 승인 관계를 의미하지 않습니다.')
-        else:st.info('현재 질문과 연결된 등록 대체 후보가 없습니다. 외부 검색 답변을 함께 확인하세요.')
-        rejected=[c for c in registered_candidates(bundle,comparison_query,include_rejected=True) if c['excluded']]
-        if rejected:
-            with st.expander('제외된 기업 · 불일치 또는 과거 자료'):
-                for c in rejected:
-                    st.write(c['name'])
-                    for e in c['evaluations']:
-                        st.caption(e['product']+' · '+STATUS[e['status']])
-                        for check in e['checks']:
-                            if check['state']!='match':st.write(check['field']+' · '+check['reason'])
+            labels=['전체 보기']+[c['name'] for c in candidates]
+            if st.session_state.get('research_candidate_source') not in labels:st.session_state.research_candidate_source='전체 보기'
+            chosen=st.selectbox('후보 선택 · 지도와 조건 함께 보기',labels,key='research_candidate_source')
+            candidate=next((c for c in candidates if c['name']==chosen),None)
+        if context.get('facility_scope',{}).get('facilities'):
+            factories,overview,details=st.tabs(['공장 · 내부 거점','지도 · 조건 비교','대체 기업 · 제품 근거'])
+        else:
+            overview,details,factories=st.tabs(['지도 · 조건 비교','대체 기업 · 제품 근거','공장 · 내부 거점'])
+        with factories:
+            from .facility_scope import render_facility_scope
+            render_facility_scope(context['query'],facility_id)
+        with overview:
+            if network is not None:
+                from .research_map import render_research_map
+                answer=saved['search']['text'] if saved else ''
+                if candidate:
+                    map_col,condition_col=st.columns([1.8,1],gap='medium')
+                    with map_col:render_research_map(network,context['query'],answer,candidates,selected_candidate=candidate['name'])
+                    with condition_col:
+                        with st.container(border=True):
+                            st.markdown('**'+candidate['name']+' · 조건 비교**')
+                            st.caption(candidate.get('origin','등록 자료 후보'))
+                            if candidate.get('origin'):
+                                st.write(candidate['reason'])
+                                st.caption(candidate['location_note'])
+                                st.caption('원문 발췌 일치 확인 · AI의 제품 연결·규격 해석은 검토 필요')
+                            evaluations=[e for e in candidate['evaluations'] if e['product'] in candidate['products']]
+                            product=st.selectbox('비교 제품',[e['product'] for e in evaluations],key='research_compare_product')
+                            evaluation=next(e for e in evaluations if e['product']==product)
+                            st.caption(STATUS[evaluation['status']])
+                            if not evaluation['checks']:st.info('질문에 구체적인 규격 조건이 없습니다. 같은 제품 종류를 기준으로 찾은 후보입니다.')
+                            for check in evaluation['checks']:
+                                label={'match':'✓ 일치','mismatch':'× 불일치','unknown':'? 자료 부족'}[check['state']]
+                                st.write(label+' · '+check['field'])
+                                st.caption(check['reason'])
+                            st.caption('고객 인증 · 추가 공급 여력 · 납기: 미확인')
+                            with st.expander('제품 근거 확인'):
+                                if candidate.get('product_quote'):st.text(candidate['product_quote'])
+                                for sid in candidate['source_ids']:source_link(bundle['sources'][sid])
+                    from .candidate_flow import render_candidate_flow
+                    if not candidate.get('origin'):render_candidate_flow(network,bundle,candidate['name'],product)
+                else:render_research_map(network,context['query'],answer,candidates)
+            else:st.info('현재 화면에는 지도 데이터가 연결되지 않았습니다.')
+        with details:
+            if candidates:
+                st.caption('등록 자료 후보와 외부 검색 후보 · 고객 인증·세부 규격·공급 여력은 추가 확인')
+                if requirements:st.write('인식한 조건: '+' · '.join(LABELS.get(k,k)+' = '+str(v) for k,v in requirements.items()))
+                for note in requirement_notes:st.caption(note)
+                st.dataframe([{'검토 기업':c['name'],'근거 구분':c.get('origin','등록 자료'),'제품 종류':' / '.join(c['products']),
+                    '조건 비교':' / '.join(dict.fromkeys(STATUS[e['status']] for e in c['evaluations'] if e['product'] in c['products']))} for c in candidates],hide_index=True,width='stretch',height=min(250,36*(len(candidates)+1)))
+                inspected=candidate or candidates[0]
+                with st.expander(inspected['name']+' · 선정 이유와 근거',expanded=bool(candidate)):
+                    for evaluation in inspected['evaluations']:
+                        st.markdown('**'+evaluation['product']+' · '+STATUS[evaluation['status']]+'**')
+                        for check in evaluation['checks']:st.write({'match':'✓ 일치','mismatch':'× 불일치','unknown':'? 자료 부족'}[check['state']]+' · '+check['field']+' · '+check['reason'])
+                        for evidence in evaluation['evidence']:
+                            st.caption(LABELS.get(evidence['field'],evidence['field'])+': '+str(evidence['value'])+' '+str(evidence.get('unit') or '')+' · 자료 위치: '+evidence['locator'])
+                    for sid in inspected['source_ids']:source_link(bundle['sources'][sid])
+                st.caption('등록 위치 또는 인용 원문에서 주소·좌표를 확인한 후보만 지도에 표시됩니다. 실제 거래·대체 승인 관계를 의미하지 않습니다.')
+            else:st.info('현재 질문과 연결된 등록 대체 후보가 없습니다. 외부 검색 답변을 함께 확인하세요.')
+            rejected=[c for c in registered_candidates(bundle,comparison_query,include_rejected=True) if c['excluded']]
+            if rejected:
+                with st.expander('제외된 기업 · 불일치 또는 과거 자료'):
+                    for c in rejected:
+                        st.write(c['name'])
+                        for e in c['evaluations']:
+                            st.caption(e['product']+' · '+STATUS[e['status']])
+                            for check in e['checks']:
+                                if check['state']!='match':st.write(check['field']+' · '+check['reason'])
     from .research_evaluation import render_evaluation
-    render_evaluation(bundle,key,api_model())
-    render_library(bundle)
+    with st.expander('추가 자료 · 평가 도구',expanded=False):
+        render_evaluation(bundle,key,api_model())
+        render_library(bundle)

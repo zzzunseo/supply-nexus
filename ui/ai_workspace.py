@@ -9,8 +9,11 @@ TASKS={
 
 def render_ai_workspace(network):
     st.subheader('AI 공급망 분석')
-    task=st.radio('어떤 자료로 분석할까요?',list(TASKS),horizontal=True,key='ai_workspace_task')
-    if task!='사건·공정 영향 조사':st.caption(TASKS[task])
+    labels={'사건·공정 영향 조사':'사건 조사','기업·소재 조건 비교':'후보 비교','기사 본문 근거 검토':'기사 분석'}
+    task=st.radio('무엇을 확인할까요?',list(TASKS),format_func=labels.get,horizontal=True,key='ai_workspace_task')
+    flows={'사건·공정 영향 조사':('질문·상황','관련 기업·소재·공정 + 근거 출처'),'기업·소재 조건 비교':('소재·요구 조건','제품 차이 + 확인할 전환 조건'),'기사 본문 근거 검토':('기사 본문','사건 요약 + 관련 기업 + 인용 근거')}
+    given,result=flows[task]
+    st.markdown('**'+given+'　→　'+result+'**')
     if task=='사건·공정 영향 조사':
         from .external_research import render_external_research
         render_external_research(show_header=False,network=network)
